@@ -1,0 +1,137 @@
+{
+  "name": "Shahal Ahammed K",
+  "first_name": "Shahal",
+  "initials": "SA",
+  "location": "United Arab Emirates",
+  "tagline": "I turn messy data and consumer signals into decisions businesses can act on.",
+  "roles": [
+    "Data Analyst",
+    "Business Commercial Specialist",
+    "Consumer Researcher",
+    "Data Scientist"
+  ],
+  "about": [
+    "I'm a data and research professional working at the point where numbers meet the market. I'm currently a Business Commercial Specialist at vivo Middle East, where I connect commercial performance with what consumers actually do.",
+    "My background is in data science and analytics. I've worked across Python, SQL, R, Power BI and Tableau, and I use both quantitative and qualitative research methods, so I can explain what is happening and also why it is happening."
+  ],
+  "status": "Open to Data, Research & Business Analyst roles",
+  "contact": {
+    "email": "your.email@example.com",
+    "phone": "",
+    "linkedin": "https://www.linkedin.com/in/your-profile",
+    "github": "https://github.com/ShahalAhammedK",
+    "cv_url": ""
+  },
+  "stats": [
+    { "value": 3, "suffix": "+", "label": "Years in data & research" },
+    { "value": 3, "suffix": "", "label": "Roles across analytics & commercial" },
+    { "value": 15, "suffix": "+", "label": "Tools & methods" },
+    { "value": 2, "suffix": "", "label": "Science degrees" }
+  ],
+  "services": [
+    {
+      "icon": "chart",
+      "title": "Data Analytics & BI",
+      "text": "Dashboards and reporting in Power BI and Tableau, so teams can follow the metrics that matter."
+    },
+    {
+      "icon": "search",
+      "title": "Consumer & Market Research",
+      "text": "Qualitative and quantitative studies that explain why customers choose, switch or stay."
+    },
+    {
+      "icon": "brain",
+      "title": "Machine Learning",
+      "text": "Predictive models in Python and R, from data cleaning through to evaluation."
+    },
+    {
+      "icon": "briefcase",
+      "title": "Commercial Strategy",
+      "text": "Putting data into the commercial picture: performance tracking, channel insight and planning support."
+    }
+  ],
+  "skill_groups": [
+    {
+      "title": "Analytics & Programming",
+      "skills": [
+        { "name": "Python", "level": 85 },
+        { "name": "SQL", "level": 85 },
+        { "name": "R", "level": 70 },
+        { "name": "Machine Learning", "level": 75 }
+      ]
+    },
+    {
+      "title": "Business Intelligence",
+      "skills": [
+        { "name": "Power BI", "level": 90 },
+        { "name": "Tableau", "level": 80 },
+        { "name": "Microsoft Office", "level": 90 },
+        { "name": "Website Management", "level": 70 }
+      ]
+    },
+    {
+      "title": "Research & Leadership",
+      "skills": [
+        { "name": "Quantitative Research", "level": 85 },
+        { "name": "Qualitative Research", "level": 85 },
+        { "name": "Consumer Research", "level": 85 },
+        { "name": "Communication & Leadership", "level": 85 }
+      ]
+    }
+  ],
+  "marquee": [
+    "Python", "SQL", "Power BI", "Tableau", "R", "Machine Learning",
+    "Data Science", "Consumer Research", "Qualitative Research",
+    "Quantitative Research", "Data Analytics", "Leadership", "Microsoft Office"
+  ],
+  "experience": [
+    {
+      "role": "Business Commercial Specialist",
+      "company": "vivo Middle East",
+      "period": "Apr 2025 — Present",
+      "current": true,
+      "points": [
+        "Supporting commercial decisions with data across the Middle East business.",
+        "Combining sales performance with consumer and market research insight."
+      ],
+      "tags": ["Commercial", "Consumer Research", "Power BI"]
+    },
+    {
+      "role": "Data Analyst",
+      "company": "Wincept Technologies",
+      "period": "Jul 2024",
+      "current": false,
+      "points": [
+        "Analysed business data and built dashboards and reports for stakeholders.",
+        "Worked with Python, SQL and BI tools to automate recurring analysis."
+      ],
+      "tags": ["Python", "SQL", "Dashboards"]
+    },
+    {
+      "role": "Data Science & Analytics Intern",
+      "company": "Wincept Technologies",
+      "period": "Nov 2023",
+      "current": false,
+      "points": [
+        "Gained hands-on experience with data science workflows, from data cleaning and EDA to modelling.",
+        "Built early machine learning and visualisation projects."
+      ],
+      "tags": ["Data Science", "ML", "EDA"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science (MSc)",
+      "school": "University of Kerala",
+      "period": "",
+      "note": ""
+    },
+    {
+      "degree": "Bachelor of Science (BSc)",
+      "school": "University of Calicut",
+      "period": "",
+      "note": ""
+    }
+  ],
+  "projects": []
+}
