@@ -1,318 +1,515 @@
+{%- macro icon(name, size=18) -%}
+<svg class="ic" width="{{ size }}" height="{{ size }}" viewBox="0 0 24 24" aria-hidden="true">
+{%- if name == 'arrow' %}<path d="M5 12h14M13 6l6 6-6 6"/>
+{%- elif name == 'arrow-ur' %}<path d="M7 17L17 7M8 7h9v9"/>
+{%- elif name == 'left' %}<path d="M15 18l-6-6 6-6"/>
+{%- elif name == 'right' %}<path d="M9 18l6-6-6-6"/>
+{%- elif name == 'download' %}<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>
+{%- elif name == 'close' %}<path d="M6 6l12 12M18 6L6 18"/>
+{%- elif name == 'zoom' %}<circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2M11 8.5v5M8.5 11h5"/>
+{%- elif name == 'spark' %}<path d="M12 3l1.8 5.4L19 10l-5.2 1.6L12 17l-1.8-5.4L5 10l5.2-1.6z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/>
+{%- elif name == 'doc' %}<path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/>
+{%- elif name == 'bars' %}<path d="M5 20v-6M10 20V9M15 20v-9M20 20V5"/>
+{%- elif name == 'compass' %}<circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/>
+{%- elif name == 'pin' %}<path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0113 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/>
+{%- elif name == 'building' %}<path d="M4 21V5l8-2v18M12 8h8v13M8 8h.01M8 12h.01M8 16h.01M16 12h.01M16 16h.01M2 21h20"/>
+{%- elif name == 'grad' %}<path d="M22 9L12 4 2 9l10 5 10-5z"/><path d="M6 11v5c3.5 2.5 8.5 2.5 12 0v-5"/>
+{%- elif name == 'book' %}<path d="M4 5.5A2.5 2.5 0 016.5 3H20v16H6.5A2.5 2.5 0 004 21.5z"/><path d="M4 5.5v16"/>
+{%- elif name == 'calendar' %}<rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/>
+{%- elif name == 'link' %}<path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1M14 10a4 4 0 00-5.7 0l-3 3a4 4 0 005.7 5.7l1-1"/>
+{%- elif name == 'copy' %}<rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 00-1-1H5a1 1 0 00-1 1v10a1 1 0 001 1h3"/>
+{%- elif name == 'id' %}<rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 16c.8-1.6 5.2-1.6 6 0M15 10h3M15 13h3"/>
+{%- elif name == 'trophy' %}<path d="M8 4h8v5a4 4 0 01-8 0zM8 6H5a3 3 0 003 4M16 6h3a3 3 0 01-3 4M12 13v4M8 20h8M10 17h4"/>
+{%- elif name == 'mic' %}<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0013 0M12 17.5V21"/>
+{%- elif name == 'globe' %}<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/>
+{%- elif name == 'mail' %}<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5L12 13l8.5-6.5"/>
+{%- elif name == 'phone' %}<path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/>
+{%- elif name == 'linkedin' %}<path d="M4.5 9.5v10M4.5 5.2v.1M9.5 19.5v-6a3 3 0 016 0v6M9.5 9.5v10" stroke-width="2.2"/>
+{%- elif name == 'github' %}<path d="M9 19c-4 1.3-4-2-6-2.5M15 21v-3.5a3 3 0 00-.9-2.4c2.9-.3 6-1.4 6-6.4a5 5 0 00-1.4-3.5 4.6 4.6 0 00-.1-3.5s-1.1-.3-3.6 1.4a12.4 12.4 0 00-6.5 0C6 2.9 4.9 3.2 4.9 3.2a4.6 4.6 0 00-.1 3.5 5 5 0 00-1.4 3.5c0 5 3.1 6.1 6 6.4a3 3 0 00-.9 2.4V21"/>
+{%- endif %}
+</svg>
+{%- endmacro -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ p.name }} | {{ p.roles[0] }}</title>
-  <meta name="description" content="{{ p.name }}: {{ p.tagline }}" />
-  <meta name="theme-color" content="#07070d" />
+  <title>{{ p.brand }}. | {{ p.headline }} · {{ p.headline_2 }}</title>
+  <meta name="description" content="{{ p.name }}: {{ p.headline }} and {{ p.headline_2 }} based in {{ p.location }}." />
+  <meta name="theme-color" content="#0a0d10" />
   <meta property="og:title" content="{{ p.name }} | Portfolio" />
-  <meta property="og:description" content="{{ p.tagline }}" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%2307070d'/><text x='50%25' y='56%25' font-family='Arial' font-weight='700' font-size='28' fill='%23a78bfa' text-anchor='middle' dominant-baseline='middle'>{{ p.initials }}</text></svg>" />
+  <meta property="og:description" content="{{ p.hero_slides[0].summary }}" />
+  <meta property="og:image" content="static/{{ p.portrait }}" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230a0d10'/><text x='14' y='46' font-family='Arial' font-weight='800' font-size='40' fill='%23f8fafc'>s</text><circle cx='46' cy='42' r='5' fill='%23d2f852'/></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="static/css/style.css" />
 </head>
-<body class="is-loading" data-static="{{ 'true' if static_build else 'false' }}">
-
-  <!-- Preloader -->
-  <div class="loader" aria-hidden="true">
-    <div class="loader__name">
-      {% for ch in p.name %}<span style="--i:{{ loop.index0 }}">{{ ch if ch != ' ' else '&nbsp;'|safe }}</span>{% endfor %}
-    </div>
-    <div class="loader__bar"><i></i></div>
-    <div class="loader__count mono"><span id="loaderCount">0</span>%</div>
-  </div>
-
-  <!-- Ambient background -->
-  <canvas id="bg-canvas" aria-hidden="true"></canvas>
-  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
-  <div class="grain" aria-hidden="true"></div>
-
-  <!-- Cursor -->
-  <div class="cursor-dot" aria-hidden="true"></div>
-  <div class="cursor-ring" aria-hidden="true"></div>
+<body data-static="{{ 'true' if static_build else 'false' }}">
 
   <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
 
-  <!-- Nav -->
+  <!-- ================= NAV ================= -->
   <header class="nav" id="nav">
-    <a href="#home" class="nav__logo" data-magnetic>
-      <span class="nav__logo-mark">{{ p.initials }}</span>
-      <span class="nav__logo-text">{{ p.first_name }}<b>.</b></span>
-    </a>
-    <nav class="nav__links" id="navLinks">
-      <a href="#about" data-link>About</a>
-      <a href="#skills" data-link>Skills</a>
-      <a href="#experience" data-link>Experience</a>
-      {% if p.projects %}<a href="#projects" data-link>Projects</a>{% endif %}
-      <a href="#education" data-link>Education</a>
-      <a href="#contact" class="nav__cta" data-link>Let's talk</a>
-    </nav>
-    <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
+    <div class="nav__inner">
+      <a href="#home" class="brand" aria-label="{{ p.name }}, home">{{ p.brand }}<b>.</b></a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#work" data-link>Work</a>
+        <a href="#about" data-link>About</a>
+        <a href="#experience" data-link>Experience</a>
+        <a href="#credentials" data-link>Credentials</a>
+        <a href="#linkedin" data-link>LinkedIn</a>
+      </nav>
+      <div class="nav__right">
+        <button class="btn btn--lime btn--sm" type="button" data-open-connect>Let's connect {{ icon('arrow', 16) }}</button>
+        <span class="nav__counter mono" id="sectionCounter">01 / 05</span>
+        <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </div>
   </header>
 
   <main>
-    <!-- HERO -->
-    <section class="hero" id="home">
-      <div class="hero__inner">
-        <div class="hero__status reveal">
-          <span class="pulse"></span>{{ p.status }}
+    <!-- ================= 01 HERO ================= -->
+    <section class="hero" id="home" data-index="1">
+      <div class="hero__media" aria-hidden="true">
+        <img src="static/{{ p.portrait }}" alt="" class="hero__portrait" id="heroPortrait" />
+        <canvas id="waveCanvas"></canvas>
+        <span class="hero__tag">{{ p.portrait_label }}</span>
+      </div>
+
+      <div class="wrap hero__content">
+        <div class="hero__eyebrow reveal">
+          <div class="mono caps">{{ p.headline }} <span class="sep">|</span> {{ p.headline_2 }}</div>
+          <div class="hero__where">{{ p.location|replace(',', '') }} <span>·</span> {{ p.company }}</div>
         </div>
-        <p class="hero__hello mono reveal">Hello, I'm</p>
-        <h1 class="hero__name" aria-label="{{ p.name }}">
-          {% for word in p.name.split(' ') %}
-          <span class="word">{% for ch in word %}<span class="char" style="--d:{{ loop.index0 }}">{{ ch }}</span>{% endfor %}</span>
-          {% endfor %}
-        </h1>
-        <div class="hero__role reveal">
-          <span class="hero__role-prefix">I'm a</span>
-          <span class="typed" id="typed" data-roles='{{ p.roles|tojson }}'></span><span class="caret"></span>
+
+        <div class="hero__slides" id="heroSlides" data-slides='{{ p.hero_slides|tojson }}'>
+          <h1 class="hero__title">
+            <span class="hero__line" id="heroLine1">{{ p.hero_slides[0].line1 }}</span>
+            <span class="hero__line hero__line--lime" id="heroLine2">{{ p.hero_slides[0].line2 }}</span>
+          </h1>
+          <p class="hero__summary" id="heroSummary">{{ p.hero_slides[0].summary }}</p>
         </div>
-        <p class="hero__tagline reveal">{{ p.tagline }}</p>
+
         <div class="hero__actions reveal">
-          <a href="#experience" class="btn btn--primary" data-magnetic><span>View my work</span>
-            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
+          <a href="#work" class="btn btn--lime btn--lg">Explore my work {{ icon('arrow') }}</a>
           {% if p.contact.cv_url %}
-          <a href="{{ p.contact.cv_url }}" class="btn btn--ghost" data-magnetic download><span>Download CV</span></a>
+          <a href="{{ p.contact.cv_url }}" class="btn btn--ghost btn--lg" download>{{ icon('download') }} Download CV</a>
           {% else %}
-          <a href="#contact" class="btn btn--ghost" data-magnetic><span>Get in touch</span></a>
+          <button type="button" class="btn btn--ghost btn--lg" data-open-connect>{{ icon('download') }} Download CV</button>
           {% endif %}
         </div>
-        <div class="hero__meta reveal mono">
-          <span>📍 {{ p.location }}</span>
-          <span class="dot-sep"></span>
-          <span>Currently @ {{ p.experience[0].company }}</span>
-        </div>
-      </div>
 
-      <div class="hero__visual reveal" aria-hidden="true">
-        <div class="orb">
-          <div class="orb__core">{{ p.initials }}</div>
-          <div class="orb__ring orb__ring--1"><span>Python</span><span>SQL</span><span>R</span></div>
-          <div class="orb__ring orb__ring--2"><span>Power BI</span><span>Tableau</span><span>ML</span><span>Research</span></div>
-          <div class="orb__ring orb__ring--3"></div>
-        </div>
-        <div class="float-card float-card--a tilt">
-          <div class="mono small muted">insight.py</div>
-          <div class="spark">
-            <svg viewBox="0 0 120 40"><polyline class="spark__line" points="0,32 15,28 30,30 45,20 60,24 75,12 90,16 105,6 120,8" fill="none" stroke="url(#g1)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs></svg>
+        <div class="hero__controls reveal">
+          <div class="dashes" id="heroDashes">
+            {% for s in p.hero_slides %}<button type="button" class="dash {% if loop.first %}is-active{% endif %}" data-slide="{{ loop.index0 }}" aria-label="Highlight {{ loop.index }}"><i></i></button>{% endfor %}
           </div>
-          <div class="big">Trend ↑</div>
-          <div class="small muted">signal &gt; noise</div>
-        </div>
-        <div class="float-card float-card--b tilt">
-          <div class="bars"><i style="--h:40%"></i><i style="--h:65%"></i><i style="--h:50%"></i><i style="--h:85%"></i><i style="--h:70%"></i><i style="--h:95%"></i></div>
-          <div class="small muted mono">dashboard.pbix</div>
+          <div class="arrows">
+            <button type="button" class="circle" id="heroPrev" aria-label="Previous highlight">{{ icon('left') }}</button>
+            <button type="button" class="circle" id="heroNext" aria-label="Next highlight">{{ icon('right') }}</button>
+          </div>
         </div>
       </div>
 
-      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+      <div class="wrap">
+        <div class="home-cards">
+          {% for c in p.home_cards %}
+          <button type="button" class="home-card reveal" style="--i:{{ loop.index0 }}" data-viewer="{{ c.viewer }}">
+            <img src="static/{{ c.img }}" alt="{{ c.title }}" loading="lazy" />
+            <span class="home-card__shade"></span>
+            <span class="home-card__body">
+              <span>
+                <span class="home-card__title">{{ c.title }}</span>
+                <span class="home-card__text">{{ c.text }}</span>
+              </span>
+              <span class="circle">{{ icon('arrow', 16) }}</span>
+            </span>
+          </button>
+          {% endfor %}
+        </div>
+
+        <div class="hero__foot">
+          <a href="#about" class="scroll-cue"><span class="mouse"><i></i></span><span class="mono caps">Scroll to explore</span></a>
+          <div class="socials">
+            <a href="{{ p.contact.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">{{ icon('linkedin', 20) }}</a>
+            <span class="vr"></span>
+            <a href="{{ p.contact.github }}" target="_blank" rel="noopener" aria-label="GitHub">{{ icon('github', 20) }}</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- MARQUEE -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee__track">
-        {% for _ in range(2) %}
-          {% for m in p.marquee %}<span>{{ m }}</span><i>✦</i>{% endfor %}
-        {% endfor %}
-      </div>
-    </div>
-
-    <!-- ABOUT -->
-    <section class="section" id="about">
-      <div class="section__head">
-        <span class="eyebrow mono reveal">01 / About</span>
-        <h2 class="title reveal">Where <em>data</em> meets <em>people</em>.</h2>
-      </div>
-      <div class="about">
-        <div class="about__text">
-          {% for para in p.about %}<p class="reveal">{{ para }}</p>{% endfor %}
-          <div class="stats">
-            {% for s in p.stats %}
-            <div class="stat reveal tilt">
-              <div class="stat__num"><span class="counter" data-target="{{ s.value }}">0</span><b>{{ s.suffix }}</b></div>
-              <div class="stat__label">{{ s.label }}</div>
-            </div>
-            {% endfor %}
-          </div>
+    <!-- ================= ABOUT / STATS ================= -->
+    <section class="wrap about" id="about" data-index="1">
+      <div class="about__grid">
+        <div class="reveal">
+          <div class="eyebrow mono caps">About</div>
+          <h2 class="h2">Research to <em>decisions.</em></h2>
+          <p class="lead">{{ p.experience.intro }}</p>
         </div>
-        <div class="services">
-          {% for s in p.services %}
-          <article class="service reveal tilt" style="--i:{{ loop.index0 }}">
-            <div class="service__icon">
-              {% if s.icon == 'chart' %}<svg viewBox="0 0 24 24"><path d="M3 3v18h18M7 15l4-4 3 3 6-7"/></svg>
-              {% elif s.icon == 'search' %}<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-              {% elif s.icon == 'brain' %}<svg viewBox="0 0 24 24"><path d="M12 5a3 3 0 0 0-5.8-1A3 3 0 0 0 3 7a3 3 0 0 0 0 6 3 3 0 0 0 3 5 3 3 0 0 0 6 1V5zM12 5a3 3 0 0 1 5.8-1A3 3 0 0 1 21 7a3 3 0 0 1 0 6 3 3 0 0 1-3 5 3 3 0 0 1-6 1"/></svg>
-              {% else %}<svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg>{% endif %}
-            </div>
-            <h3>{{ s.title }}</h3>
-            <p>{{ s.text }}</p>
-            <span class="service__glow"></span>
-          </article>
+        <div class="stats">
+          {% for s in p.stats %}
+          <div class="stat card reveal" style="--i:{{ loop.index0 }}">
+            <div class="stat__num"><span class="counter" data-target="{{ s.value }}">0</span><b>{{ s.suffix }}</b></div>
+            <div class="stat__label">{{ s.label }}</div>
+          </div>
           {% endfor %}
         </div>
       </div>
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker__track">
+          {% for _ in range(2) %}{% for s in p.experience.skills %}<span>{{ s }}</span><i>✦</i>{% endfor %}{% endfor %}
+        </div>
+      </div>
     </section>
 
-    <!-- SKILLS -->
-    <section class="section" id="skills">
-      <div class="section__head">
-        <span class="eyebrow mono reveal">02 / Skills</span>
-        <h2 class="title reveal">Tools I use to <em>find the story</em>.</h2>
-      </div>
-      <div class="skills">
-        {% for g in p.skill_groups %}
-        <div class="skill-card reveal tilt" style="--i:{{ loop.index0 }}">
-          <div class="skill-card__head">
-            <span class="mono muted">0{{ loop.index }}</span>
-            <h3>{{ g.title }}</h3>
+    <!-- ================= 02 WORK ================= -->
+    <section class="wrap work" id="work" data-index="2">
+      <div class="work__grid">
+        <div class="work__main">
+          <div class="reveal">
+            <div class="eyebrow mono caps">Work / Project gallery</div>
+            <h2 class="h2">Explore what <em>I’ve built.</em></h2>
+            <p class="lead">Research, analytics and AI tools for real-world questions across the UAE, KSA and Iraq.</p>
           </div>
-          <ul>
-            {% for s in g.skills %}
-            <li>
-              <div class="skill__row"><span>{{ s.name }}</span><span class="mono muted skill__pct" data-target="{{ s.level }}">0%</span></div>
-              <div class="skill__bar"><i style="--w:{{ s.level }}%"></i></div>
-            </li>
+
+          <div class="pills reveal" role="tablist" aria-label="Filter projects">
+            <button type="button" class="pill is-active" data-filter="all">All projects</button>
+            {% for c in p.categories %}
+            <button type="button" class="pill" data-filter="{{ c.id }}">{{ icon(c.icon, 17) }} {{ c.label }}</button>
             {% endfor %}
-          </ul>
+          </div>
+
+          <div class="featured">
+            {% for pr in p.projects if pr.featured %}
+            <article class="project-feature card reveal {% if loop.first %}is-highlight{% endif %}" data-cat="{{ pr.cat }}" style="--i:{{ loop.index0 }}">
+              <div class="project-feature__media">
+                <img src="static/{{ pr.img }}" alt="{{ pr.title }}" loading="lazy" />
+                {% if pr.badge %}<span class="badge mono">{{ pr.badge }}</span>{% endif %}
+                {% if pr.viewer %}<button type="button" class="zoom" data-viewer="{{ pr.viewer }}" aria-label="Open {{ pr.title }} preview">{{ icon('zoom') }}</button>{% endif %}
+              </div>
+              <div class="project-feature__body">
+                <div>
+                  <h3>{{ pr.title }}</h3>
+                  <p>{{ pr.subtitle }}</p>
+                  <div class="tags">{% for t in pr.tags %}<span>{{ t }}</span>{% endfor %}</div>
+                </div>
+                {% if loop.first %}
+                <button type="button" class="btn btn--outline" data-case-study>Open case study {{ icon('arrow-ur', 16) }}</button>
+                {% else %}
+                <button type="button" class="circle" data-viewer="{{ pr.viewer }}" aria-label="Open {{ pr.title }}">{{ icon('right') }}</button>
+                {% endif %}
+              </div>
+            </article>
+            {% endfor %}
+          </div>
+
+          <div class="others">
+            <div class="others__head">
+              <h3>Explore other work</h3>
+              <span class="muted" id="othersLabel">Projects from every category.</span>
+            </div>
+            <div class="others__track" id="othersTrack">
+              {% for pr in p.projects if not pr.featured %}
+              <article class="project-row card" data-cat="{{ pr.cat }}">
+                <img src="static/{{ pr.img }}" alt="{{ pr.title }}" loading="lazy" />
+                <div class="project-row__body">
+                  <h4>{{ pr.title }}</h4>
+                  <p>{{ pr.subtitle }}</p>
+                  <div class="tags">{% for t in pr.tags %}<span>{{ t }}</span>{% endfor %}</div>
+                </div>
+                {% if pr.url %}
+                <a class="circle" href="{{ pr.url }}" target="_blank" rel="noopener" aria-label="Open {{ pr.title }}">{{ icon('right') }}</a>
+                {% elif pr.viewer %}
+                <button type="button" class="circle" data-viewer="{{ pr.viewer }}" aria-label="Preview {{ pr.title }}">{{ icon('right') }}</button>
+                {% else %}
+                <button type="button" class="circle" data-open-connect aria-label="Ask about {{ pr.title }}">{{ icon('right') }}</button>
+                {% endif %}
+              </article>
+              {% endfor %}
+            </div>
+            <div class="pager">
+              <button type="button" class="circle" id="othersPrev" aria-label="Previous projects">{{ icon('left') }}</button>
+              <div class="pager__dots" id="othersDots"></div>
+              <button type="button" class="circle" id="othersNext" aria-label="Next projects">{{ icon('right') }}</button>
+            </div>
+          </div>
         </div>
-        {% endfor %}
-      </div>
-    </section>
 
-    <!-- EXPERIENCE -->
-    <section class="section" id="experience">
-      <div class="section__head">
-        <span class="eyebrow mono reveal">03 / Experience</span>
-        <h2 class="title reveal">My <em>career</em> so far.</h2>
-      </div>
-      <div class="timeline">
-        <div class="timeline__line"><i id="timelineFill"></i></div>
-        {% for e in p.experience %}
-        <article class="job reveal {% if e.current %}job--current{% endif %}">
-          <div class="job__node"></div>
-          <div class="job__card tilt">
-            <div class="job__top">
-              <span class="job__period mono">{{ e.period }}</span>
-              {% if e.current %}<span class="badge"><span class="pulse"></span>Current</span>{% endif %}
-            </div>
-            <h3 class="job__role">{{ e.role }}</h3>
-            <div class="job__company">{{ e.company }}</div>
-            <ul class="job__points">{% for pt in e.points %}<li>{{ pt }}</li>{% endfor %}</ul>
-            <div class="tags">{% for t in e.tags %}<span>{{ t }}</span>{% endfor %}</div>
+        <aside class="finder card reveal">
+          <div class="finder__head">
+            <div class="finder__title">{{ icon('compass', 20) }} Find a project</div>
+            <p>Explore work across research, analytics and AI engineering.</p>
           </div>
-        </article>
-        {% endfor %}
-      </div>
-    </section>
-
-    {% if p.projects %}
-    <!-- PROJECTS -->
-    <section class="section" id="projects">
-      <div class="section__head">
-        <span class="eyebrow mono reveal">Selected work</span>
-        <h2 class="title reveal">Projects &amp; <em>case studies</em>.</h2>
-      </div>
-      <div class="projects">
-        {% for pr in p.projects %}
-        <a class="project reveal tilt" href="{{ pr.link or '#' }}" {% if pr.link %}target="_blank" rel="noopener"{% endif %}>
-          <div class="project__num mono">0{{ loop.index }}</div>
-          <h3>{{ pr.title }}</h3>
-          <p>{{ pr.text }}</p>
-          <div class="tags">{% for t in pr.tags %}<span>{{ t }}</span>{% endfor %}</div>
-          <span class="project__arrow">↗</span>
-        </a>
-        {% endfor %}
-      </div>
-    </section>
-    {% endif %}
-
-    <!-- EDUCATION -->
-    <section class="section" id="education">
-      <div class="section__head">
-        <span class="eyebrow mono reveal">04 / Education</span>
-        <h2 class="title reveal">Academic <em>foundation</em>.</h2>
-      </div>
-      <div class="edu">
-        {% for ed in p.education %}
-        <article class="edu__card reveal tilt" style="--i:{{ loop.index0 }}">
-          <div class="edu__icon">
-            <svg viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>
-          </div>
-          <div>
-            <h3>{{ ed.degree }}</h3>
-            <div class="edu__school">{{ ed.school }}</div>
-            {% if ed.period %}<div class="mono muted small">{{ ed.period }}</div>{% endif %}
-            {% if ed.note %}<p class="muted">{{ ed.note }}</p>{% endif %}
-          </div>
-        </article>
-        {% endfor %}
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section contact" id="contact">
-      <div class="contact__wrap reveal">
-        <span class="eyebrow mono">05 / Contact</span>
-        <h2 class="contact__title">Let's build something<br /><em>insightful</em> together.</h2>
-        <p class="muted">Have a role, a project or a dataset that needs a closer look? My inbox is open.</p>
-
-        <div class="contact__grid">
-          <form class="form" id="contactForm" data-email="{{ p.contact.email }}" novalidate>
-            <div class="field">
-              <input type="text" id="f-name" name="name" required placeholder=" " autocomplete="name" />
-              <label for="f-name">Your name</label>
-            </div>
-            <div class="field">
-              <input type="email" id="f-email" name="email" required placeholder=" " autocomplete="email" />
-              <label for="f-email">Email address</label>
-            </div>
-            <div class="field">
-              <textarea id="f-msg" name="message" rows="4" required placeholder=" "></textarea>
-              <label for="f-msg">Message</label>
-            </div>
-            <button class="btn btn--primary btn--block" type="submit" data-magnetic><span>Send message</span>
-              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <div class="finder__list">
+            {% for c in p.categories %}
+            <button type="button" class="finder__item" data-filter="{{ c.id }}">
+              <span class="finder__label">{{ icon(c.icon, 20) }} {{ c.label }}</span>
+              <span class="radio"></span>
+              <span class="finder__text">{{ c.text }}</span>
             </button>
-            <div class="form__status" id="formStatus" role="status"></div>
-          </form>
+            {% endfor %}
+          </div>
+          <div class="finder__profile">
+            <img src="static/{{ p.avatar }}" alt="{{ p.name }}" loading="lazy" />
+            <div class="finder__name">{{ p.name }}</div>
+            <div class="finder__role">{{ p.headline }} | {{ p.headline_2 }}</div>
+            <ul>
+              <li>{{ icon('pin', 16) }} {{ p.location }}</li>
+              <li>{{ icon('building', 16) }} {{ p.company }}</li>
+              <li>{{ icon('grad', 16) }} MSc CS (AI) · 8.54 GPA</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-          <div class="links">
-            <a class="link-card tilt" href="mailto:{{ p.contact.email }}">
-              <span class="link-card__label mono">Email</span><span class="link-card__value">{{ p.contact.email }}</span><span class="link-card__arrow">↗</span>
-            </a>
-            {% if p.contact.linkedin %}
-            <a class="link-card tilt" href="{{ p.contact.linkedin }}" target="_blank" rel="noopener">
-              <span class="link-card__label mono">LinkedIn</span><span class="link-card__value">Connect with me</span><span class="link-card__arrow">↗</span>
-            </a>
-            {% endif %}
-            {% if p.contact.github %}
-            <a class="link-card tilt" href="{{ p.contact.github }}" target="_blank" rel="noopener">
-              <span class="link-card__label mono">GitHub</span><span class="link-card__value">{{ p.contact.github.rstrip('/').split('/')[-1] }}</span><span class="link-card__arrow">↗</span>
-            </a>
-            {% endif %}
-            {% if p.contact.phone %}
-            <a class="link-card tilt" href="tel:{{ p.contact.phone|replace(' ', '') }}">
-              <span class="link-card__label mono">Phone</span><span class="link-card__value">{{ p.contact.phone }}</span><span class="link-card__arrow">↗</span>
-            </a>
-            {% endif %}
+    <!-- ================= 03 CASE STUDY ================= -->
+    {% set cs = p.case_study %}
+    {% set v = p.viewers[cs.id] %}
+    <section class="wrap case" id="case-study" data-index="3">
+      <div class="case__card card reveal">
+        <div class="case__head">
+          <div>
+            <div class="crumb mono">Work / <b>{{ cs.title }}</b></div>
+            <h2 class="h2 h2--sm">{{ cs.title }}</h2>
+            <p class="lead">{{ cs.subtitle }}</p>
+          </div>
+          <button type="button" class="btn btn--lime" data-viewer="{{ cs.id }}">{{ icon('zoom', 17) }} Open image viewer</button>
+        </div>
+        <div class="case__grid">
+          <div class="case__story">
+            <div class="tags tags--lg">{% for t in cs.tags %}<span>{{ t }}</span>{% endfor %}</div>
+            <div><h3>The challenge</h3><p>{{ cs.challenge }}</p></div>
+            <div><h3>The approach</h3><p>{{ cs.approach }}</p></div>
+            <div>
+              <div class="mono caps muted small">Inspect pipeline layer</div>
+              <div class="layers" id="layers" data-layers='{{ cs.layers|tojson }}'>
+                {% for l in cs.layers %}
+                <button type="button" class="layer {% if loop.first %}is-active{% endif %}" data-layer="{{ loop.index0 }}">
+                  <span class="mono">0{{ loop.index }}. {{ l.name }}</span><small>{{ l.sub }}</small>
+                </button>
+                {% endfor %}
+              </div>
+              <div class="layer-detail mono" id="layerDetail"><b>[0{{ 1 }}. {{ cs.layers[0].name|upper }}]</b> <span>{{ cs.layers[0].detail }}</span></div>
+            </div>
+          </div>
+          <div class="inline-viewer" id="inlineViewer" data-viewer-key="{{ cs.id }}">
+            <div class="inline-viewer__top"><span>{{ v.title }}</span><span class="mono muted" data-counter>01 / {{ '%02d' % v.slides|length }}</span></div>
+            <div class="inline-viewer__stage">
+              <img src="static/{{ v.slides[0].img }}" alt="{{ v.slides[0].caption }}" data-main />
+              <button type="button" class="circle circle--glass" data-prev aria-label="Previous slide">{{ icon('left') }}</button>
+              <button type="button" class="circle circle--glass circle--lime" data-next aria-label="Next slide">{{ icon('right') }}</button>
+            </div>
+            <div class="thumbs">
+              {% for s in v.slides %}<button type="button" class="thumb {% if loop.first %}is-active{% endif %}" data-thumb="{{ loop.index0 }}"><img src="static/{{ s.img }}" alt="Slide {{ loop.index }}" loading="lazy" /></button>{% endfor %}
+            </div>
+            <p class="caption muted" data-caption>{{ v.slides[0].caption }}</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    {% set ex = p.experience %}
+    <section class="wrap experience" id="experience" data-index="3">
+      <div class="reveal">
+        <div class="eyebrow mono caps">Experience & education</div>
+        <h2 class="h2">Where I’ve <em>made an impact.</em></h2>
+      </div>
+      <div class="exp__grid">
+        <article class="exp-main card is-highlight reveal">
+          <span class="chip chip--lime">{{ ex.main.period }}</span>
+          <h3>{{ ex.main.role }}</h3>
+          <a class="exp-main__co" href="{{ ex.main.url }}" target="_blank" rel="noopener">{{ ex.main.company }} <span>·</span> {{ ex.main.place }} {{ icon('arrow-ur', 14) }}</a>
+          <div class="exp-blocks">
+            {% for b in ex.main.blocks %}
+            <div class="exp-block" style="--i:{{ loop.index0 }}">
+              <span class="exp-block__icon">{{ icon(b.icon, 20) }}</span>
+              <strong>{{ b.title }}</strong>
+              <p>{{ b.text }}</p>
+            </div>
+            {% endfor %}
+          </div>
+        </article>
+        <div class="exp-side">
+          {% for o in ex.others %}
+          <article class="card exp-card reveal">
+            <div class="exp-card__meta mono"><span>{{ o.period }}</span><span>{{ o.place }}</span></div>
+            <h3>{{ o.role }} <span class="muted">— {{ o.company }}</span></h3>
+            <p>{{ o.text }}</p>
+            <div class="links">{% for l in o.links %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }} {{ icon('arrow-ur', 13) }}</a>{% endfor %}</div>
+          </article>
+          {% endfor %}
+          <article class="card exp-card reveal">
+            {% for e in ex.education %}
+            <div class="edu {% if not loop.first %}edu--sub{% endif %}">
+              <div class="exp-card__meta mono {% if loop.first %}lime{% endif %}"><span>{{ e.period }}</span><span>{{ e.grade }}</span></div>
+              <h3>{{ icon('grad', 18) }} {{ e.degree }}</h3>
+              <p class="muted">{{ e.school }}</p>
+              {% if e.links %}<div class="links">{% for l in e.links %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }} {{ icon('arrow-ur', 13) }}</a>{% endfor %}</div>{% endif %}
+            </div>
+            {% endfor %}
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 04 CREDENTIALS & LINKEDIN ================= -->
+    <section class="wrap creds" id="credentials" data-index="4">
+      <div class="creds__grid">
+        <div class="creds__main">
+          <div class="reveal">
+            <div class="eyebrow mono caps">Credentials & LinkedIn</div>
+            <h2 class="h2">Learning, ideas &amp; milestones<em>.</em></h2>
+            <p class="lead">{{ p.headline }} | {{ p.headline_2 }}, {{ p.location|replace(',', '') }}, {{ p.company }}.</p>
+          </div>
+
+          <div class="cred-tabs reveal">
+            <button type="button" class="pill is-active" data-cred-tab="featured">{{ icon('calendar', 17) }} Credentials</button>
+            <button type="button" class="pill" data-cred-tab="cert">{{ icon('book', 17) }} All certificates ({{ p.credentials|selectattr('tab', 'equalto', 'cert')|list|length }})</button>
+            <button type="button" class="pill" data-cred-tab="honour">{{ icon('trophy', 17) }} Honours ({{ p.credentials|selectattr('tab', 'equalto', 'honour')|list|length }})</button>
+            <a class="pill" href="#linkedin">{{ icon('linkedin', 17) }} LinkedIn highlights</a>
+            <span class="rule"></span>
+          </div>
+
+          <div class="cred-grid" id="credGrid">
+            {% for c in p.credentials %}
+            <button type="button" class="cred card" data-cred="{{ c.id }}" data-tab="{{ c.tab }}" data-featured="{{ 'true' if c.featured else 'false' }}">
+              <img src="static/{{ c.art }}" alt="" loading="lazy" class="cred__art" />
+              <span class="cred__fade"></span>
+              <span class="cred__body">
+                <span class="cred__brand">{{ c.brand }}</span>
+                <span class="cred__title">{{ c.title }}</span>
+                <span class="cred__issuer">{{ c.issuer }}</span>
+                <span class="cred__type">{{ icon('book', 15) }} {{ c.type }}</span>
+              </span>
+              <span class="cred__arrow">{{ icon('arrow-ur', 18) }}</span>
+            </button>
+            {% endfor %}
+          </div>
+
+          <div class="li" id="linkedin" data-index="5">
+            <div class="li__head">
+              <h3>From LinkedIn</h3>
+              <span class="rule"></span>
+              <span class="muted">Ideas, insights and real-world work shared on LinkedIn.</span>
+            </div>
+            <div class="li__grid">
+              {% for l in p.linkedin_posts %}
+              <button type="button" class="li-card card reveal" style="--i:{{ loop.index0 }}" data-cred="{{ l.id }}">
+                <span class="li-card__media"><img src="static/{{ l.img }}" alt="" loading="lazy" /></span>
+                <span class="li-card__body">
+                  <span class="li-card__title">{{ l.title }} {{ icon('arrow-ur', 18) }}</span>
+                  <span class="li-card__src"><span class="in">in</span> Shared on LinkedIn</span>
+                </span>
+              </button>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+
+        <aside class="drawer card" id="drawer" aria-live="polite">
+          <button type="button" class="drawer__close" id="drawerClose" aria-label="Close details">{{ icon('close', 22) }}</button>
+          <div class="drawer__art"><img id="drawerArt" src="" alt="" /></div>
+          <h3 id="drawerTitle"></h3>
+          <p class="muted" id="drawerIssuer"></p>
+          <p class="drawer__desc" id="drawerDesc"></p>
+          <div class="drawer__meta">
+            <span class="chip" id="drawerType"></span>
+            <span class="chip" id="drawerDate"></span>
+            <span class="chip"><span class="in">in</span> Listed on LinkedIn</span>
+          </div>
+          <a class="btn btn--lime btn--block" id="drawerCta" href="#" target="_blank" rel="noopener"><span>View</span> {{ icon('arrow-ur', 17) }}</a>
+          <div class="copybar">
+            {{ icon('link', 17) }}
+            <span class="mono">{{ p.contact.linkedin|replace('https://www.', '') }}</span>
+            <button type="button" id="copyLink" data-copy="{{ p.contact.linkedin }}" aria-label="Copy LinkedIn link">{{ icon('copy', 17) }}</button>
+          </div>
+          <div class="drawer__related">
+            <div class="muted small">Related learning</div>
+            <button type="button" class="related card" id="drawerRelated"></button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="wrap cta reveal">
+      <div class="cta__card">
+        <div>
+          <div class="eyebrow mono caps">Open to opportunities</div>
+          <h2 class="h2">Have a question about <em>your customers?</em></h2>
+          <p class="lead">Research, dashboards or a GenAI prototype. Let's talk about what you need.</p>
+        </div>
+        <button type="button" class="btn btn--lime btn--lg" data-open-connect>Let's connect {{ icon('arrow') }}</button>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer__big" aria-hidden="true">{{ p.first_name }}</div>
-    <div class="footer__row">
-      <span>© {{ year }} {{ p.name }}</span>
-      <a href="#home" class="mono" data-magnetic>Back to top ↑</a>
+  <footer class="wrap footer">
+    <a href="#home" class="brand">{{ p.brand }}<b>.</b></a>
+    <span class="muted">© {{ year }} {{ p.name }} · {{ p.location }}</span>
+    <div class="socials">
+      <a href="{{ p.contact.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">{{ icon('linkedin', 20) }}</a>
+      <span class="vr"></span>
+      <a href="{{ p.contact.github }}" target="_blank" rel="noopener" aria-label="GitHub">{{ icon('github', 20) }}</a>
     </div>
   </footer>
 
+  <!-- ================= LIGHTBOX VIEWER ================= -->
+  <div class="modal" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lbTitle" hidden>
+    <div class="modal__panel lightbox">
+      <div class="lightbox__top"><span id="lbTitle"></span><button type="button" class="x" data-close aria-label="Close viewer">{{ icon('close', 24) }}</button></div>
+      <div class="lightbox__stage">
+        <img id="lbImg" src="" alt="" />
+        <button type="button" class="circle circle--glass circle--xl" id="lbPrev" aria-label="Previous image">{{ icon('left', 22) }}</button>
+        <button type="button" class="circle circle--glass circle--xl circle--lime" id="lbNext" aria-label="Next image">{{ icon('right', 22) }}</button>
+      </div>
+      <div class="lightbox__bottom">
+        <div class="thumbs" id="lbThumbs"></div>
+        <span class="mono lightbox__count" id="lbCount"></span>
+      </div>
+      <p class="lightbox__caption"><span id="lbCaption"></span> <span class="muted" id="lbNote"></span></p>
+    </div>
+  </div>
+
+  <!-- ================= CONNECT MODAL ================= -->
+  <div class="modal" id="connect" role="dialog" aria-modal="true" aria-labelledby="connectTitle" hidden>
+    <div class="modal__panel connect">
+      <div class="connect__top">
+        <div>
+          <div class="mono caps lime small">Direct contact{% if p.contact.cv_url %} & CV{% endif %}</div>
+          <h3 id="connectTitle">{{ p.name }}</h3>
+          <p class="muted">{{ p.headline }} | {{ p.headline_2 }} · {{ p.location }}</p>
+        </div>
+        <button type="button" class="x" data-close aria-label="Close">{{ icon('close', 22) }}</button>
+      </div>
+      <div class="connect__grid">
+        <a class="contact-tile" href="mailto:{{ p.contact.email }}">{{ icon('mail') }}<span>{{ p.contact.email }}</span></a>
+        {% if p.contact.phone %}<a class="contact-tile" href="tel:{{ p.contact.phone|replace(' ', '') }}">{{ icon('phone') }}<span>{{ p.contact.phone }}</span></a>{% endif %}
+        <a class="contact-tile" href="{{ p.contact.linkedin }}" target="_blank" rel="noopener">{{ icon('linkedin') }}<span>LinkedIn profile</span></a>
+        <a class="contact-tile" href="{{ p.contact.github }}" target="_blank" rel="noopener">{{ icon('github') }}<span>GitHub repos</span></a>
+      </div>
+      <form class="form" id="contactForm" data-email="{{ p.contact.email }}" novalidate>
+        <div class="form__row">
+          <label class="field"><input name="name" required placeholder=" " autocomplete="name" /><span>Your name</span></label>
+          <label class="field"><input name="email" type="email" required placeholder=" " autocomplete="email" /><span>Email</span></label>
+        </div>
+        <label class="field"><textarea name="message" rows="3" required placeholder=" "></textarea><span>Message</span></label>
+        <div class="form__foot">
+          <span class="form__status" id="formStatus" role="status"></span>
+          {% if p.contact.cv_url %}<a class="btn btn--ghost" href="{{ p.contact.cv_url }}" download>{{ icon('download') }} CV</a>{% endif %}
+          <button class="btn btn--lime" type="submit"><span>Send message</span> {{ icon('arrow') }}</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script id="siteData" type="application/json">{{ {'viewers': p.viewers, 'credentials': p.credentials, 'linkedin': p.linkedin_posts}|tojson }}</script>
   <script src="static/js/main.js"></script>
 </body>
 </html>
