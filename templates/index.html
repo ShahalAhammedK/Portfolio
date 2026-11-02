@@ -39,7 +39,7 @@
   <meta name="theme-color" content="#0a0d10" />
   <meta property="og:title" content="{{ p.name }} | Portfolio" />
   <meta property="og:description" content="{{ p.hero_slides[0].summary }}" />
-  <meta property="og:image" content="static/{{ p.portrait }}" />
+  <meta property="og:image" content="static/img/share.jpg" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230a0d10'/><text x='14' y='46' font-family='Arial' font-weight='800' font-size='40' fill='%23f8fafc'>s</text><circle cx='46' cy='42' r='5' fill='%23d2f852'/></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -75,7 +75,7 @@
       <div class="hero__media" aria-hidden="true">
         <img src="static/{{ p.portrait }}" alt="" class="hero__portrait" id="heroPortrait" />
         <canvas id="waveCanvas"></canvas>
-        <span class="hero__tag">{{ p.portrait_label }}</span>
+        {% if p.portrait_label %}<span class="hero__tag">{{ p.portrait_label }}</span>{% endif %}
       </div>
 
       <div class="wrap hero__content">

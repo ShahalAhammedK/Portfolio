@@ -148,7 +148,7 @@
       for (let i = 0; i < DOTS; i++) {
         const p = i / (DOTS - 1);
         const x = W * (0.22 + p * 0.78);
-        let y = H * (0.98 - p * 0.72 + s * 0.022)
+        let y = H * (1.06 - p * 0.46 + s * 0.016)
           + Math.sin(p * 6.2 + t * 0.9 + phase) * amp
           + Math.sin(p * 2.1 - t * 0.5 + s) * amp * 0.6;
         if (mouse.x >= 0) {
