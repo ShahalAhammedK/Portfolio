@@ -503,7 +503,7 @@
       "issuer": "Kaggle",
       "type": "Course",
       "date": "Issued Jun 2023",
-      "art": "img/cred-ibm-ml.jpg",
+      "art": "img/cred-python.jpg",
       "desc": "Data transformation, aggregation and cleaning workflows in Python Pandas.",
       "url": "https://drive.google.com/file/d/1iXSXv4mVZp0TGTPabYrrNyX2jpPrglKe/view?usp=drivesdk",
       "cta": "View certificate"
@@ -517,7 +517,7 @@
       "issuer": "Coursera Project Network",
       "type": "Project certificate",
       "date": "Issued Jun 2023",
-      "art": "img/cred-ibm-ds.jpg",
+      "art": "img/cred-deep-learning.jpg",
       "desc": "Neural image segmentation pipelines, which later supported the generative AI mask automation.",
       "url": "https://coursera.org/verify/2QDX2BHVGT9N",
       "cta": "Verify certificate"
@@ -531,7 +531,7 @@
       "issuer": "Coursera Project Network",
       "type": "Project certificate",
       "date": "Issued Jun 2023",
-      "art": "img/cred-voc.jpg",
+      "art": "img/cred-deep-learning.jpg",
       "desc": "Text embeddings and NLP classification for comment sentiment and theme coding.",
       "url": "https://coursera.org/verify/TXEKEJF6MUV2",
       "cta": "Verify certificate"
@@ -545,7 +545,7 @@
       "issuer": "IBM · Coursera",
       "type": "Course",
       "date": "Issued Jun 2023",
-      "art": "img/cred-ibm-ds.jpg",
+      "art": "img/cred-deep-learning.jpg",
       "desc": "Deep neural architectures and backpropagation with Keras.",
       "url": "https://coursera.org/verify/VKDLBYKM348J",
       "cta": "Verify certificate"
@@ -559,7 +559,7 @@
       "issuer": "Coursera",
       "type": "3 certificates",
       "date": "Issued Jun 2023",
-      "art": "img/cred-powerbi.jpg",
+      "art": "img/cred-python.jpg",
       "desc": "PivotTables, XLOOKUP, automated reporting templates and commercial Excel dashboards.",
       "url": "https://coursera.org/verify/DKRCLWN4MEMA",
       "cta": "Verify certificate"
@@ -573,7 +573,7 @@
       "issuer": "Udemy",
       "type": "4 certificates",
       "date": "2022 – 2023",
-      "art": "img/cred-ibm-ml.jpg",
+      "art": "img/cred-python.jpg",
       "desc": "Four Udemy certificates in Python ETL, OpenCV face recognition and big data.",
       "url": "https://drive.google.com/file/d/1C-EOWfXnD5ZIgq63Pype2htd-LiS4-Rt/view?usp=drivesdk",
       "cta": "View certificates"
