@@ -89,7 +89,7 @@
     {
       "title": "Social Media Analytics",
       "text": "Influencer campaign performance & sentiment analysis",
-      "img": "img/card-social.jpg",
+      "img": "img/sentiment-analysis.jpg",
       "viewer": "campaign"
     },
     {
@@ -122,7 +122,7 @@
       "title": "Influencer Campaign Analysis",
       "subtitle": "How each creator's campaign performed across TikTok, Instagram & YouTube",
       "cat": "analytics",
-      "img": "img/social-dashboard.jpg",
+      "img": "img/campaign-analysis.jpg",
       "tags": [
         "Python",
         "Streamlit",
@@ -135,7 +135,7 @@
       "title": "Influencer Sentiment Analysis",
       "subtitle": "What audiences say in creator comments, and where the campaign can improve",
       "cat": "analytics",
-      "img": "img/sentiment-dashboard.jpg",
+      "img": "img/sentiment-analysis.jpg",
       "tags": [
         "Python",
         "NLP",
@@ -254,38 +254,38 @@
       ]
     },
     "campaign": {
-      "title": "Influencer Campaign Analysis — concept preview",
-      "note": "Illustrative preview of the analysis workflow.",
+      "title": "Influencer Campaign Analysis",
+      "note": "Illustrative visuals of the analysis workflow.",
       "slides": [
+        {
+          "img": "img/campaign-analysis.jpg",
+          "caption": "Comparing creators side by side: who delivered for the campaign across TikTok, Instagram and YouTube."
+        },
         {
           "img": "img/social-dashboard.jpg",
           "caption": "One view of every creator's campaign: content performance, audience segments and benchmarking against competitors."
         },
         {
-          "img": "img/card-social.jpg",
-          "caption": "Creator posts from TikTok, Instagram and YouTube are collected and compared side by side."
-        },
-        {
           "img": "img/social-small.jpg",
-          "caption": "The results show which creators delivered for the campaign and guide who to work with next."
+          "caption": "The results guide which creators to work with next and how to plan the following campaign."
         }
       ]
     },
     "sentiment": {
-      "title": "Influencer Sentiment Analysis — concept preview",
-      "note": "Illustrative data, not real campaign results.",
+      "title": "Influencer Sentiment Analysis",
+      "note": "Illustrative visuals and data, not real campaign results.",
       "slides": [
         {
+          "img": "img/sentiment-analysis.jpg",
+          "caption": "Every comment on creator posts is read and classified as positive, neutral or negative."
+        },
+        {
           "img": "img/sentiment-dashboard.jpg",
-          "caption": "Comments on creator posts are classified by sentiment and coded into themes such as camera, design, battery and price."
+          "caption": "Comments are coded into themes such as camera, design, battery and price, showing what people love and where the campaign can improve."
         },
         {
           "img": "img/social-small.jpg",
           "caption": "Themes are compared across TikTok, Instagram and YouTube, with statistical testing for UAE and KSA audiences."
-        },
-        {
-          "img": "img/card-social.jpg",
-          "caption": "The output: what people are saying, what they love, and where messaging or the campaign can improve."
         }
       ]
     }
