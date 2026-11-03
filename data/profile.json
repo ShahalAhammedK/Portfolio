@@ -88,9 +88,9 @@
     },
     {
       "title": "Social Media Analytics",
-      "text": "TikTok, IG & YouTube KOL sentiment pipelines",
+      "text": "Influencer campaign performance & sentiment analysis",
       "img": "img/card-social.jpg",
-      "viewer": "social"
+      "viewer": "campaign"
     },
     {
       "title": "Consumer Insights",
@@ -117,10 +117,10 @@
       "viewer": "aistudio"
     },
     {
-      "id": "social",
+      "id": "campaign",
       "featured": true,
-      "title": "Social Media Analytics",
-      "subtitle": "Multi-platform analytics and competitor benchmarking",
+      "title": "Influencer Campaign Analysis",
+      "subtitle": "How each creator's campaign performed across TikTok, Instagram & YouTube",
       "cat": "analytics",
       "img": "img/social-dashboard.jpg",
       "tags": [
@@ -128,7 +128,21 @@
         "Streamlit",
         "REST APIs"
       ],
-      "viewer": "social"
+      "viewer": "campaign"
+    },
+    {
+      "id": "sentiment",
+      "title": "Influencer Sentiment Analysis",
+      "subtitle": "What audiences say in creator comments, and where the campaign can improve",
+      "cat": "analytics",
+      "img": "img/sentiment-dashboard.jpg",
+      "tags": [
+        "Python",
+        "NLP",
+        "Theme coding",
+        "Statistical testing"
+      ],
+      "viewer": "sentiment"
     },
     {
       "id": "ipl",
@@ -141,19 +155,6 @@
         "Scikit-learn"
       ],
       "url": "https://github.com/ShahalAhammedK/IPL-AUCTION-PRICE-PREDICTIO-USING-ML-"
-    },
-    {
-      "id": "kol",
-      "title": "GCC Creator (KOL) Sentiment Engine",
-      "subtitle": "TikTok, IG & YouTube comment sentiment + statistical testing for UAE & KSA",
-      "cat": "analytics",
-      "img": "img/social-small.jpg",
-      "tags": [
-        "Python",
-        "Power BI",
-        "Statistical testing"
-      ],
-      "viewer": "social"
     },
     {
       "id": "idi",
@@ -234,24 +235,6 @@
         }
       ]
     },
-    "social": {
-      "title": "Social Media Analytics — concept preview",
-      "note": "Illustrative preview of the analytics workflow.",
-      "slides": [
-        {
-          "img": "img/social-dashboard.jpg",
-          "caption": "Multi-platform analytics: audience segments, content performance and competitor benchmarking."
-        },
-        {
-          "img": "img/card-social.jpg",
-          "caption": "Creator (KOL) comments from TikTok, Instagram and YouTube across UAE & KSA."
-        },
-        {
-          "img": "img/social-small.jpg",
-          "caption": "Theme coding and statistical testing guide creator selection and price messaging."
-        }
-      ]
-    },
     "insights": {
       "title": "Consumer Insights — concept preview",
       "note": "Illustrative preview of the research programme.",
@@ -267,6 +250,42 @@
         {
           "img": "img/li-vivo.jpg",
           "caption": "Findings feed directly into smartphone launch decisions at vivo Middle East."
+        }
+      ]
+    },
+    "campaign": {
+      "title": "Influencer Campaign Analysis — concept preview",
+      "note": "Illustrative preview of the analysis workflow.",
+      "slides": [
+        {
+          "img": "img/social-dashboard.jpg",
+          "caption": "One view of every creator's campaign: content performance, audience segments and benchmarking against competitors."
+        },
+        {
+          "img": "img/card-social.jpg",
+          "caption": "Creator posts from TikTok, Instagram and YouTube are collected and compared side by side."
+        },
+        {
+          "img": "img/social-small.jpg",
+          "caption": "The results show which creators delivered for the campaign and guide who to work with next."
+        }
+      ]
+    },
+    "sentiment": {
+      "title": "Influencer Sentiment Analysis — concept preview",
+      "note": "Illustrative data, not real campaign results.",
+      "slides": [
+        {
+          "img": "img/sentiment-dashboard.jpg",
+          "caption": "Comments on creator posts are classified by sentiment and coded into themes such as camera, design, battery and price."
+        },
+        {
+          "img": "img/social-small.jpg",
+          "caption": "Themes are compared across TikTok, Instagram and YouTube, with statistical testing for UAE and KSA audiences."
+        },
+        {
+          "img": "img/card-social.jpg",
+          "caption": "The output: what people are saying, what they love, and where messaging or the campaign can improve."
         }
       ]
     }
@@ -322,8 +341,8 @@
         },
         {
           "icon": "bars",
-          "title": "Creator (KOL) sentiment analytics",
-          "text": "Analyse TikTok, Instagram and YouTube creator comments across UAE and KSA with theme coding and statistical testing to guide creator selection and price messaging."
+          "title": "Influencer campaign & sentiment analytics",
+          "text": "Measure how creator campaigns perform across TikTok, Instagram and YouTube, and analyse comment sentiment with theme coding and statistical testing to show what audiences say and where campaigns and price messaging can improve."
         },
         {
           "icon": "spark",
