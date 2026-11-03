@@ -672,7 +672,7 @@
       "id": "li_ipl",
       "title": "IPL auction prediction",
       "full": "Hybrid ML (K-Means + Decision Tree) for IPL player valuation",
-      "img": "img/ipl-analytics.jpg",
+      "img": "img/li-ipl.jpg",
       "desc": "Combining K-Means clustering with Decision Tree Regression to help T20 franchises plan player budgets.",
       "url": "https://github.com/ShahalAhammedK/IPL-AUCTION-PRICE-PREDICTIO-USING-ML-",
       "cta": "Open GitHub repository"
