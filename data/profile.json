@@ -876,5 +876,257 @@
         "text": "Customer survey study."
       }
     ]
+  },
+  "phones": {
+    "x300-ultra": {
+      "name": "X300 Ultra",
+      "brand": "vivo",
+      "series": "x"
+    },
+    "x300-pro": {
+      "name": "X300 Pro",
+      "brand": "vivo",
+      "series": "x"
+    },
+    "x300": {
+      "name": "X300",
+      "brand": "vivo",
+      "series": "x"
+    },
+    "x300-fe": {
+      "name": "X300 FE",
+      "brand": "vivo",
+      "series": "x"
+    },
+    "x200-pro": {
+      "name": "X200 Pro",
+      "brand": "vivo",
+      "series": "x"
+    },
+    "x200-fe": {
+      "name": "X200 FE",
+      "brand": "vivo",
+      "series": "x"
+    },
+    "v80-lite": {
+      "name": "V80 Lite",
+      "brand": "vivo",
+      "series": "v"
+    },
+    "v70": {
+      "name": "V70",
+      "brand": "vivo",
+      "series": "v"
+    },
+    "v70-fe": {
+      "name": "V70 FE",
+      "brand": "vivo",
+      "series": "v"
+    },
+    "v60": {
+      "name": "V60",
+      "brand": "vivo",
+      "series": "v"
+    },
+    "v60-lite": {
+      "name": "V60 Lite",
+      "brand": "vivo",
+      "series": "v"
+    },
+    "v50": {
+      "name": "V50",
+      "brand": "vivo",
+      "series": "v"
+    },
+    "y31-5g": {
+      "name": "Y31 5G",
+      "brand": "vivo",
+      "series": "y"
+    },
+    "iqoo-neo-10": {
+      "name": "iQOO Neo 10",
+      "brand": "iQOO",
+      "series": "iqoo"
+    },
+    "iqoo-z10": {
+      "name": "iQOO Z10",
+      "brand": "iQOO",
+      "series": "iqoo"
+    },
+    "honor-400": {
+      "name": "Honor 400",
+      "brand": "Honor",
+      "series": "other"
+    }
+  },
+  "dashboards": {
+    "intro": "Social media campaign dashboards that track how each launch and its creators (KOLs) performed, plus side-by-side comparisons between models and against competitors.",
+    "filters": [
+      {
+        "id": "all",
+        "label": "All dashboards"
+      },
+      {
+        "id": "launch",
+        "label": "Launch campaigns"
+      },
+      {
+        "id": "compare",
+        "label": "Comparisons"
+      },
+      {
+        "id": "kol",
+        "label": "KOL dashboards"
+      },
+      {
+        "id": "competitor",
+        "label": "Competitor"
+      }
+    ],
+    "kinds": {
+      "launch": "Launch campaign",
+      "compare": "Comparison",
+      "kol": "KOL dashboard",
+      "competitor": "Competitor benchmark"
+    },
+    "items": [
+      {
+        "title": "V80 Lite",
+        "kind": "launch",
+        "phones": [
+          "v80-lite"
+        ]
+      },
+      {
+        "title": "X300 FE vs X200 FE",
+        "kind": "compare",
+        "phones": [
+          "x300-fe",
+          "x200-fe"
+        ]
+      },
+      {
+        "title": "X300 Ultra",
+        "kind": "launch",
+        "phones": [
+          "x300-ultra"
+        ]
+      },
+      {
+        "title": "X300 Ultra & FE",
+        "kind": "launch",
+        "phones": [
+          "x300-ultra",
+          "x300-fe"
+        ]
+      },
+      {
+        "title": "V70 FE",
+        "kind": "launch",
+        "phones": [
+          "v70-fe"
+        ]
+      },
+      {
+        "title": "V70 vs V60 vs V50",
+        "kind": "compare",
+        "phones": [
+          "v70",
+          "v60",
+          "v50"
+        ]
+      },
+      {
+        "title": "V70 Dashboard",
+        "kind": "launch",
+        "phones": [
+          "v70"
+        ]
+      },
+      {
+        "title": "X300 Series vs X200 Pro",
+        "kind": "compare",
+        "phones": [
+          "x300",
+          "x200-pro"
+        ]
+      },
+      {
+        "title": "vivo X300 Series Dashboard",
+        "kind": "launch",
+        "phones": [
+          "x300-ultra",
+          "x300-pro",
+          "x300"
+        ]
+      },
+      {
+        "title": "vivo Y31 5G KSA Dashboard",
+        "kind": "launch",
+        "phones": [
+          "y31-5g"
+        ],
+        "market": "KSA"
+      },
+      {
+        "title": "V60 Lite KOL Dashboard",
+        "kind": "kol",
+        "phones": [
+          "v60-lite"
+        ]
+      },
+      {
+        "title": "V60 vs V50",
+        "kind": "compare",
+        "phones": [
+          "v60",
+          "v50"
+        ]
+      },
+      {
+        "title": "V50 Dashboard",
+        "kind": "launch",
+        "phones": [
+          "v50"
+        ]
+      },
+      {
+        "title": "V60 Dashboard",
+        "kind": "launch",
+        "phones": [
+          "v60"
+        ],
+        "market": "KSA & GCC"
+      },
+      {
+        "title": "X200 Pro Dashboard",
+        "kind": "launch",
+        "phones": [
+          "x200-pro"
+        ]
+      },
+      {
+        "title": "X200 FE Dashboard",
+        "kind": "launch",
+        "phones": [
+          "x200-fe"
+        ]
+      },
+      {
+        "title": "Honor 400 Dashboard",
+        "kind": "competitor",
+        "phones": [
+          "honor-400"
+        ]
+      },
+      {
+        "title": "KOL Dashboard for iQOO Neo 10 & Z10",
+        "kind": "kol",
+        "phones": [
+          "iqoo-neo-10",
+          "iqoo-z10"
+        ]
+      }
+    ]
   }
 }

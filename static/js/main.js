@@ -239,13 +239,31 @@
 
   /* ============ Consumer research: filter by series ============ */
   const rPills = $$("#researchPills .pill");
-  const phoneCards = $$(".phone-card");
+  const phoneCards = $$("#phones .phone-card");
   rPills.forEach((b) => b.addEventListener("click", () => {
     const s = b.dataset.series;
     rPills.forEach((x) => x.classList.toggle("is-active", x === b));
     let i = 0;
     phoneCards.forEach((c) => {
       const show = s === "all" || c.dataset.series === s;
+      c.hidden = !show;
+      if (show) {
+        c.style.setProperty("--i", i++ % 4);
+        c.classList.remove("is-in");
+        requestAnimationFrame(() => c.classList.add("is-in"));
+      }
+    });
+  }));
+
+  /* ============ Campaign dashboards: filter by kind ============ */
+  const dPills = $$("#dashPills .pill");
+  const dashCards = $$(".dash-card");
+  dPills.forEach((b) => b.addEventListener("click", () => {
+    const k = b.dataset.kind;
+    dPills.forEach((x) => x.classList.toggle("is-active", x === b));
+    let i = 0;
+    dashCards.forEach((c) => {
+      const show = k === "all" || c.dataset.kind === k;
       c.hidden = !show;
       if (show) {
         c.style.setProperty("--i", i++ % 4);

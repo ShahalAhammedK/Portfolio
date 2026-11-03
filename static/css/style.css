@@ -341,7 +341,7 @@ em { font-style: normal; color: var(--lime); }
 .phone-card:hover .phone-card__glow { opacity: 0.7; transform: scale(1.15); }
 .phone-card__img { position: relative; max-height: 200px; width: auto; object-fit: contain; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.6)); transition: transform 0.7s var(--ease); }
 .phone-card:hover .phone-card__img { transform: translateY(-6px) rotate(-3deg) scale(1.04); }
-.phone-card__count { position: absolute; top: 12px; right: 12px; font-size: 0.7rem; padding: 4px 10px; border-radius: 999px; background: rgba(0,0,0,0.55); border: 1px solid var(--line-hi); color: var(--soft); }
+.phone-card__count { z-index: 20; position: absolute; top: 12px; right: 12px; font-size: 0.7rem; padding: 4px 10px; border-radius: 999px; background: rgba(0,0,0,0.55); border: 1px solid var(--line-hi); color: var(--soft); }
 
 /* CSS phone, shown until a real product image is added to static/img/phones/ */
 .mock { position: relative; width: 92px; height: 188px; border-radius: 22px; transform: rotate(-8deg); transition: transform 0.7s var(--ease);
@@ -368,6 +368,28 @@ em { font-style: normal; color: var(--lime); }
 .cross__list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .cross__item { display: grid; gap: 2px; font-size: 0.9rem; }
 .cross__item .muted { font-size: 0.8rem; }
+
+/* ---------- Campaign dashboards ---------- */
+.dashboards { padding-top: clamp(70px, 10vh, 110px); }
+.stack { position: relative; display: flex; align-items: center; justify-content: center; }
+.stack__item { position: relative; margin-left: calc(var(--n) * -9px + 9px); transform: translateY(calc(var(--k) * 6px + 8px)) rotate(calc((var(--k) - (var(--n) - 1) / 2) * 7deg - 6deg)); transition: transform 0.6s var(--ease); z-index: calc(10 - var(--k)); }
+.stack__item:first-child { margin-left: 0; }
+.stack .mock { transform: none; }
+.dash-card:hover .stack__item { transform: translateY(0) rotate(calc((var(--k) - (var(--n) - 1) / 2) * 12deg - 2deg)); }
+.dash-card:hover .stack .mock { transform: none; }
+.stack .mock { width: 84px; height: 172px; }
+.stack[style*="--n:2"] .mock, .stack[style*="--n:3"] .mock { width: 78px; height: 160px; }
+.stack[style*="--n:3"] .mock { width: 70px; height: 146px; }
+.stack[style*="--n:2"] .phone-card__img, .stack[style*="--n:3"] .phone-card__img { max-height: 170px; }
+.mock--y { background: linear-gradient(150deg, #cffafe, #06b6d4 50%, #083344); }
+.mock--other { background: linear-gradient(150deg, #e0e7ff, #6366f1 50%, #1e1b4b); }
+.mock--y .mock__cam, .mock--other .mock__cam { border-radius: 14px; width: 44px; height: 70px; left: 26px; transform: none; grid-template-columns: 1fr; padding: 6px; }
+.phone-card__stage--y .phone-card__glow { background: #06b6d4; opacity: 0.35; }
+.phone-card__stage--other .phone-card__glow { background: #6366f1; opacity: 0.4; }
+.dash-card .phone-card__brand { display: flex; align-items: center; gap: 6px; }
+.dash-card h3 { font-size: 1.15rem; line-height: 1.25; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips span { font-size: 0.72rem; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line-hi); color: var(--soft); background: rgba(255,255,255,0.03); }
 
 /* ---------- Experience ---------- */
 .experience { padding-top: clamp(80px, 12vh, 130px); }
@@ -537,6 +559,11 @@ em { font-style: normal; color: var(--lime); }
   .mock__brand { bottom: 16px; font-size: 0.72rem; }
   .phone-card__count { top: 8px; right: 8px; font-size: 0.62rem; padding: 3px 8px; }
   .phone-card__img { max-height: 150px; margin-top: 18px; }
+  .stack[style*="--n:2"] .mock, .stack[style*="--n:3"] .mock { width: 54px; height: 112px; }
+  .stack .mock__cam { width: 36px; height: 36px; padding: 5px; }
+  .stack .mock__cam i { width: 10px; height: 10px; }
+  .stack .mock--v .mock__cam, .stack .mock--iqoo .mock__cam, .stack .mock--y .mock__cam, .stack .mock--other .mock__cam { width: 26px; height: 42px; left: 14px; }
+  .stack .mock__brand { font-size: 0.6rem; bottom: 12px; }
   .phone-card__body { padding: 14px 14px 18px; }
   .phone-card h3 { font-size: 1.1rem; }
   .phone-card li { font-size: 0.8rem; }

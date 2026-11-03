@@ -374,6 +374,63 @@
       </div>
     </section>
 
+    <!-- ================= CAMPAIGN DASHBOARDS ================= -->
+    {% set db = p.dashboards %}
+    {% set dn = namespace(models=[], compare=0) %}
+    {% for it in db['items'] %}{% for s in it.phones %}{% if s not in dn.models %}{% set dn.models = dn.models + [s] %}{% endif %}{% endfor %}{% if it.kind == 'compare' %}{% set dn.compare = dn.compare + 1 %}{% endif %}{% endfor %}
+    <section class="wrap research dashboards" id="dashboards" data-index="3">
+      <div class="research__head">
+        <div class="reveal">
+          <div class="eyebrow mono caps">Analytics / Social media campaign analysis</div>
+          <h2 class="h2">Every campaign, <em>measured.</em></h2>
+          <p class="lead">{{ db.intro }}</p>
+        </div>
+        <div class="research__stats reveal">
+          <div><span class="counter" data-target="{{ db['items']|length }}">0</span><small>Dashboards</small></div>
+          <div><span class="counter" data-target="{{ dn.models|length }}">0</span><small>Phone models</small></div>
+          <div><span class="counter" data-target="{{ dn.compare }}">0</span><small>Comparisons</small></div>
+        </div>
+      </div>
+
+      <div class="pills reveal" id="dashPills" role="tablist" aria-label="Filter dashboards">
+        {% for f in db.filters %}<button type="button" class="pill {% if loop.first %}is-active{% endif %}" data-kind="{{ f.id }}">{{ f.label }}</button>{% endfor %}
+      </div>
+
+      <div class="phones" id="dashGrid">
+        {% for it in db['items'] %}
+        {% set lead = p.phones[it.phones[0]] %}
+        <article class="phone-card dash-card card reveal" data-kind="{{ it.kind }}" style="--i:{{ loop.index0 % 4 }}">
+          <div class="phone-card__stage phone-card__stage--{{ lead.series }}">
+            <span class="phone-card__glow"></span>
+            <div class="stack" style="--n:{{ it.phones|length }}">
+              {% for slug in it.phones %}
+              {% set ph = p.phones[slug] %}
+              {% set ns3 = namespace(img='') %}
+              {% for ext in ['png', 'webp', 'jpg'] %}{% if not ns3.img and has_static('img/phones/' ~ slug ~ '.' ~ ext) %}{% set ns3.img = 'img/phones/' ~ slug ~ '.' ~ ext %}{% endif %}{% endfor %}
+              <div class="stack__item" style="--k:{{ loop.index0 }}">
+                {% if ns3.img %}
+                <img src="static/{{ ns3.img }}" alt="{{ ph.brand }} {{ ph.name }}" loading="lazy" class="phone-card__img" />
+                {% else %}
+                <div class="mock mock--{{ ph.series }}" aria-hidden="true">
+                  <div class="mock__cam"><i></i><i></i>{% if 'Ultra' in ph.name or 'Pro' in ph.name %}<i></i>{% endif %}<b></b></div>
+                  <div class="mock__brand">{{ ph.brand }}</div>
+                </div>
+                {% endif %}
+              </div>
+              {% endfor %}
+            </div>
+            <span class="phone-card__count mono">{{ db.kinds[it.kind] }}</span>
+          </div>
+          <div class="phone-card__body">
+            <div class="phone-card__brand mono">{{ icon('bars', 14) }} Dashboard{% if it.market %} · {{ it.market }}{% endif %}</div>
+            <h3>{{ it.title }}</h3>
+            <div class="chips">{% for slug in it.phones %}<span>{{ p.phones[slug].name }}</span>{% endfor %}</div>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+
     <!-- ================= EXPERIENCE ================= -->
     {% set ex = p.experience %}
     <section class="wrap experience" id="experience" data-index="3">
