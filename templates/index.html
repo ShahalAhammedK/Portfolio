@@ -302,7 +302,7 @@
               <button type="button" class="circle circle--glass" data-prev aria-label="Previous slide">{{ icon('left') }}</button>
               <button type="button" class="circle circle--glass circle--lime" data-next aria-label="Next slide">{{ icon('right') }}</button>
             </div>
-            <div class="thumbs">
+            <div class="thumbs" style="--n:{{ v.slides|length }}">
               {% for s in v.slides %}<button type="button" class="thumb {% if loop.first %}is-active{% endif %}" data-thumb="{{ loop.index0 }}"><img src="static/{{ s.img }}" alt="Slide {{ loop.index }}" loading="lazy" /></button>{% endfor %}
             </div>
             <p class="caption muted" data-caption>{{ v.slides[0].caption }}</p>

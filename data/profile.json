@@ -8,7 +8,6 @@
   "portrait": "img/portrait.jpg",
   "portrait_label": "",
   "avatar": "img/avatar.jpg",
-
   "contact": {
     "email": "shahalshalukolloli@gmail.com",
     "phone": "+971 54 515 3730",
@@ -16,7 +15,6 @@
     "github": "https://github.com/ShahalAhammedK",
     "cv_url": ""
   },
-
   "hero_slides": [
     {
       "line1": "Understand people.",
@@ -39,26 +37,68 @@
       "summary": "MSc Computer Science (Artificial Intelligence, A+ grade) from the University of Kerala, the IBM Data Science Professional Certificate, and the Rajya Puraskar state honour."
     }
   ],
-
   "stats": [
-    { "value": 3, "suffix": " yrs", "label": "Across insights, analytics & GenAI" },
-    { "value": 2, "suffix": "", "label": "Smartphone launches shipped with AI Studio" },
-    { "value": 4, "suffix": "", "label": "Research agencies managed" },
-    { "value": 13, "suffix": "+", "label": "Verified certificates" }
+    {
+      "value": 3,
+      "suffix": " yrs",
+      "label": "Across insights, analytics & GenAI"
+    },
+    {
+      "value": 2,
+      "suffix": "",
+      "label": "Smartphone launches shipped with AI Studio"
+    },
+    {
+      "value": 4,
+      "suffix": "",
+      "label": "Research agencies managed"
+    },
+    {
+      "value": 13,
+      "suffix": "+",
+      "label": "Verified certificates"
+    }
   ],
-
   "categories": [
-    { "id": "ai", "icon": "spark", "label": "AI & Engineering", "text": "Generative AI tools, prototypes and automation." },
-    { "id": "research", "icon": "doc", "label": "Research", "text": "Consumer research, IDIs, trilingual surveys and AIPL insights." },
-    { "id": "analytics", "icon": "bars", "label": "Analytics", "text": "Data analysis, Looker/Power BI dashboards and ML models." }
+    {
+      "id": "ai",
+      "icon": "spark",
+      "label": "AI & Engineering",
+      "text": "Generative AI tools, prototypes and automation."
+    },
+    {
+      "id": "research",
+      "icon": "doc",
+      "label": "Research",
+      "text": "Consumer research, IDIs, trilingual surveys and AIPL insights."
+    },
+    {
+      "id": "analytics",
+      "icon": "bars",
+      "label": "Analytics",
+      "text": "Data analysis, Looker/Power BI dashboards and ML models."
+    }
   ],
-
   "home_cards": [
-    { "title": "AI Studio", "text": "Live GenAI smartphone launch web apps", "img": "img/card-ai-studio.jpg", "viewer": "aistudio" },
-    { "title": "Social Media Analytics", "text": "TikTok, IG & YouTube KOL sentiment pipelines", "img": "img/card-social.jpg", "viewer": "social" },
-    { "title": "Consumer Insights", "text": "UAE & KSA IDIs, trilingual surveys & AIPL decks", "img": "img/card-insights.jpg", "viewer": "insights" }
+    {
+      "title": "AI Studio",
+      "text": "Live GenAI smartphone launch web apps",
+      "img": "img/card-ai-studio.jpg",
+      "viewer": "aistudio"
+    },
+    {
+      "title": "Social Media Analytics",
+      "text": "TikTok, IG & YouTube KOL sentiment pipelines",
+      "img": "img/card-social.jpg",
+      "viewer": "social"
+    },
+    {
+      "title": "Consumer Insights",
+      "text": "UAE & KSA IDIs, trilingual surveys & AIPL decks",
+      "img": "img/card-insights.jpg",
+      "viewer": "insights"
+    }
   ],
-
   "projects": [
     {
       "id": "aistudio",
@@ -67,8 +107,13 @@
       "title": "AI Studio",
       "subtitle": "Generative AI campaign experiences, shipped for 2 launches",
       "cat": "ai",
-      "img": "img/ai-studio-ui.jpg",
-      "tags": ["JavaScript", "OpenAI API", "Cloudflare", "Python (Pillow, rembg)"],
+      "img": "img/ai-studio-showcase.jpg",
+      "tags": [
+        "JavaScript",
+        "OpenAI API",
+        "Cloudflare",
+        "Python (Pillow, rembg)"
+      ],
       "viewer": "aistudio"
     },
     {
@@ -78,7 +123,11 @@
       "subtitle": "Multi-platform analytics and competitor benchmarking",
       "cat": "analytics",
       "img": "img/social-dashboard.jpg",
-      "tags": ["Python", "Streamlit", "REST APIs"],
+      "tags": [
+        "Python",
+        "Streamlit",
+        "REST APIs"
+      ],
       "viewer": "social"
     },
     {
@@ -87,7 +136,10 @@
       "subtitle": "Player valuation through K-Means clustering & Decision Tree Regression",
       "cat": "analytics",
       "img": "img/ipl.jpg",
-      "tags": ["Python", "Scikit-learn"],
+      "tags": [
+        "Python",
+        "Scikit-learn"
+      ],
       "url": "https://github.com/ShahalAhammedK/IPL-AUCTION-PRICE-PREDICTIO-USING-ML-"
     },
     {
@@ -96,7 +148,11 @@
       "subtitle": "TikTok, IG & YouTube comment sentiment + statistical testing for UAE & KSA",
       "cat": "analytics",
       "img": "img/social-small.jpg",
-      "tags": ["Python", "Power BI", "Statistical testing"],
+      "tags": [
+        "Python",
+        "Power BI",
+        "Statistical testing"
+      ],
       "viewer": "social"
     },
     {
@@ -105,7 +161,11 @@
       "subtitle": "In-depth interviews across Dubai, Abu Dhabi, Sharjah & Fujairah with 4 agencies",
       "cat": "research",
       "img": "img/card-insights.jpg",
-      "tags": ["IDIs", "AIPL journey", "EN / AR / HI surveys"],
+      "tags": [
+        "IDIs",
+        "AIPL journey",
+        "EN / AR / HI surveys"
+      ],
       "viewer": "insights"
     },
     {
@@ -113,8 +173,12 @@
       "title": "AI Reporting Toolkit & Interview Simulator",
       "subtitle": "Transcript-to-report synthesis, moderator simulator & WhatsApp sales parser",
       "cat": "ai",
-      "img": "img/card-ai-studio.jpg",
-      "tags": ["Generative AI", "Python", "Prompt engineering"]
+      "img": "img/ai-concept.jpg",
+      "tags": [
+        "Generative AI",
+        "Python",
+        "Prompt engineering"
+      ]
     },
     {
       "id": "imdb",
@@ -122,7 +186,11 @@
       "subtitle": "Exploratory financial & genre trend analysis across decades",
       "cat": "analytics",
       "img": "img/social-dashboard.jpg",
-      "tags": ["Python", "Pandas", "Matplotlib"],
+      "tags": [
+        "Python",
+        "Pandas",
+        "Matplotlib"
+      ],
       "url": "https://github.com/ShahalAhammedK/IMDB-Data-Analysis-EDA-Project-"
     },
     {
@@ -131,57 +199,113 @@
       "subtitle": "Arabic key visuals for Iraq/GCC markets, launch videos & livestream scripts",
       "cat": "research",
       "img": "img/li-vivo.jpg",
-      "tags": ["Localisation", "UAE / KSA / Iraq", "Brand launch"],
+      "tags": [
+        "Localisation",
+        "UAE / KSA / Iraq",
+        "Brand launch"
+      ],
       "url": "https://www.vivo.com/ae/en/"
     }
   ],
-
   "viewers": {
     "aistudio": {
-      "title": "AI Studio — concept preview",
-      "note": "Illustrative preview; not an actual campaign screenshot.",
+      "title": "AI Studio — sample outputs",
+      "note": "Sample outputs generated by the AI Studio web app.",
       "slides": [
-        { "img": "img/viewer-1.jpg", "caption": "Turn ideas into campaigns: visitors upload a selfie and step inside the official launch key visual in seconds." },
-        { "img": "img/viewer-2.jpg", "caption": "Gender-aware prompting adjusts pose, hand geometry, smile and studio lighting." },
-        { "img": "img/viewer-3.jpg", "caption": "A Python mask pipeline (Pillow, NumPy, rembg) separates person, hand, product and logo layers." },
-        { "img": "img/viewer-4.jpg", "caption": "Serverless on Cloudflare Pages, plus a no-AI drag-and-zoom “Profile with Frame” mode." }
+        {
+          "img": "img/aistudio-v80-m.jpg",
+          "caption": "vivo V80 launch: a visitor's selfie placed inside the official key visual, holding the phone in the campaign outfit."
+        },
+        {
+          "img": "img/aistudio-v80-f.jpg",
+          "caption": "Same campaign, female visitor: gender-aware prompting adjusts pose, hand and styling while the logo, phone and headline stay pixel-exact."
+        },
+        {
+          "img": "img/aistudio-v80lite-m.jpg",
+          "caption": "vivo V80 Lite 5G launch: a second campaign template on the same pipeline, with the battery and record-holder panel kept locked in front of the person."
+        },
+        {
+          "img": "img/aistudio-v80lite-f.jpg",
+          "caption": "V80 Lite, female visitor: the mask pipeline keeps the product, lettering and badge layers intact for every generation."
+        },
+        {
+          "img": "img/viewer-1.jpg",
+          "caption": "Concept: the campaign landing experience where visitors upload a selfie and generate their own key visual."
+        }
       ]
     },
     "social": {
       "title": "Social Media Analytics — concept preview",
       "note": "Illustrative preview of the analytics workflow.",
       "slides": [
-        { "img": "img/social-dashboard.jpg", "caption": "Multi-platform analytics: audience segments, content performance and competitor benchmarking." },
-        { "img": "img/card-social.jpg", "caption": "Creator (KOL) comments from TikTok, Instagram and YouTube across UAE & KSA." },
-        { "img": "img/social-small.jpg", "caption": "Theme coding and statistical testing guide creator selection and price messaging." }
+        {
+          "img": "img/social-dashboard.jpg",
+          "caption": "Multi-platform analytics: audience segments, content performance and competitor benchmarking."
+        },
+        {
+          "img": "img/card-social.jpg",
+          "caption": "Creator (KOL) comments from TikTok, Instagram and YouTube across UAE & KSA."
+        },
+        {
+          "img": "img/social-small.jpg",
+          "caption": "Theme coding and statistical testing guide creator selection and price messaging."
+        }
       ]
     },
     "insights": {
       "title": "Consumer Insights — concept preview",
       "note": "Illustrative preview of the research programme.",
       "slides": [
-        { "img": "img/card-insights.jpg", "caption": "In-depth interviews across Dubai, Abu Dhabi, Sharjah & Fujairah." },
-        { "img": "img/li-research.jpg", "caption": "Respondent profiles and model-comparison decks built on the AIPL framework." },
-        { "img": "img/li-vivo.jpg", "caption": "Findings feed directly into smartphone launch decisions at vivo Middle East." }
+        {
+          "img": "img/card-insights.jpg",
+          "caption": "In-depth interviews across Dubai, Abu Dhabi, Sharjah & Fujairah."
+        },
+        {
+          "img": "img/li-research.jpg",
+          "caption": "Respondent profiles and model-comparison decks built on the AIPL framework."
+        },
+        {
+          "img": "img/li-vivo.jpg",
+          "caption": "Findings feed directly into smartphone launch decisions at vivo Middle East."
+        }
       ]
     }
   },
-
   "case_study": {
     "id": "aistudio",
     "title": "AI Studio",
     "subtitle": "Generative AI campaign experiences, shipped for two vivo smartphone launches",
-    "tags": ["JavaScript", "OpenAI Image API", "Cloudflare Pages", "Python (Pillow, NumPy, rembg)"],
+    "tags": [
+      "JavaScript",
+      "OpenAI Image API",
+      "Cloudflare Pages",
+      "Python (Pillow, NumPy, rembg)"
+    ],
     "challenge": "Create personalised smartphone launch campaign imagery from a visitor's selfie, placing them inside the official key visual in the campaign outfit and holding the phone, while keeping the brand logo, product and headline lettering pixel-exact.",
     "approach": "A custom Python masking pipeline that separates person, protected-logo, product and hand masks and rebuilds occluded campaign lettering, paired with gender-aware prompt engineering and a serverless Cloudflare Pages stream.",
     "layers": [
-      { "name": "Mask Pipeline", "sub": "Person, hand & logo", "detail": "A Python script turns the designer's master key visual into person, protected-logo, product and hand masks, and reconstructs hidden parts of the campaign lettering so generated hair falls naturally in front of it." },
-      { "name": "Gender Prompting", "sub": "Likeness & pose tuning", "detail": "Prompts tuned against real generations for facial likeness, pose, scale, smile and studio lighting, with automatic gender detection so women are never rendered with the original male model's hand or build." },
-      { "name": "Cloudflare Edge", "sub": "FastAPI → serverless", "detail": "Migrated from a Python/FastAPI server on Render to Cloudflare Pages by moving image compositing into the browser and streaming the OpenAI Image API response server-side." },
-      { "name": "Frame Mode", "sub": "No-AI drag & zoom", "detail": "A fast, no-AI “Profile with Frame” mode that creates a branded square profile picture with interactive drag-and-zoom positioning." }
+      {
+        "name": "Mask Pipeline",
+        "sub": "Person, hand & logo",
+        "detail": "A Python script turns the designer's master key visual into person, protected-logo, product and hand masks, and reconstructs hidden parts of the campaign lettering so generated hair falls naturally in front of it."
+      },
+      {
+        "name": "Gender Prompting",
+        "sub": "Likeness & pose tuning",
+        "detail": "Prompts tuned against real generations for facial likeness, pose, scale, smile and studio lighting, with automatic gender detection so women are never rendered with the original male model's hand or build."
+      },
+      {
+        "name": "Cloudflare Edge",
+        "sub": "FastAPI → serverless",
+        "detail": "Migrated from a Python/FastAPI server on Render to Cloudflare Pages by moving image compositing into the browser and streaming the OpenAI Image API response server-side."
+      },
+      {
+        "name": "Frame Mode",
+        "sub": "No-AI drag & zoom",
+        "detail": "A fast, no-AI “Profile with Frame” mode that creates a branded square profile picture with interactive drag-and-zoom positioning."
+      }
     ]
   },
-
   "experience": {
     "intro": "Nearly 3 years across consumer insights, data analytics and generative AI engineering in the UAE, KSA and India.",
     "main": {
@@ -191,10 +315,26 @@
       "place": "JLT, Dubai, UAE",
       "url": "https://www.vivo.com/ae/en/",
       "blocks": [
-        { "icon": "mic", "title": "Qualitative IDIs & AIPL decks", "text": "Plan, moderate and report in-depth interviews across Dubai, Abu Dhabi, Sharjah and Fujairah; build respondent profiles and model-comparison decks using the AIPL framework." },
-        { "icon": "bars", "title": "Creator (KOL) sentiment analytics", "text": "Analyse TikTok, Instagram and YouTube creator comments across UAE and KSA with theme coding and statistical testing to guide creator selection and price messaging." },
-        { "icon": "spark", "title": "GenAI apps & AI reporting toolkit", "text": "Built and shipped “AI Studio” launch web apps, an automated transcript-to-report toolkit, an AI interview simulator for moderator training, and a WhatsApp sales parser." },
-        { "icon": "globe", "title": "4 agencies, trilingual surveys & web", "text": "Manage ValuStrat, Think Positive, Accurate ME and iBrid Insights; design English, Arabic and Hindi surveys; manage the vivo Middle East website and Iraq Arabic key visuals." }
+        {
+          "icon": "mic",
+          "title": "Qualitative IDIs & AIPL decks",
+          "text": "Plan, moderate and report in-depth interviews across Dubai, Abu Dhabi, Sharjah and Fujairah; build respondent profiles and model-comparison decks using the AIPL framework."
+        },
+        {
+          "icon": "bars",
+          "title": "Creator (KOL) sentiment analytics",
+          "text": "Analyse TikTok, Instagram and YouTube creator comments across UAE and KSA with theme coding and statistical testing to guide creator selection and price messaging."
+        },
+        {
+          "icon": "spark",
+          "title": "GenAI apps & AI reporting toolkit",
+          "text": "Built and shipped “AI Studio” launch web apps, an automated transcript-to-report toolkit, an AI interview simulator for moderator training, and a WhatsApp sales parser."
+        },
+        {
+          "icon": "globe",
+          "title": "4 agencies, trilingual surveys & web",
+          "text": "Manage ValuStrat, Think Positive, Accurate ME and iBrid Insights; design English, Arabic and Hindi surveys; manage the vivo Middle East website and Iraq Arabic key visuals."
+        }
       ]
     },
     "others": [
@@ -205,8 +345,14 @@
         "company": "Wincept Technologies",
         "text": "Applied Python, statistical testing and machine learning to client datasets; built interactive Power BI and Tableau dashboards and end-to-end ETL pipelines.",
         "links": [
-          { "label": "Relieving letter", "url": "https://drive.google.com/open?id=1FKiMdv7oefSgfUtQUqI70f7WOew31G2m" },
-          { "label": "Internship certificate", "url": "https://drive.google.com/open?id=1R0pqoClo2_sK5qP6oDxR_I4ISLp7QKuz" }
+          {
+            "label": "Relieving letter",
+            "url": "https://drive.google.com/open?id=1FKiMdv7oefSgfUtQUqI70f7WOew31G2m"
+          },
+          {
+            "label": "Internship certificate",
+            "url": "https://drive.google.com/open?id=1R0pqoClo2_sK5qP6oDxR_I4ISLp7QKuz"
+          }
         ]
       }
     ],
@@ -217,8 +363,14 @@
         "degree": "MSc Computer Science (Artificial Intelligence)",
         "school": "University of Kerala",
         "links": [
-          { "label": "Degree", "url": "https://drive.google.com/file/d/10M68RbxljW2MDxxUppkWtsPzglddhM_d/view?usp=drivesdk" },
-          { "label": "Position certificate", "url": "https://drive.google.com/file/d/10SvI43rzXiSyT6gDbFdxyeVPtU7Tru45/view?usp=drivesdk" }
+          {
+            "label": "Degree",
+            "url": "https://drive.google.com/file/d/10M68RbxljW2MDxxUppkWtsPzglddhM_d/view?usp=drivesdk"
+          },
+          {
+            "label": "Position certificate",
+            "url": "https://drive.google.com/file/d/10SvI43rzXiSyT6gDbFdxyeVPtU7Tru45/view?usp=drivesdk"
+          }
         ]
       },
       {
@@ -229,32 +381,282 @@
         "links": []
       }
     ],
-    "skills": ["Python", "SQL", "R", "Power BI", "Tableau", "Looker", "Scikit-learn", "Pandas", "OpenAI API", "Prompt engineering", "Cloudflare Pages", "Qualitative research", "Quantitative research", "AIPL framework", "Survey design (EN/AR/HI)", "Statistical testing"]
+    "skills": [
+      "Python",
+      "SQL",
+      "R",
+      "Power BI",
+      "Tableau",
+      "Looker",
+      "Scikit-learn",
+      "Pandas",
+      "OpenAI API",
+      "Prompt engineering",
+      "Cloudflare Pages",
+      "Qualitative research",
+      "Quantitative research",
+      "AIPL framework",
+      "Survey design (EN/AR/HI)",
+      "Statistical testing"
+    ]
   },
-
   "credentials": [
-    { "id": "ibm_ds", "featured": true, "tab": "cert", "brand": "IBM", "title": "IBM Data Science", "full": "IBM Data Science Professional Certificate (10 courses)", "issuer": "IBM", "type": "Professional certificate", "date": "Issued Nov 2023", "art": "img/cred-ibm-ds.jpg", "desc": "10-course specialisation covering Python, SQL, data analysis, visualisation, applied machine learning and a capstone project.", "url": "https://www.coursera.org/account/accomplishments/professional-cert/9HFU8E9Y6XZ6", "cta": "Verify certificate" },
-    { "id": "ibm_ml", "featured": true, "tab": "cert", "brand": "IBM", "title": "Machine Learning with Python", "full": "Machine Learning with Python — IBM Skills Network", "issuer": "IBM", "type": "Course", "date": "Issued Feb 2023", "art": "img/cred-ibm-ml.jpg", "desc": "Supervised and unsupervised learning, K-Means clustering, decision trees and regression pipelines in Python.", "url": "https://www.coursera.org/account/accomplishments/verify/L8PYBQDRRA8R", "cta": "Verify certificate" },
-    { "id": "voc", "featured": true, "tab": "cert", "brand": "coursera", "title": "Voice of the Customer (VoC)", "full": "Voice of the Customer (VoC): Enhancing Experiences", "issuer": "Coursera", "type": "Course", "date": "Issued Jan 2026", "art": "img/cred-voc.jpg", "desc": "Customer journey mapping (AIPL), qualitative listening frameworks and consumer verbatim synthesis.", "url": "https://www.linkedin.com/in/shahal-ahammed/", "cta": "View LinkedIn profile" },
-    { "id": "powerbi", "featured": true, "tab": "cert", "brand": "Knowledge Accelerators", "title": "Data-Driven Decisions with Power BI", "full": "Data-Driven Decisions with Power BI", "issuer": "Knowledge Accelerators", "type": "Course", "date": "Issued Jul 2023", "art": "img/cred-powerbi.jpg", "desc": "Executive dashboard design, DAX modelling and KPI storytelling in Microsoft Power BI.", "url": "https://www.coursera.org/account/accomplishments/verify/LNU5N78JR4YF", "cta": "Verify certificate" },
-    { "id": "vivo_camp", "tab": "cert", "brand": "vivo", "title": "vivo Overseas Local Branding Camp 2025", "full": "Overseas Local Branding Team Empowerment E-Learning Camp 2025", "issuer": "vivo", "type": "Brand certification", "date": "Issued 2025", "art": "img/li-vivo.jpg", "desc": "vivo's overseas local branding, consumer insights and product launch campaign programme.", "url": "https://www.linkedin.com/in/shahal-ahammed/", "cta": "View LinkedIn profile" },
-    { "id": "kaggle_pandas", "tab": "cert", "brand": "kaggle", "title": "Pandas", "full": "Kaggle Learn — Pandas", "issuer": "Kaggle", "type": "Course", "date": "Issued Jun 2023", "art": "img/cred-ibm-ml.jpg", "desc": "Data transformation, aggregation and cleaning workflows in Python Pandas.", "url": "https://drive.google.com/file/d/1iXSXv4mVZp0TGTPabYrrNyX2jpPrglKe/view?usp=drivesdk", "cta": "View certificate" },
-    { "id": "pytorch_seg", "tab": "cert", "brand": "coursera", "title": "Deep Learning with PyTorch: Image Segmentation", "full": "Deep Learning with PyTorch: Image Segmentation", "issuer": "Coursera Project Network", "type": "Project certificate", "date": "Issued Jun 2023", "art": "img/cred-ibm-ds.jpg", "desc": "Neural image segmentation pipelines, which later supported the generative AI mask automation.", "url": "https://coursera.org/verify/2QDX2BHVGT9N", "cta": "Verify certificate" },
-    { "id": "tf_nlp", "tab": "cert", "brand": "coursera", "title": "Transfer Learning for NLP with TensorFlow Hub", "full": "Transfer Learning for NLP with TensorFlow Hub", "issuer": "Coursera Project Network", "type": "Project certificate", "date": "Issued Jun 2023", "art": "img/cred-voc.jpg", "desc": "Text embeddings and NLP classification for comment sentiment and theme coding.", "url": "https://coursera.org/verify/TXEKEJF6MUV2", "cta": "Verify certificate" },
-    { "id": "keras_dl", "tab": "cert", "brand": "IBM", "title": "Deep Learning & Neural Networks with Keras", "full": "Introduction to Deep Learning & Neural Networks with Keras", "issuer": "IBM · Coursera", "type": "Course", "date": "Issued Jun 2023", "art": "img/cred-ibm-ds.jpg", "desc": "Deep neural architectures and backpropagation with Keras.", "url": "https://coursera.org/verify/VKDLBYKM348J", "cta": "Verify certificate" },
-    { "id": "excel_dash", "tab": "cert", "brand": "coursera", "title": "Excel Skills for Business & Dashboards", "full": "Excel Skills for Business + Charts & Dashboards + Data Analysis (3 certificates)", "issuer": "Coursera", "type": "3 certificates", "date": "Issued Jun 2023", "art": "img/cred-powerbi.jpg", "desc": "PivotTables, XLOOKUP, automated reporting templates and commercial Excel dashboards.", "url": "https://coursera.org/verify/DKRCLWN4MEMA", "cta": "Verify certificate" },
-    { "id": "udemy_bundle", "tab": "cert", "brand": "Udemy", "title": "Python Data Analytics, Face Detection & Big Data", "full": "Data Analytics A–Z, NumPy/Pandas, Face Recognition & Big Data Basics (4 certificates)", "issuer": "Udemy", "type": "4 certificates", "date": "2022 – 2023", "art": "img/cred-ibm-ml.jpg", "desc": "Four Udemy certificates in Python ETL, OpenCV face recognition and big data.", "url": "https://drive.google.com/file/d/1C-EOWfXnD5ZIgq63Pype2htd-LiS4-Rt/view?usp=drivesdk", "cta": "View certificates" },
-
-    { "id": "award_rajya", "tab": "honour", "brand": "STATE AWARD", "title": "Rajya Puraskar State Honour", "full": "Rajya Puraskar — State-level award (Bharat Scouts & Guides)", "issuer": "Bharat Scouts and Guides", "type": "State honour", "date": "2013 – 2016", "art": "img/cred-powerbi.jpg", "desc": "State-level Rajya Puraskar award for service and leadership.", "url": "https://www.linkedin.com/in/shahal-ahammed/", "cta": "View on LinkedIn" },
-    { "id": "award_msc", "tab": "honour", "brand": "UNIVERSITY OF KERALA", "title": "MSc AI — A+ Grade & Position Certificate", "full": "MSc Computer Science (AI) — 8.54 GPA, A+ grade & position certificate", "issuer": "University of Kerala", "type": "Academic distinction", "date": "May 2024", "art": "img/cred-ibm-ds.jpg", "desc": "A+ grade in MSc Computer Science with specialisation in Artificial Intelligence.", "url": "https://drive.google.com/file/d/10SvI43rzXiSyT6gDbFdxyeVPtU7Tru45/view?usp=drivesdk", "cta": "View position certificate" },
-    { "id": "award_yip", "tab": "honour", "brand": "YIP KERALA", "title": "Young Innovators Programme (Ideator)", "full": "Young Innovators Programme — Ideator ID 21YIP025578", "issuer": "Dept. of Computer Science, University of Kerala", "type": "Innovation award", "date": "Nov 2022", "art": "img/cred-voc.jpg", "desc": "Recognised as an Ideator under the Young Innovators Programme at the University of Kerala.", "url": "https://drive.google.com/file/d/1u7ZC4LdZPuviJ32qo5lDGBLiLF9Ey_el/view?usp=drivesdk", "cta": "View certificate" },
-    { "id": "award_aiam", "tab": "honour", "brand": "AIAM 2K22", "title": "Annual Interdisciplinary Academic Meet", "full": "AIAM 2k22 — School of Technology, University of Kerala", "issuer": "University of Kerala", "type": "Academic meet", "date": "2022", "art": "img/cred-ibm-ml.jpg", "desc": "Recognised at the Annual Interdisciplinary Academic Meet (AIAM 2k22) and International Seminar on Data Science.", "url": "https://drive.google.com/file/d/1umgCpL4N_dpWIt092TtfefHejRh93R2h/view?usp=drivesdk", "cta": "View certificate" },
-    { "id": "award_gtt", "tab": "honour", "brand": "GTT · BARCLAYS", "title": "Barclays LifeSkills Programme", "full": "Barclays LifeSkills Programme — Global Talent Track (GTT) Foundation", "issuer": "GTT Foundation", "type": "Leadership certificate", "date": "Dec 2021", "art": "img/cred-powerbi.jpg", "desc": "Completed the Barclays LifeSkills Programme at the University of Kerala.", "url": "https://drive.google.com/open?id=1UVK8OzUfMkfKOEx9vdmOkWsanakiWO9z", "cta": "View certificate" }
+    {
+      "id": "ibm_ds",
+      "featured": true,
+      "tab": "cert",
+      "brand": "IBM",
+      "title": "IBM Data Science",
+      "full": "IBM Data Science Professional Certificate (10 courses)",
+      "issuer": "IBM",
+      "type": "Professional certificate",
+      "date": "Issued Nov 2023",
+      "art": "img/cred-ibm-ds.jpg",
+      "desc": "10-course specialisation covering Python, SQL, data analysis, visualisation, applied machine learning and a capstone project.",
+      "url": "https://www.coursera.org/account/accomplishments/professional-cert/9HFU8E9Y6XZ6",
+      "cta": "Verify certificate"
+    },
+    {
+      "id": "ibm_ml",
+      "featured": true,
+      "tab": "cert",
+      "brand": "IBM",
+      "title": "Machine Learning with Python",
+      "full": "Machine Learning with Python — IBM Skills Network",
+      "issuer": "IBM",
+      "type": "Course",
+      "date": "Issued Feb 2023",
+      "art": "img/cred-ibm-ml.jpg",
+      "desc": "Supervised and unsupervised learning, K-Means clustering, decision trees and regression pipelines in Python.",
+      "url": "https://www.coursera.org/account/accomplishments/verify/L8PYBQDRRA8R",
+      "cta": "Verify certificate"
+    },
+    {
+      "id": "voc",
+      "featured": true,
+      "tab": "cert",
+      "brand": "coursera",
+      "title": "Voice of the Customer (VoC)",
+      "full": "Voice of the Customer (VoC): Enhancing Experiences",
+      "issuer": "Coursera",
+      "type": "Course",
+      "date": "Issued Jan 2026",
+      "art": "img/cred-voc.jpg",
+      "desc": "Customer journey mapping (AIPL), qualitative listening frameworks and consumer verbatim synthesis.",
+      "url": "https://www.linkedin.com/in/shahal-ahammed/",
+      "cta": "View LinkedIn profile"
+    },
+    {
+      "id": "powerbi",
+      "featured": true,
+      "tab": "cert",
+      "brand": "Knowledge Accelerators",
+      "title": "Data-Driven Decisions with Power BI",
+      "full": "Data-Driven Decisions with Power BI",
+      "issuer": "Knowledge Accelerators",
+      "type": "Course",
+      "date": "Issued Jul 2023",
+      "art": "img/cred-powerbi.jpg",
+      "desc": "Executive dashboard design, DAX modelling and KPI storytelling in Microsoft Power BI.",
+      "url": "https://www.coursera.org/account/accomplishments/verify/LNU5N78JR4YF",
+      "cta": "Verify certificate"
+    },
+    {
+      "id": "vivo_camp",
+      "tab": "cert",
+      "brand": "vivo",
+      "title": "vivo Overseas Local Branding Camp 2025",
+      "full": "Overseas Local Branding Team Empowerment E-Learning Camp 2025",
+      "issuer": "vivo",
+      "type": "Brand certification",
+      "date": "Issued 2025",
+      "art": "img/li-vivo.jpg",
+      "desc": "vivo's overseas local branding, consumer insights and product launch campaign programme.",
+      "url": "https://www.linkedin.com/in/shahal-ahammed/",
+      "cta": "View LinkedIn profile"
+    },
+    {
+      "id": "kaggle_pandas",
+      "tab": "cert",
+      "brand": "kaggle",
+      "title": "Pandas",
+      "full": "Kaggle Learn — Pandas",
+      "issuer": "Kaggle",
+      "type": "Course",
+      "date": "Issued Jun 2023",
+      "art": "img/cred-ibm-ml.jpg",
+      "desc": "Data transformation, aggregation and cleaning workflows in Python Pandas.",
+      "url": "https://drive.google.com/file/d/1iXSXv4mVZp0TGTPabYrrNyX2jpPrglKe/view?usp=drivesdk",
+      "cta": "View certificate"
+    },
+    {
+      "id": "pytorch_seg",
+      "tab": "cert",
+      "brand": "coursera",
+      "title": "Deep Learning with PyTorch: Image Segmentation",
+      "full": "Deep Learning with PyTorch: Image Segmentation",
+      "issuer": "Coursera Project Network",
+      "type": "Project certificate",
+      "date": "Issued Jun 2023",
+      "art": "img/cred-ibm-ds.jpg",
+      "desc": "Neural image segmentation pipelines, which later supported the generative AI mask automation.",
+      "url": "https://coursera.org/verify/2QDX2BHVGT9N",
+      "cta": "Verify certificate"
+    },
+    {
+      "id": "tf_nlp",
+      "tab": "cert",
+      "brand": "coursera",
+      "title": "Transfer Learning for NLP with TensorFlow Hub",
+      "full": "Transfer Learning for NLP with TensorFlow Hub",
+      "issuer": "Coursera Project Network",
+      "type": "Project certificate",
+      "date": "Issued Jun 2023",
+      "art": "img/cred-voc.jpg",
+      "desc": "Text embeddings and NLP classification for comment sentiment and theme coding.",
+      "url": "https://coursera.org/verify/TXEKEJF6MUV2",
+      "cta": "Verify certificate"
+    },
+    {
+      "id": "keras_dl",
+      "tab": "cert",
+      "brand": "IBM",
+      "title": "Deep Learning & Neural Networks with Keras",
+      "full": "Introduction to Deep Learning & Neural Networks with Keras",
+      "issuer": "IBM · Coursera",
+      "type": "Course",
+      "date": "Issued Jun 2023",
+      "art": "img/cred-ibm-ds.jpg",
+      "desc": "Deep neural architectures and backpropagation with Keras.",
+      "url": "https://coursera.org/verify/VKDLBYKM348J",
+      "cta": "Verify certificate"
+    },
+    {
+      "id": "excel_dash",
+      "tab": "cert",
+      "brand": "coursera",
+      "title": "Excel Skills for Business & Dashboards",
+      "full": "Excel Skills for Business + Charts & Dashboards + Data Analysis (3 certificates)",
+      "issuer": "Coursera",
+      "type": "3 certificates",
+      "date": "Issued Jun 2023",
+      "art": "img/cred-powerbi.jpg",
+      "desc": "PivotTables, XLOOKUP, automated reporting templates and commercial Excel dashboards.",
+      "url": "https://coursera.org/verify/DKRCLWN4MEMA",
+      "cta": "Verify certificate"
+    },
+    {
+      "id": "udemy_bundle",
+      "tab": "cert",
+      "brand": "Udemy",
+      "title": "Python Data Analytics, Face Detection & Big Data",
+      "full": "Data Analytics A–Z, NumPy/Pandas, Face Recognition & Big Data Basics (4 certificates)",
+      "issuer": "Udemy",
+      "type": "4 certificates",
+      "date": "2022 – 2023",
+      "art": "img/cred-ibm-ml.jpg",
+      "desc": "Four Udemy certificates in Python ETL, OpenCV face recognition and big data.",
+      "url": "https://drive.google.com/file/d/1C-EOWfXnD5ZIgq63Pype2htd-LiS4-Rt/view?usp=drivesdk",
+      "cta": "View certificates"
+    },
+    {
+      "id": "award_rajya",
+      "tab": "honour",
+      "brand": "STATE AWARD",
+      "title": "Rajya Puraskar State Honour",
+      "full": "Rajya Puraskar — State-level award (Bharat Scouts & Guides)",
+      "issuer": "Bharat Scouts and Guides",
+      "type": "State honour",
+      "date": "2013 – 2016",
+      "art": "img/cred-powerbi.jpg",
+      "desc": "State-level Rajya Puraskar award for service and leadership.",
+      "url": "https://www.linkedin.com/in/shahal-ahammed/",
+      "cta": "View on LinkedIn"
+    },
+    {
+      "id": "award_msc",
+      "tab": "honour",
+      "brand": "UNIVERSITY OF KERALA",
+      "title": "MSc AI — A+ Grade & Position Certificate",
+      "full": "MSc Computer Science (AI) — 8.54 GPA, A+ grade & position certificate",
+      "issuer": "University of Kerala",
+      "type": "Academic distinction",
+      "date": "May 2024",
+      "art": "img/cred-ibm-ds.jpg",
+      "desc": "A+ grade in MSc Computer Science with specialisation in Artificial Intelligence.",
+      "url": "https://drive.google.com/file/d/10SvI43rzXiSyT6gDbFdxyeVPtU7Tru45/view?usp=drivesdk",
+      "cta": "View position certificate"
+    },
+    {
+      "id": "award_yip",
+      "tab": "honour",
+      "brand": "YIP KERALA",
+      "title": "Young Innovators Programme (Ideator)",
+      "full": "Young Innovators Programme — Ideator ID 21YIP025578",
+      "issuer": "Dept. of Computer Science, University of Kerala",
+      "type": "Innovation award",
+      "date": "Nov 2022",
+      "art": "img/cred-voc.jpg",
+      "desc": "Recognised as an Ideator under the Young Innovators Programme at the University of Kerala.",
+      "url": "https://drive.google.com/file/d/1u7ZC4LdZPuviJ32qo5lDGBLiLF9Ey_el/view?usp=drivesdk",
+      "cta": "View certificate"
+    },
+    {
+      "id": "award_aiam",
+      "tab": "honour",
+      "brand": "AIAM 2K22",
+      "title": "Annual Interdisciplinary Academic Meet",
+      "full": "AIAM 2k22 — School of Technology, University of Kerala",
+      "issuer": "University of Kerala",
+      "type": "Academic meet",
+      "date": "2022",
+      "art": "img/cred-ibm-ml.jpg",
+      "desc": "Recognised at the Annual Interdisciplinary Academic Meet (AIAM 2k22) and International Seminar on Data Science.",
+      "url": "https://drive.google.com/file/d/1umgCpL4N_dpWIt092TtfefHejRh93R2h/view?usp=drivesdk",
+      "cta": "View certificate"
+    },
+    {
+      "id": "award_gtt",
+      "tab": "honour",
+      "brand": "GTT · BARCLAYS",
+      "title": "Barclays LifeSkills Programme",
+      "full": "Barclays LifeSkills Programme — Global Talent Track (GTT) Foundation",
+      "issuer": "GTT Foundation",
+      "type": "Leadership certificate",
+      "date": "Dec 2021",
+      "art": "img/cred-powerbi.jpg",
+      "desc": "Completed the Barclays LifeSkills Programme at the University of Kerala.",
+      "url": "https://drive.google.com/open?id=1UVK8OzUfMkfKOEx9vdmOkWsanakiWO9z",
+      "cta": "View certificate"
+    }
   ],
-
   "linkedin_posts": [
-    { "id": "li_research", "title": "Consumer research", "full": "Turning UAE & KSA in-depth interviews into AIPL launch strategy", "img": "img/li-research.jpg", "desc": "How qualitative smartphone IDIs across Dubai, Abu Dhabi, Sharjah and Fujairah combine with trilingual surveys and AI reporting workflows to shape product decisions.", "url": "https://www.linkedin.com/in/shahal-ahammed/", "cta": "Read on LinkedIn" },
-    { "id": "li_vivo", "title": "vivo launch milestones", "full": "Shipping AI Studio & KOL sentiment analytics for vivo launches", "img": "img/li-vivo.jpg", "desc": "Behind the scenes of launching live generative AI campaign web apps and evaluating creator performance across TikTok, Instagram and YouTube.", "url": "https://www.linkedin.com/in/shahal-ahammed/", "cta": "Read on LinkedIn" },
-    { "id": "li_ipl", "title": "IPL auction prediction", "full": "Hybrid ML (K-Means + Decision Tree) for IPL player valuation", "img": "img/li-ipl.jpg", "desc": "Combining K-Means clustering with Decision Tree Regression to help T20 franchises plan player budgets.", "url": "https://github.com/ShahalAhammedK/IPL-AUCTION-PRICE-PREDICTIO-USING-ML-", "cta": "Open GitHub repository" }
+    {
+      "id": "li_research",
+      "title": "Consumer research",
+      "full": "Turning UAE & KSA in-depth interviews into AIPL launch strategy",
+      "img": "img/li-research.jpg",
+      "desc": "How qualitative smartphone IDIs across Dubai, Abu Dhabi, Sharjah and Fujairah combine with trilingual surveys and AI reporting workflows to shape product decisions.",
+      "url": "https://www.linkedin.com/in/shahal-ahammed/",
+      "cta": "Read on LinkedIn"
+    },
+    {
+      "id": "li_vivo",
+      "title": "vivo launch milestones",
+      "full": "Shipping AI Studio & KOL sentiment analytics for vivo launches",
+      "img": "img/li-vivo.jpg",
+      "desc": "Behind the scenes of launching live generative AI campaign web apps and evaluating creator performance across TikTok, Instagram and YouTube.",
+      "url": "https://www.linkedin.com/in/shahal-ahammed/",
+      "cta": "Read on LinkedIn"
+    },
+    {
+      "id": "li_ipl",
+      "title": "IPL auction prediction",
+      "full": "Hybrid ML (K-Means + Decision Tree) for IPL player valuation",
+      "img": "img/li-ipl.jpg",
+      "desc": "Combining K-Means clustering with Decision Tree Regression to help T20 franchises plan player budgets.",
+      "url": "https://github.com/ShahalAhammedK/IPL-AUCTION-PRICE-PREDICTIO-USING-ML-",
+      "cta": "Open GitHub repository"
+    }
   ]
 }

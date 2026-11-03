@@ -262,6 +262,7 @@
 
   /* ============ Image viewers (inline + lightbox) ============ */
   const swapImg = (img, src, alt) => {
+    if (img.parentElement) img.parentElement.style.setProperty("--bg", `url('${new URL(src, location.href).href}')`);
     if (img.getAttribute("src") === src) return;
     img.classList.add("is-swapping");
     const pre = new Image();
@@ -274,6 +275,8 @@
   const inline = $("#inlineViewer");
   if (inline) {
     const slidesIV = DATA.viewers[inline.dataset.viewerKey].slides;
+    const mainImg = $("[data-main]", inline);
+    mainImg.parentElement.style.setProperty("--bg", `url('${mainImg.src}')`);
     let idx = 0;
     const go = (i) => {
       idx = (i + slidesIV.length) % slidesIV.length;
