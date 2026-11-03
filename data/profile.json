@@ -677,5 +677,204 @@
       "url": "https://github.com/ShahalAhammedK/IPL-AUCTION-PRICE-PREDICTIO-USING-ML-",
       "cta": "Open GitHub repository"
     }
-  ]
+  ],
+  "research": {
+    "intro": "Customer surveys and in-depth consumer research I've run for vivo and iQOO smartphones across the UAE and KSA, from early surveys to upgraded follow-up studies.",
+    "filters": [
+      {
+        "id": "all",
+        "label": "All models"
+      },
+      {
+        "id": "x",
+        "label": "X series"
+      },
+      {
+        "id": "v",
+        "label": "V series"
+      },
+      {
+        "id": "iqoo",
+        "label": "iQOO"
+      }
+    ],
+    "models": [
+      {
+        "model": "X300 Ultra",
+        "brand": "vivo",
+        "series": "x",
+        "slug": "x300-ultra",
+        "studies": [
+          {
+            "title": "X300 Ultra Consumer Research",
+            "type": "Consumer research"
+          }
+        ]
+      },
+      {
+        "model": "X300 Pro",
+        "brand": "vivo",
+        "series": "x",
+        "slug": "x300-pro",
+        "studies": [
+          {
+            "title": "X300 Pro Consumer Research",
+            "type": "Consumer research"
+          }
+        ]
+      },
+      {
+        "model": "X300",
+        "brand": "vivo",
+        "series": "x",
+        "slug": "x300",
+        "studies": [
+          {
+            "title": "X300 Consumer Research",
+            "type": "Consumer research"
+          }
+        ]
+      },
+      {
+        "model": "V70",
+        "brand": "vivo",
+        "series": "v",
+        "slug": "v70",
+        "studies": [
+          {
+            "title": "V70 Consumer Research",
+            "type": "Consumer research"
+          },
+          {
+            "title": "V70 Consumer Research",
+            "type": "Upgraded study"
+          }
+        ]
+      },
+      {
+        "model": "V70 FE",
+        "brand": "vivo",
+        "series": "v",
+        "slug": "v70-fe",
+        "studies": [
+          {
+            "title": "V70 FE Consumer Research",
+            "type": "Consumer research"
+          },
+          {
+            "title": "V70 FE Consumer Research",
+            "type": "Upgraded study"
+          }
+        ]
+      },
+      {
+        "model": "X200 Pro",
+        "brand": "vivo",
+        "series": "x",
+        "slug": "x200-pro",
+        "studies": [
+          {
+            "title": "X200 Pro Consumer Research",
+            "type": "Consumer research"
+          }
+        ]
+      },
+      {
+        "model": "X200 FE",
+        "brand": "vivo",
+        "series": "x",
+        "slug": "x200-fe",
+        "studies": [
+          {
+            "title": "X200 FE Customer Survey",
+            "type": "Customer survey"
+          },
+          {
+            "title": "X200 FE Table Survey",
+            "type": "Table survey"
+          },
+          {
+            "title": "X200 FE Consumer Research",
+            "type": "Consumer research"
+          }
+        ]
+      },
+      {
+        "model": "V60",
+        "brand": "vivo",
+        "series": "v",
+        "slug": "v60",
+        "studies": [
+          {
+            "title": "V60 Consumer Research",
+            "type": "Consumer research"
+          }
+        ]
+      },
+      {
+        "model": "V60 Lite",
+        "brand": "vivo",
+        "series": "v",
+        "slug": "v60-lite",
+        "studies": [
+          {
+            "title": "V60 Lite Consumer Research",
+            "type": "Consumer research"
+          }
+        ]
+      },
+      {
+        "model": "V50",
+        "brand": "vivo",
+        "series": "v",
+        "slug": "v50",
+        "studies": [
+          {
+            "title": "V50 Consumer Survey",
+            "type": "Consumer survey"
+          }
+        ]
+      },
+      {
+        "model": "iQOO 13",
+        "brand": "iQOO",
+        "series": "iqoo",
+        "slug": "iqoo-13",
+        "studies": [
+          {
+            "title": "iQOO 13 Customer Survey",
+            "type": "Customer survey",
+            "note": "Completed with three interviews"
+          }
+        ]
+      },
+      {
+        "model": "iQOO 12",
+        "brand": "iQOO",
+        "series": "iqoo",
+        "slug": "iqoo-12",
+        "studies": [
+          {
+            "title": "iQOO 12 Survey",
+            "type": "Customer survey",
+            "note": "KSA"
+          }
+        ]
+      }
+    ],
+    "cross": [
+      {
+        "title": "X300 Series Consumer Research",
+        "text": "Research across the whole X300 line-up."
+      },
+      {
+        "title": "Series Wise Conclusion",
+        "text": "Findings brought together series by series."
+      },
+      {
+        "title": "IR and OR Customer Survey",
+        "text": "Customer survey study."
+      }
+    ]
+  }
 }

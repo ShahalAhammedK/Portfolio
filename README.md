@@ -33,6 +33,9 @@ Edit that file and refresh the page. You don't need to touch the HTML.
 - **Credentials / honours:** add to `"credentials"` with `"tab": "cert"` or `"honour"`; `"featured": true` shows it
   on the first tab.
 - **CV download:** put your PDF in `static/` (e.g. `static/cv.pdf`) and set `"cv_url": "static/cv.pdf"`.
+- **Consumer research phones:** studies are listed under `"research"` in `profile.json`. To show a real product
+  photo, save it as `static/img/phones/<slug>.png` (transparent PNG works best; `.webp` or `.jpg` also work),
+  e.g. `static/img/phones/x300-ultra.png`. Until then a styled phone graphic is shown.
 - **Images** live in `static/img/`.
 
 Messages sent through the contact form are saved to `data/messages.jsonl` (git-ignored).

@@ -56,6 +56,7 @@
       <a href="#home" class="brand" aria-label="{{ p.name }}, home">{{ p.brand }}<b>.</b></a>
       <nav class="nav__links" id="navLinks" aria-label="Primary">
         <a href="#work" data-link>Work</a>
+        <a href="#research" data-link>Research</a>
         <a href="#about" data-link>About</a>
         <a href="#experience" data-link>Experience</a>
         <a href="#credentials" data-link>Credentials</a>
@@ -307,6 +308,68 @@
             </div>
             <p class="caption muted" data-caption>{{ v.slides[0].caption }}</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONSUMER RESEARCH ================= -->
+    {% set rs = p.research %}
+    {% set ns = namespace(total=rs.cross|length) %}
+    {% for m in rs.models %}{% set ns.total = ns.total + m.studies|length %}{% endfor %}
+    <section class="wrap research" id="research" data-index="3">
+      <div class="research__head">
+        <div class="reveal">
+          <div class="eyebrow mono caps">Research / Consumer studies</div>
+          <h2 class="h2">Listening before <em>every launch.</em></h2>
+          <p class="lead">{{ rs.intro }}</p>
+        </div>
+        <div class="research__stats reveal">
+          <div><span class="counter" data-target="{{ ns.total }}">0</span><small>Studies</small></div>
+          <div><span class="counter" data-target="{{ rs.models|length }}">0</span><small>Phone models</small></div>
+          <div><span class="counter" data-target="3">0</span><small>Series</small></div>
+        </div>
+      </div>
+
+      <div class="pills reveal" id="researchPills" role="tablist" aria-label="Filter studies by series">
+        {% for f in rs.filters %}<button type="button" class="pill {% if loop.first %}is-active{% endif %}" data-series="{{ f.id }}">{{ f.label }}</button>{% endfor %}
+      </div>
+
+      <div class="phones" id="phones">
+        {% for m in rs.models %}
+        {% set ns2 = namespace(img='') %}
+        {% for ext in ['png', 'webp', 'jpg'] %}{% if not ns2.img and has_static('img/phones/' ~ m.slug ~ '.' ~ ext) %}{% set ns2.img = 'img/phones/' ~ m.slug ~ '.' ~ ext %}{% endif %}{% endfor %}
+        <article class="phone-card card reveal" data-series="{{ m.series }}" style="--i:{{ loop.index0 % 4 }}">
+          <div class="phone-card__stage phone-card__stage--{{ m.series }}">
+            <span class="phone-card__glow"></span>
+            {% if ns2.img %}
+            <img src="static/{{ ns2.img }}" alt="{{ m.brand }} {{ m.model }}" loading="lazy" class="phone-card__img" />
+            {% else %}
+            <div class="mock mock--{{ m.series }}" aria-hidden="true">
+              <div class="mock__cam"><i></i><i></i>{% if 'Ultra' in m.model or 'Pro' in m.model %}<i></i>{% endif %}<b></b></div>
+              <div class="mock__brand">{{ m.brand }}</div>
+            </div>
+            {% endif %}
+            <span class="phone-card__count mono">{{ m.studies|length }} {{ 'study' if m.studies|length == 1 else 'studies' }}</span>
+          </div>
+          <div class="phone-card__body">
+            <div class="phone-card__brand mono">{{ m.brand }}</div>
+            <h3>{{ m.model }}</h3>
+            <ul>
+              {% for s in m.studies %}
+              <li><span class="dot"></span><span>{{ s.type }}{% if s.note %} <em class="muted">· {{ s.note }}</em>{% endif %}</span></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+
+      <div class="cross reveal">
+        <div class="cross__title">{{ icon('doc', 20) }} Cross-series studies</div>
+        <div class="cross__list">
+          {% for c in rs.cross %}
+          <div class="cross__item"><strong>{{ c.title }}</strong><span class="muted">{{ c.text }}</span></div>
+          {% endfor %}
         </div>
       </div>
     </section>

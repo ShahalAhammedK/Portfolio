@@ -186,7 +186,7 @@
   }).observe(hero);
 
   /* ============ Project filter ============ */
-  const pills = $$(".pills .pill");
+  const pills = $$(".work .pills .pill");
   const finderItems = $$(".finder__item");
   const featured = $$(".project-feature");
   const rows = $$(".project-row");
@@ -236,6 +236,24 @@
 
   $$("[data-case-study]").forEach((b) => b.addEventListener("click", () =>
     $("#case-study").scrollIntoView({ behavior: reduce ? "auto" : "smooth" })));
+
+  /* ============ Consumer research: filter by series ============ */
+  const rPills = $$("#researchPills .pill");
+  const phoneCards = $$(".phone-card");
+  rPills.forEach((b) => b.addEventListener("click", () => {
+    const s = b.dataset.series;
+    rPills.forEach((x) => x.classList.toggle("is-active", x === b));
+    let i = 0;
+    phoneCards.forEach((c) => {
+      const show = s === "all" || c.dataset.series === s;
+      c.hidden = !show;
+      if (show) {
+        c.style.setProperty("--i", i++ % 4);
+        c.classList.remove("is-in");
+        requestAnimationFrame(() => c.classList.add("is-in"));
+      }
+    });
+  }));
 
   /* ============ Case study: pipeline layers (typewriter) ============ */
   const layersEl = $("#layers");

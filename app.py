@@ -20,6 +20,7 @@ MESSAGES_FILE = BASE / "data" / "messages.jsonl"
 EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 
 app = Flask(__name__)
+app.jinja_env.globals["has_static"] = lambda rel: (BASE / "static" / rel).is_file()
 
 
 def load_profile():
