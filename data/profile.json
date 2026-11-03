@@ -149,7 +149,7 @@
       "title": "IPL Auction Prediction",
       "subtitle": "Player valuation through K-Means clustering & Decision Tree Regression",
       "cat": "analytics",
-      "img": "img/ipl.jpg",
+      "img": "img/ipl-analytics.jpg",
       "tags": [
         "Python",
         "Scikit-learn"
@@ -174,7 +174,7 @@
       "title": "AI Reporting Toolkit & Interview Simulator",
       "subtitle": "Transcript-to-report synthesis, moderator simulator & WhatsApp sales parser",
       "cat": "ai",
-      "img": "img/ai-concept.jpg",
+      "img": "img/ai-toolkit.jpg",
       "tags": [
         "Generative AI",
         "Python",
@@ -186,7 +186,7 @@
       "title": "IMDB Movie Industry EDA",
       "subtitle": "Exploratory financial & genre trend analysis across decades",
       "cat": "analytics",
-      "img": "img/social-dashboard.jpg",
+      "img": "img/imdb-eda.jpg",
       "tags": [
         "Python",
         "Pandas",
@@ -199,7 +199,7 @@
       "title": "vivo ME Website & Launch Localisation",
       "subtitle": "Arabic key visuals for Iraq/GCC markets, launch videos & livestream scripts",
       "cat": "research",
-      "img": "img/li-vivo.jpg",
+      "img": "img/localisation.jpg",
       "tags": [
         "Localisation",
         "UAE / KSA / Iraq",
@@ -587,7 +587,7 @@
       "issuer": "Bharat Scouts and Guides",
       "type": "State honour",
       "date": "2013 – 2016",
-      "art": "img/cred-powerbi.jpg",
+      "art": "img/honours.jpg",
       "desc": "State-level Rajya Puraskar award for service and leadership.",
       "url": "https://www.linkedin.com/in/shahal-ahammed/",
       "cta": "View on LinkedIn"
@@ -601,7 +601,7 @@
       "issuer": "University of Kerala",
       "type": "Academic distinction",
       "date": "May 2024",
-      "art": "img/cred-ibm-ds.jpg",
+      "art": "img/honours.jpg",
       "desc": "A+ grade in MSc Computer Science with specialisation in Artificial Intelligence.",
       "url": "https://drive.google.com/file/d/10SvI43rzXiSyT6gDbFdxyeVPtU7Tru45/view?usp=drivesdk",
       "cta": "View position certificate"
@@ -615,7 +615,7 @@
       "issuer": "Dept. of Computer Science, University of Kerala",
       "type": "Innovation award",
       "date": "Nov 2022",
-      "art": "img/cred-voc.jpg",
+      "art": "img/honours.jpg",
       "desc": "Recognised as an Ideator under the Young Innovators Programme at the University of Kerala.",
       "url": "https://drive.google.com/file/d/1u7ZC4LdZPuviJ32qo5lDGBLiLF9Ey_el/view?usp=drivesdk",
       "cta": "View certificate"
@@ -629,7 +629,7 @@
       "issuer": "University of Kerala",
       "type": "Academic meet",
       "date": "2022",
-      "art": "img/cred-ibm-ml.jpg",
+      "art": "img/honours.jpg",
       "desc": "Recognised at the Annual Interdisciplinary Academic Meet (AIAM 2k22) and International Seminar on Data Science.",
       "url": "https://drive.google.com/file/d/1umgCpL4N_dpWIt092TtfefHejRh93R2h/view?usp=drivesdk",
       "cta": "View certificate"
@@ -643,7 +643,7 @@
       "issuer": "GTT Foundation",
       "type": "Leadership certificate",
       "date": "Dec 2021",
-      "art": "img/cred-powerbi.jpg",
+      "art": "img/honours.jpg",
       "desc": "Completed the Barclays LifeSkills Programme at the University of Kerala.",
       "url": "https://drive.google.com/open?id=1UVK8OzUfMkfKOEx9vdmOkWsanakiWO9z",
       "cta": "View certificate"
@@ -672,7 +672,7 @@
       "id": "li_ipl",
       "title": "IPL auction prediction",
       "full": "Hybrid ML (K-Means + Decision Tree) for IPL player valuation",
-      "img": "img/li-ipl.jpg",
+      "img": "img/ipl-analytics.jpg",
       "desc": "Combining K-Means clustering with Decision Tree Regression to help T20 franchises plan player budgets.",
       "url": "https://github.com/ShahalAhammedK/IPL-AUCTION-PRICE-PREDICTIO-USING-ML-",
       "cta": "Open GitHub repository"
