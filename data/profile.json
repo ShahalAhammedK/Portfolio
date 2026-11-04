@@ -49,9 +49,9 @@
       "label": "Smartphone launches shipped with AI Studio"
     },
     {
-      "value": 4,
+      "value": 10,
       "suffix": "",
-      "label": "Research agencies managed"
+      "label": "Country websites managed"
     },
     {
       "value": 13,
@@ -159,7 +159,7 @@
     {
       "id": "idi",
       "title": "UAE & KSA Smartphone IDIs & AIPL Decks",
-      "subtitle": "In-depth interviews across Dubai, Abu Dhabi, Sharjah & Fujairah with 4 agencies",
+      "subtitle": "In-depth interviews across Dubai, Abu Dhabi, Sharjah & Fujairah",
       "cat": "research",
       "img": "img/card-insights.jpg",
       "tags": [
@@ -351,8 +351,8 @@
         },
         {
           "icon": "globe",
-          "title": "4 agencies, trilingual surveys & web",
-          "text": "Manage ValuStrat, Think Positive, Accurate ME and iBrid Insights; design English, Arabic and Hindi surveys; manage the vivo Middle East official websites across 10 countries and Iraq Arabic key visuals."
+          "title": "Trilingual surveys & websites",
+          "text": "Design English, Arabic and Hindi surveys; manage the official vivo Middle East websites across 10 countries and Iraq Arabic key visuals."
         }
       ],
       "websites": {

@@ -46,7 +46,7 @@ Data Analyst | Generative AI Builder at **vivo Middle East**, Dubai, UAE. Follow
    reacting to the mouse. Below: 3 image cards (AI Studio, Social Media Analytics, Consumer Insights) that open
    an image viewer; "Scroll to explore" mouse cue; LinkedIn + GitHub icons.
 3. **About**: "Research to **decisions.**", short intro, 4 stat cards (3 yrs · 2 launches shipped with AI
-   Studio · 4 research agencies · 13+ certificates), and a scrolling skills ticker.
+   Studio · 10 country websites managed · 13+ certificates), and a scrolling skills ticker.
 4. **Work / Project gallery**: "Explore what **I've built.**", filter pills (All · AI & Engineering · Research ·
    Analytics), sticky "Find a project" sidebar with the same categories as radio items and a profile card
    (`avatar.jpg`, Dubai UAE, vivo Middle East, MSc CS (AI)). Two featured cards: **AI Studio** (lime border,
@@ -69,7 +69,7 @@ Data Analyst | Generative AI Builder at **vivo Middle East**, Dubai, UAE. Follow
    (KSA & GCC); X200 Pro; X200 FE; Honor 400 (competitor benchmark); KOL dashboard for iQOO Neo 10 & Z10.
 8. **Experience & education**: vivo Middle East, Business Commercial Specialist — Branding & Consumer Research
    (Apr 2025 – Present, JLT Dubai) with 4 highlight blocks (IDIs & AIPL decks; influencer campaign & sentiment
-   analytics; GenAI apps & AI reporting toolkit; 4 agencies, trilingual EN/AR/HI surveys & website). Below the blocks, a
+   analytics; GenAI apps & AI reporting toolkit; trilingual EN/AR/HI surveys & websites). Below the blocks, a
    strip "Official vivo websites I manage · 10 countries" (link vivo.com/ae/en) with country chips: UAE, Saudi
    Arabia, Kuwait, Qatar, Bahrain, Oman, Iraq, Jordan, Lebanon, Yemen (one chip per country, no EN/AR split). Wincept
    Technologies, Data Analyst & Data Science Intern (Nov 2023 – Dec 2024, Kerala) with document links. MSc
