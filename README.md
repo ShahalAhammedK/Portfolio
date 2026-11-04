@@ -44,4 +44,13 @@ Messages sent through the contact form are saved to `data/messages.jsonl` (git-i
 
 - **Flask host** (Render, Railway, PythonAnywhere): deploy as a normal Flask app (`app:app`).
 - **Static host** (GitHub Pages, Netlify): run `python app.py build` and publish the `dist/` folder.
+- **Cloudflare Pages** (connected to this GitHub repo, redeploys on every push):
+  Workers & Pages → Create → Pages → Connect to Git → pick `ShahalAhammedK/Portfolio`, then set
+  - Production branch: `claude/elegant-cerf-35px6y` (the repo's default branch; merge changes into it to go live)
+  - Framework preset: None
+  - Build command: `pip install -r requirements.txt && python app.py build`
+  - Build output directory: `dist`
+  - Environment variable: `PYTHON_VERSION` = `3.12`
+
+  The contact form falls back to `mailto:` on the static site.
   On static hosting the contact form opens the visitor's email app instead.
