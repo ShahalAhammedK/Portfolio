@@ -452,6 +452,17 @@
             </div>
             {% endfor %}
           </div>
+          {% if ex.main.websites %}{% set ws = ex.main.websites %}
+          <div class="exp-sites">
+            <div class="exp-sites__head">
+              <span class="eyebrow mono caps">{{ icon('globe', 16) }} {{ ws.title }} · {{ ws.countries|length }} countries</span>
+              <a href="{{ ws.url }}" target="_blank" rel="noopener">{{ ws.link_label }} {{ icon('arrow-ur', 13) }}</a>
+            </div>
+            <ul class="exp-sites__list" aria-label="{{ ws.title }}">
+              {% for c in ws.countries %}<li>{{ c }}</li>{% endfor %}
+            </ul>
+          </div>
+          {% endif %}
         </article>
         <div class="exp-side">
           {% for o in ex.others %}

@@ -197,12 +197,12 @@
     {
       "id": "web",
       "title": "vivo ME Website & Launch Localisation",
-      "subtitle": "Arabic key visuals for Iraq/GCC markets, launch videos & livestream scripts",
+      "subtitle": "Official vivo websites for 10 Middle East countries, Arabic key visuals for Iraq/GCC, launch videos & livestream scripts",
       "cat": "research",
       "img": "img/localisation.jpg",
       "tags": [
         "Localisation",
-        "UAE / KSA / Iraq",
+        "10 ME country sites",
         "Brand launch"
       ],
       "url": "https://www.vivo.com/ae/en/"
@@ -352,9 +352,26 @@
         {
           "icon": "globe",
           "title": "4 agencies, trilingual surveys & web",
-          "text": "Manage ValuStrat, Think Positive, Accurate ME and iBrid Insights; design English, Arabic and Hindi surveys; manage the vivo Middle East website and Iraq Arabic key visuals."
+          "text": "Manage ValuStrat, Think Positive, Accurate ME and iBrid Insights; design English, Arabic and Hindi surveys; manage the vivo Middle East official websites across 10 countries and Iraq Arabic key visuals."
         }
-      ]
+      ],
+      "websites": {
+        "title": "Official vivo websites I manage",
+        "url": "https://www.vivo.com/ae/en/",
+        "link_label": "vivo.com/ae",
+        "countries": [
+          "UAE",
+          "Saudi Arabia",
+          "Kuwait",
+          "Qatar",
+          "Bahrain",
+          "Oman",
+          "Iraq",
+          "Jordan",
+          "Lebanon",
+          "Yemen"
+        ]
+      }
     },
     "others": [
       {

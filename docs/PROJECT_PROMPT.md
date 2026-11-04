@@ -53,7 +53,7 @@ Data Analyst | Generative AI Builder at **vivo Middle East**, Dubai, UAE. Follow
    "Open case study") and **Influencer Campaign Analysis**. "Explore other work" horizontal carousel with
    pager dots: Influencer Sentiment Analysis, IPL Auction Prediction (GitHub link), UAE & KSA Smartphone IDIs &
    AIPL Decks, AI Reporting Toolkit & Interview Simulator, IMDB Movie Industry EDA (GitHub link), vivo ME
-   Website & Launch Localisation.
+   Website & Launch Localisation (official sites for 10 ME countries).
 5. **AI Studio case study**: challenge, approach, tags, four clickable pipeline layers with typewriter detail
    (Mask Pipeline, Gender Prompting, Cloudflare Edge, Frame Mode) and an inline image viewer showing the real
    sample outputs (vivo V80 male/female, V80 Lite male/female) on a blurred backdrop.
@@ -69,7 +69,9 @@ Data Analyst | Generative AI Builder at **vivo Middle East**, Dubai, UAE. Follow
    (KSA & GCC); X200 Pro; X200 FE; Honor 400 (competitor benchmark); KOL dashboard for iQOO Neo 10 & Z10.
 8. **Experience & education**: vivo Middle East, Business Commercial Specialist — Branding & Consumer Research
    (Apr 2025 – Present, JLT Dubai) with 4 highlight blocks (IDIs & AIPL decks; influencer campaign & sentiment
-   analytics; GenAI apps & AI reporting toolkit; 4 agencies, trilingual EN/AR/HI surveys & website). Wincept
+   analytics; GenAI apps & AI reporting toolkit; 4 agencies, trilingual EN/AR/HI surveys & website). Below the blocks, a
+   strip "Official vivo websites I manage · 10 countries" (link vivo.com/ae/en) with country chips: UAE, Saudi
+   Arabia, Kuwait, Qatar, Bahrain, Oman, Iraq, Jordan, Lebanon, Yemen (one chip per country, no EN/AR split). Wincept
    Technologies, Data Analyst & Data Science Intern (Nov 2023 – Dec 2024, Kerala) with document links. MSc
    Computer Science (AI), University of Kerala (8.54/10, A+); BSc Computer Science, University of Calicut.
 9. **Credentials & LinkedIn** ("Learning, ideas & milestones."): tabs Credentials (featured 4) · All
