@@ -196,8 +196,8 @@
                   <p>{{ pr.subtitle }}</p>
                   <div class="tags">{% for t in pr.tags %}<span>{{ t }}</span>{% endfor %}</div>
                 </div>
-                {% if loop.first %}
-                <button type="button" class="btn btn--outline" data-case-study>Open case study {{ icon('arrow-ur', 16) }}</button>
+                {% if pr.case %}
+                <button type="button" class="btn btn--outline" data-case-study="{{ pr.case }}">Open case study {{ icon('arrow-ur', 16) }}</button>
                 {% else %}
                 <button type="button" class="circle" data-viewer="{{ pr.viewer }}" aria-label="Open {{ pr.title }}">{{ icon('right') }}</button>
                 {% endif %}
@@ -220,7 +220,9 @@
                   <p>{{ pr.subtitle }}</p>
                   <div class="tags">{% for t in pr.tags %}<span>{{ t }}</span>{% endfor %}</div>
                 </div>
-                {% if pr.url %}
+                {% if pr.case %}
+                <button type="button" class="circle" data-case-study="{{ pr.case }}" aria-label="Open {{ pr.title }} case study">{{ icon('right') }}</button>
+                {% elif pr.url %}
                 <a class="circle" href="{{ pr.url }}" target="_blank" rel="noopener" aria-label="Open {{ pr.title }}">{{ icon('right') }}</a>
                 {% elif pr.viewer %}
                 <button type="button" class="circle" data-viewer="{{ pr.viewer }}" aria-label="Preview {{ pr.title }}">{{ icon('right') }}</button>
@@ -266,18 +268,21 @@
       </div>
     </section>
 
-    <!-- ================= 03 CASE STUDY ================= -->
-    {% set cs = p.case_study %}
+    <!-- ================= 03 CASE STUDIES ================= -->
+    {% for cs in p.case_studies %}
     {% set v = p.viewers[cs.id] %}
-    <section class="wrap case" id="case-study" data-index="3">
+    <section class="wrap case" id="case-{{ cs.id }}" data-index="3" aria-labelledby="case-{{ cs.id }}-title">
       <div class="case__card card reveal">
         <div class="case__head">
           <div>
-            <div class="crumb mono">Work / <b>{{ cs.title }}</b></div>
-            <h2 class="h2 h2--sm">{{ cs.title }}</h2>
+            <div class="crumb mono">Work / <b>{{ cs.title }}</b>{% if cs.status %} <span class="case__status">{{ cs.status }}</span>{% endif %}</div>
+            <h2 class="h2 h2--sm" id="case-{{ cs.id }}-title">{{ cs.title }}</h2>
             <p class="lead">{{ cs.subtitle }}</p>
           </div>
-          <button type="button" class="btn btn--lime" data-viewer="{{ cs.id }}">{{ icon('zoom', 17) }} Open image viewer</button>
+          <div class="case__actions">
+            {% if cs.link %}<a class="btn btn--ghost" href="{{ cs.link.href }}">{{ cs.link.label }} {{ icon('arrow-ur', 16) }}</a>{% endif %}
+            <button type="button" class="btn btn--lime" data-viewer="{{ cs.id }}">{{ icon('zoom', 17) }} Open image viewer</button>
+          </div>
         </div>
         <div class="case__grid">
           <div class="case__story">
@@ -285,32 +290,34 @@
             <div><h3>The challenge</h3><p>{{ cs.challenge }}</p></div>
             <div><h3>The approach</h3><p>{{ cs.approach }}</p></div>
             <div>
-              <div class="mono caps muted small">Inspect pipeline layer</div>
-              <div class="layers" id="layers" data-layers='{{ cs.layers|tojson }}'>
+              <div class="mono caps muted small">{{ cs.layers_label or 'Inspect layer' }}</div>
+              <div class="layers" data-layers='{{ cs.layers|tojson }}'>
                 {% for l in cs.layers %}
-                <button type="button" class="layer {% if loop.first %}is-active{% endif %}" data-layer="{{ loop.index0 }}">
+                <button type="button" class="layer {% if loop.first %}is-active{% endif %}" data-layer="{{ loop.index0 }}" aria-pressed="{{ 'true' if loop.first else 'false' }}">
                   <span class="mono">0{{ loop.index }}. {{ l.name }}</span><small>{{ l.sub }}</small>
                 </button>
                 {% endfor %}
               </div>
-              <div class="layer-detail mono" id="layerDetail"><b>[0{{ 1 }}. {{ cs.layers[0].name|upper }}]</b> <span>{{ cs.layers[0].detail }}</span></div>
+              <div class="layer-detail mono" data-layer-detail aria-live="polite"><b>[01. {{ cs.layers[0].name|upper }}]</b> <span>{{ cs.layers[0].detail }}</span></div>
             </div>
           </div>
-          <div class="inline-viewer" id="inlineViewer" data-viewer-key="{{ cs.id }}">
+          <div class="inline-viewer" data-viewer-key="{{ cs.id }}">
             <div class="inline-viewer__top"><span>{{ v.title }}</span><span class="mono muted" data-counter>01 / {{ '%02d' % v.slides|length }}</span></div>
             <div class="inline-viewer__stage">
-              <img src="static/{{ v.slides[0].img }}" alt="{{ v.slides[0].caption }}" data-main />
+              <img src="static/{{ v.slides[0].img }}" alt="{{ v.slides[0].caption }}" data-main {% if not loop.first %}loading="lazy"{% endif %} />
               <button type="button" class="circle circle--glass" data-prev aria-label="Previous slide">{{ icon('left') }}</button>
               <button type="button" class="circle circle--glass circle--lime" data-next aria-label="Next slide">{{ icon('right') }}</button>
             </div>
             <div class="thumbs" style="--n:{{ v.slides|length }}">
-              {% for s in v.slides %}<button type="button" class="thumb {% if loop.first %}is-active{% endif %}" data-thumb="{{ loop.index0 }}"><img src="static/{{ s.img }}" alt="Slide {{ loop.index }}" loading="lazy" /></button>{% endfor %}
+              {% for s in v.slides %}<button type="button" class="thumb {% if loop.first %}is-active{% endif %}" data-thumb="{{ loop.index0 }}" aria-label="Show slide {{ loop.index }}"><img src="static/{{ s.img }}" alt="" loading="lazy" /></button>{% endfor %}
             </div>
             <p class="caption muted" data-caption>{{ v.slides[0].caption }}</p>
+            {% if v.note %}<p class="inline-viewer__note mono">{{ v.note }}</p>{% endif %}
           </div>
         </div>
       </div>
     </section>
+    {% endfor %}
 
     <!-- ================= CONSUMER RESEARCH ================= -->
     {% set rs = p.research %}

@@ -236,7 +236,9 @@ em { font-style: normal; color: var(--lime); }
 .badge { z-index: 1; position: absolute; top: 14px; left: 14px; padding: 6px 12px; border-radius: 8px; background: rgba(0,0,0,0.75); border: 1px solid var(--line-hi); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.05em; }
 .zoom { position: absolute; top: 14px; right: 14px; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: rgba(0,0,0,0.7); border: 1px solid var(--line-hi); transition: all 0.25s; }
 .zoom:hover { background: var(--lime); color: var(--bg); transform: scale(1.08); }
-.project-feature__body { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; padding: 18px 4px 4px; }
+.project-feature__body { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; padding: 18px 4px 4px; }
+.project-feature__body > div { flex: 1 1 240px; min-width: 0; }
+.project-feature__body .btn { flex-shrink: 0; white-space: nowrap; }
 .project-feature h3 { font-family: var(--display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; }
 .project-feature p { color: var(--muted); margin-top: 2px; }
 .project-feature.is-filtered-out, .project-row.is-filtered-out { opacity: 0.25; filter: grayscale(1); }
@@ -288,6 +290,10 @@ em { font-style: normal; color: var(--lime); }
 .case__head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
 .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 8px; }
 .crumb b { color: var(--lime); font-weight: 500; }
+.case + .case { padding-top: clamp(28px, 4vh, 44px); }
+.case__actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.case__status { display: inline-block; margin: 4px 0 0 10px; padding: 3px 10px; border-radius: 999px; font-size: 0.7rem; color: var(--lime); border: 1px dashed rgba(210,248,82,0.5); background: var(--lime-dim); vertical-align: 1px; }
+.inline-viewer__note { font-size: 0.72rem; color: var(--muted); padding: 0 4px; letter-spacing: 0.04em; }
 .case__grid { display: grid; grid-template-columns: 5fr 7fr; gap: 36px; padding-top: 28px; }
 .case__story { display: grid; gap: 22px; align-content: start; }
 .case__story .tags { margin-top: 0; }
@@ -596,6 +602,8 @@ em { font-style: normal; color: var(--lime); }
   .project-row { flex-direction: column; align-items: stretch; }
   .project-feature__body { flex-direction: column; align-items: stretch; }
   .project-feature__body .circle { align-self: flex-end; }
+  .project-feature__body > div { flex: none; }
+  .project-feature__body .btn { align-self: flex-start; }
   .project-row img { width: 100%; height: 160px; }
   .project-row .circle { align-self: flex-end; }
   .cred-grid, .exp-blocks, .layers, .connect__grid, .form__row { grid-template-columns: 1fr; }

@@ -114,13 +114,14 @@
         "Cloudflare",
         "Python (Pillow, rembg)"
       ],
-      "viewer": "aistudio"
+      "viewer": "aistudio",
+      "case": "aistudio"
     },
     {
       "id": "campaign",
       "featured": true,
-      "title": "Influencer Campaign Analysis",
-      "subtitle": "How each creator's campaign performed across TikTok, Instagram & YouTube",
+      "title": "Social Media Analytics",
+      "subtitle": "Campaign-tracking web app: a page per campaign, every creator tracked across TikTok, Instagram & YouTube",
       "cat": "analytics",
       "img": "img/campaign-analysis.jpg",
       "tags": [
@@ -128,12 +129,13 @@
         "Streamlit",
         "REST APIs"
       ],
-      "viewer": "campaign"
+      "viewer": "campaign",
+      "case": "campaign"
     },
     {
       "id": "sentiment",
-      "title": "Influencer Sentiment Analysis",
-      "subtitle": "What audiences say in creator comments, and where the campaign can improve",
+      "title": "Campaign Sentiment Analysis",
+      "subtitle": "Second web app: what audiences say in creator comments, and where the campaign can improve",
       "cat": "analytics",
       "img": "img/sentiment-analysis.jpg",
       "tags": [
@@ -142,7 +144,8 @@
         "Theme coding",
         "Statistical testing"
       ],
-      "viewer": "sentiment"
+      "viewer": "sentiment",
+      "case": "sentiment"
     },
     {
       "id": "ipl",
@@ -254,7 +257,7 @@
       ]
     },
     "campaign": {
-      "title": "Influencer Campaign Analysis",
+      "title": "Social Media Analytics — illustrative views",
       "note": "Illustrative visuals of the analysis workflow.",
       "slides": [
         {
@@ -272,7 +275,7 @@
       ]
     },
     "sentiment": {
-      "title": "Influencer Sentiment Analysis",
+      "title": "Campaign Sentiment Analysis — illustrative views",
       "note": "Illustrative visuals and data, not real campaign results.",
       "slides": [
         {
@@ -289,41 +292,6 @@
         }
       ]
     }
-  },
-  "case_study": {
-    "id": "aistudio",
-    "title": "AI Studio",
-    "subtitle": "Generative AI campaign experiences, shipped for two vivo smartphone launches",
-    "tags": [
-      "JavaScript",
-      "OpenAI Image API",
-      "Cloudflare Pages",
-      "Python (Pillow, NumPy, rembg)"
-    ],
-    "challenge": "Create personalised smartphone launch campaign imagery from a visitor's selfie, placing them inside the official key visual in the campaign outfit and holding the phone, while keeping the brand logo, product and headline lettering pixel-exact.",
-    "approach": "A custom Python masking pipeline that separates person, protected-logo, product and hand masks and rebuilds occluded campaign lettering, paired with gender-aware prompt engineering and a serverless Cloudflare Pages stream.",
-    "layers": [
-      {
-        "name": "Mask Pipeline",
-        "sub": "Person, hand & logo",
-        "detail": "A Python script turns the designer's master key visual into person, protected-logo, product and hand masks, and reconstructs hidden parts of the campaign lettering so generated hair falls naturally in front of it."
-      },
-      {
-        "name": "Gender Prompting",
-        "sub": "Likeness & pose tuning",
-        "detail": "Prompts tuned against real generations for facial likeness, pose, scale, smile and studio lighting, with automatic gender detection so women are never rendered with the original male model's hand or build."
-      },
-      {
-        "name": "Cloudflare Edge",
-        "sub": "FastAPI → serverless",
-        "detail": "Migrated from a Python/FastAPI server on Render to Cloudflare Pages by moving image compositing into the browser and streaming the OpenAI Image API response server-side."
-      },
-      {
-        "name": "Frame Mode",
-        "sub": "No-AI drag & zoom",
-        "detail": "A fast, no-AI “Profile with Frame” mode that creates a branded square profile picture with interactive drag-and-zoom positioning."
-      }
-    ]
   },
   "experience": {
     "intro": "Nearly 3 years across consumer insights, data analytics and generative AI engineering in the UAE, KSA and India.",
@@ -1145,5 +1113,121 @@
         ]
       }
     ]
-  }
+  },
+  "case_studies": [
+    {
+      "id": "aistudio",
+      "title": "AI Studio",
+      "subtitle": "Generative AI campaign experiences, shipped for two vivo smartphone launches",
+      "tags": [
+        "JavaScript",
+        "OpenAI Image API",
+        "Cloudflare Pages",
+        "Python (Pillow, NumPy, rembg)"
+      ],
+      "challenge": "Create personalised smartphone launch campaign imagery from a visitor's selfie, placing them inside the official key visual in the campaign outfit and holding the phone, while keeping the brand logo, product and headline lettering pixel-exact.",
+      "approach": "A custom Python masking pipeline that separates person, protected-logo, product and hand masks and rebuilds occluded campaign lettering, paired with gender-aware prompt engineering and a serverless Cloudflare Pages stream.",
+      "layers": [
+        {
+          "name": "Mask Pipeline",
+          "sub": "Person, hand & logo",
+          "detail": "A Python script turns the designer's master key visual into person, protected-logo, product and hand masks, and reconstructs hidden parts of the campaign lettering so generated hair falls naturally in front of it."
+        },
+        {
+          "name": "Gender Prompting",
+          "sub": "Likeness & pose tuning",
+          "detail": "Prompts tuned against real generations for facial likeness, pose, scale, smile and studio lighting, with automatic gender detection so women are never rendered with the original male model's hand or build."
+        },
+        {
+          "name": "Cloudflare Edge",
+          "sub": "FastAPI → serverless",
+          "detail": "Migrated from a Python/FastAPI server on Render to Cloudflare Pages by moving image compositing into the browser and streaming the OpenAI Image API response server-side."
+        },
+        {
+          "name": "Frame Mode",
+          "sub": "No-AI drag & zoom",
+          "detail": "A fast, no-AI “Profile with Frame” mode that creates a branded square profile picture with interactive drag-and-zoom positioning."
+        }
+      ],
+      "layers_label": "Inspect pipeline layer"
+    },
+    {
+      "id": "campaign",
+      "title": "Social Media Analytics",
+      "subtitle": "A campaign-tracking web app: one page per launch campaign, every creator tracked across TikTok, Instagram & YouTube",
+      "tags": [
+        "Python",
+        "Streamlit",
+        "REST APIs",
+        "Campaign tracking"
+      ],
+      "challenge": "vivo Middle East runs creator (KOL) campaigns for every smartphone launch across TikTok, Instagram and YouTube. Results sat on separate platforms, so there was no single place to see how a campaign and each of its creators performed, or to compare one launch with the next.",
+      "approach": "A web app where every campaign gets its own page: set it up once, pull post performance from each platform, and track every creator in one dashboard, with launches and competitors compared side by side.",
+      "layers_label": "Inspect app layer",
+      "layers": [
+        {
+          "name": "Campaign Pages",
+          "sub": "Page creation",
+          "detail": "Each launch campaign gets its own page with its phone, market and creator list, so every campaign is set up and tracked the same way."
+        },
+        {
+          "name": "Platform Data",
+          "sub": "TikTok, Instagram, YouTube",
+          "detail": "Post performance from TikTok, Instagram and YouTube is pulled through REST APIs into one dataset per campaign."
+        },
+        {
+          "name": "Tracking Dashboard",
+          "sub": "Creators side by side",
+          "detail": "Content performance, audience segments and creator-by-creator results in one view, so the team sees who delivered for the campaign."
+        },
+        {
+          "name": "Comparisons",
+          "sub": "Launches & competitors",
+          "detail": "Campaigns are compared across launches, such as V70 vs V60 vs V50, and against competitor benchmarks, guiding which creators to work with next."
+        }
+      ],
+      "status": "Sample reports coming soon",
+      "link": {
+        "label": "See the campaign dashboards",
+        "href": "#dashboards"
+      }
+    },
+    {
+      "id": "sentiment",
+      "title": "Campaign Sentiment Analysis",
+      "subtitle": "A second web app that reads the comments on a campaign's creator posts and turns them into sentiment and themes",
+      "tags": [
+        "Python",
+        "NLP",
+        "Theme coding",
+        "Statistical testing"
+      ],
+      "challenge": "Reach and engagement show how far a campaign travelled, not what audiences thought of the phone. The answers sit in the comments under each creator's post, far too many to read by hand for every launch.",
+      "approach": "A web app that classifies every comment as positive, neutral or negative, codes it into themes such as camera, design, battery and price, and compares those themes across platforms and markets with statistical testing.",
+      "layers_label": "Inspect analysis layer",
+      "layers": [
+        {
+          "name": "Comment Capture",
+          "sub": "Per campaign",
+          "detail": "Comments on each creator's campaign posts are collected into one dataset, linked to the campaign, creator and platform."
+        },
+        {
+          "name": "Sentiment",
+          "sub": "Positive · neutral · negative",
+          "detail": "Every comment is classified as positive, neutral or negative, giving each creator and campaign a clear sentiment picture."
+        },
+        {
+          "name": "Theme Coding",
+          "sub": "Camera, design, battery, price",
+          "detail": "Comments are coded into themes such as camera, design, battery and price, showing what people love and where the campaign and price messaging can improve."
+        },
+        {
+          "name": "Testing",
+          "sub": "UAE vs KSA, by platform",
+          "detail": "Themes are compared across TikTok, Instagram and YouTube, with statistical testing for UAE and KSA audiences."
+        }
+      ],
+      "status": "Sample reports coming soon"
+    }
+  ]
 }

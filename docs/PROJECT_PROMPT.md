@@ -50,13 +50,21 @@ Data Analyst | Generative AI Builder at **vivo Middle East**, Dubai, UAE. Follow
 4. **Work / Project gallery**: "Explore what **I've built.**", filter pills (All · AI & Engineering · Research ·
    Analytics), sticky "Find a project" sidebar with the same categories as radio items and a profile card
    (`avatar.jpg`, Dubai UAE, vivo Middle East, MSc CS (AI)). Two featured cards: **AI Studio** (lime border,
-   "Open case study") and **Influencer Campaign Analysis**. "Explore other work" horizontal carousel with
-   pager dots: Influencer Sentiment Analysis, IPL Auction Prediction (GitHub link), UAE & KSA Smartphone IDIs &
+   "Open case study") and **Social Media Analytics** ("Open case study"). "Explore other work" horizontal
+   carousel with pager dots: Campaign Sentiment Analysis (opens its case study), IPL Auction Prediction (GitHub link), UAE & KSA Smartphone IDIs &
    AIPL Decks, AI Reporting Toolkit & Interview Simulator, IMDB Movie Industry EDA (GitHub link), vivo ME
    Website & Launch Localisation (official sites for 10 ME countries).
 5. **AI Studio case study**: challenge, approach, tags, four clickable pipeline layers with typewriter detail
    (Mask Pipeline, Gender Prompting, Cloudflare Edge, Frame Mode) and an inline image viewer showing the real
    sample outputs (vivo V80 male/female, V80 Lite male/female) on a blurred backdrop.
+   Followed by two more case studies in the same layout (data: `case_studies` list in profile.json), each with a
+   "Sample reports coming soon" chip until real reports are added:
+   - **Social Media Analytics**: campaign-tracking web app, one page per launch campaign, creators tracked across
+     TikTok/Instagram/YouTube. Layers: Campaign Pages, Platform Data, Tracking Dashboard, Comparisons. Button
+     "See the campaign dashboards" jumps to section 7.
+   - **Campaign Sentiment Analysis** (second web app): comments classified positive/neutral/negative, coded into
+     themes (camera, design, battery, price), tested across platforms and UAE vs KSA. Layers: Comment Capture,
+     Sentiment, Theme Coding, Testing. Viewer images are labelled "Illustrative".
 6. **Consumer Research** ("Listening before **every launch.**"): counters (19 studies · 12 models · 3 series),
    filter (All · X series · V series · iQOO), one card per phone listing its studies: X300 Ultra, X300 Pro,
    X300, V70 (+ upgraded), V70 FE (+ upgraded), X200 Pro, X200 FE (customer survey, table survey, consumer

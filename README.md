@@ -5,7 +5,7 @@ An animated, single-page portfolio built with **Flask** and vanilla HTML/CSS/JS 
 Design: obsidian + lime, built from the UI mockups (Homepage, Project Gallery, Image Viewer, Credentials & LinkedIn).
 
 **Features:** rotating hero headlines with an animated lime particle wave, filterable project gallery with a
-"Find a project" sidebar, AI Studio case study with an interactive pipeline-layer explorer, full-screen image
+"Find a project" sidebar, case studies (AI Studio, Social Media Analytics, Campaign Sentiment Analysis) with an interactive pipeline-layer explorer, full-screen image
 viewer (keyboard + swipe), experience and education cards, credentials/honours tabs with a detail drawer,
 LinkedIn highlights, a "Let's connect" modal with a working contact form, mobile menu, and
 `prefers-reduced-motion` support.
