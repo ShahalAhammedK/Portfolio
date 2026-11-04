@@ -44,6 +44,9 @@ Messages sent through the contact form are saved to `data/messages.jsonl` (git-i
 
 - **Flask host** (Render, Railway, PythonAnywhere): deploy as a normal Flask app (`app:app`).
 - **Static host** (GitHub Pages, Netlify): run `python app.py build` and publish the `dist/` folder.
+- **Cloudflare Workers** (repo connected under Workers & Pages, uses `wrangler.jsonc`):
+  Settings → Build → Build command `pip install -r requirements.txt && python app.py build`,
+  Deploy command `npx wrangler deploy`. Then Settings → Domains & Routes → enable `workers.dev`.
 - **Cloudflare Pages** (connected to this GitHub repo, redeploys on every push):
   Workers & Pages → Create → Pages → Connect to Git → pick `ShahalAhammedK/Portfolio`, then set
   - Production branch: `claude/elegant-cerf-35px6y` (the repo's default branch; merge changes into it to go live)

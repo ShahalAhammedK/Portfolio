@@ -4,3 +4,5 @@ __pycache__/
 venv/
 dist/
 data/messages.jsonl
+.wrangler/
+node_modules/
