@@ -60,8 +60,9 @@ Data Analyst | Generative AI Builder at **vivo Middle East**, Dubai, UAE. Follow
    sample outputs (vivo V80 male/female, V80 Lite male/female) on a blurred backdrop.
    Followed by two more case studies in the same layout (data: `case_studies` list in profile.json), each with a
    "Sample reports coming soon" chip until real reports are added:
-   - **Social Media Analytics**: campaign-tracking web app, one page per launch campaign, creators tracked across
-     TikTok/Instagram/YouTube. Layers: Campaign Pages, Platform Data, Tracking Dashboard, Comparisons. Button
+   - **Social Media Analytics**: every launch campaign tracked in one place, creators compared across
+     TikTok/Instagram/YouTube. Layers: Campaign Overview, Creator Performance, Audience Insights, Comparisons.
+     Never describe how it is built (no tech stack, APIs, data sources or page mechanics). Button
      "See the campaign dashboards" jumps to section 7.
    - **Campaign Sentiment Analysis** (second web app): comments classified positive/neutral/negative, coded into
      themes (camera, design, battery, price), tested across platforms and UAE vs KSA. Layers: Comment Capture,

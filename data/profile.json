@@ -122,13 +122,13 @@
       "id": "campaign",
       "featured": true,
       "title": "Social Media Analytics",
-      "subtitle": "Campaign-tracking web app: a page per campaign, every creator tracked across TikTok, Instagram & YouTube",
+      "subtitle": "Every launch campaign in one view: how each creator performed across TikTok, Instagram & YouTube",
       "cat": "analytics",
       "img": "img/campaign-analysis.jpg",
       "tags": [
-        "Python",
-        "Streamlit",
-        "REST APIs"
+        "Campaign tracking",
+        "Creator (KOL) analytics",
+        "TikTok · Instagram · YouTube"
       ],
       "viewer": "campaign",
       "case": "campaign",
@@ -1159,31 +1159,31 @@
     {
       "id": "campaign",
       "title": "Social Media Analytics",
-      "subtitle": "A campaign-tracking web app: one page per launch campaign, every creator tracked across TikTok, Instagram & YouTube",
+      "subtitle": "Every vivo launch campaign tracked in one place, with each creator's performance across TikTok, Instagram & YouTube",
       "tags": [
-        "Python",
-        "Streamlit",
-        "REST APIs",
-        "Campaign tracking"
+        "Campaign tracking",
+        "Creator (KOL) analytics",
+        "TikTok · Instagram · YouTube",
+        "Launch reporting"
       ],
-      "challenge": "vivo Middle East runs creator (KOL) campaigns for every smartphone launch across TikTok, Instagram and YouTube. Results sat on separate platforms, so there was no single place to see how a campaign and each of its creators performed, or to compare one launch with the next.",
-      "approach": "A web app where every campaign gets its own page: set it up once, pull post performance from each platform, and track every creator in one dashboard, with launches and competitors compared side by side.",
-      "layers_label": "Inspect app layer",
+      "challenge": "vivo Middle East runs creator (KOL) campaigns for every smartphone launch across TikTok, Instagram and YouTube. Results sat on separate platforms, so there was no single view of how a campaign and each of its creators performed, or how one launch compared with the next.",
+      "approach": "A campaign analytics view for every launch: each creator's results side by side, audience reactions, and clear comparisons with earlier launches and competitors, so the team can see what worked and plan the next campaign.",
+      "layers_label": "Inspect what it shows",
       "layers": [
         {
-          "name": "Campaign Pages",
-          "sub": "Page creation",
-          "detail": "Each launch campaign gets its own page with its phone, market and creator list, so every campaign is set up and tracked the same way."
+          "name": "Campaign Overview",
+          "sub": "One view per launch",
+          "detail": "Every launch campaign gets its own overview: the phone, the market and the creators involved, tracked the same way each time."
         },
         {
-          "name": "Platform Data",
-          "sub": "TikTok, Instagram, YouTube",
-          "detail": "Post performance from TikTok, Instagram and YouTube is pulled through REST APIs into one dataset per campaign."
-        },
-        {
-          "name": "Tracking Dashboard",
+          "name": "Creator Performance",
           "sub": "Creators side by side",
-          "detail": "Content performance, audience segments and creator-by-creator results in one view, so the team sees who delivered for the campaign."
+          "detail": "Each creator's content is compared side by side across TikTok, Instagram and YouTube, showing who delivered for the campaign."
+        },
+        {
+          "name": "Audience Insights",
+          "sub": "Who engaged",
+          "detail": "Audience segments and engagement show which people each creator reached and how they responded to the campaign."
         },
         {
           "name": "Comparisons",
@@ -1214,7 +1214,7 @@
         {
           "name": "Comment Capture",
           "sub": "Per campaign",
-          "detail": "Comments on each creator's campaign posts are collected into one dataset, linked to the campaign, creator and platform."
+          "detail": "Comments on each creator's campaign posts are brought together for the campaign, so every reaction is linked to its creator and platform."
         },
         {
           "name": "Sentiment",
