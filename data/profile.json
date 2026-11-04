@@ -1195,7 +1195,8 @@
       "link": {
         "label": "See the campaign dashboards",
         "href": "#dashboards"
-      }
+      },
+      "confidential_note": "Real campaign reports are confidential. The samples here use fictional creators, numbers and comments, and leave out costs."
     },
     {
       "id": "sentiment",
@@ -1232,7 +1233,8 @@
           "detail": "Themes are compared across TikTok, Instagram and YouTube, with statistical testing for UAE and KSA audiences."
         }
       ],
-      "status": "Sample reports coming soon"
+      "status": "Sample reports coming soon",
+      "confidential_note": "Real campaign reports are confidential. The samples here use fictional creators, numbers and comments, and leave out costs."
     }
   ]
 }

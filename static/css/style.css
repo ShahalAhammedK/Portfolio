@@ -294,6 +294,8 @@ em { font-style: normal; color: var(--lime); }
 .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 8px; }
 .crumb b { color: var(--lime); font-weight: 500; }
 .case + .case { padding-top: clamp(28px, 4vh, 44px); }
+.case__story .case__note { display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border-radius: 12px; border: 1px dashed rgba(210,248,82,0.35); background: rgba(210,248,82,0.05); color: var(--soft); font-size: 0.85rem; line-height: 1.5; }
+.case__note svg { flex-shrink: 0; color: var(--lime); margin-top: 2px; }
 .case__actions { display: flex; flex-wrap: wrap; gap: 10px; }
 .case__status { display: inline-block; margin: 4px 0 0 10px; padding: 3px 10px; border-radius: 999px; font-size: 0.7rem; color: var(--lime); border: 1px dashed rgba(210,248,82,0.5); background: var(--lime-dim); vertical-align: 1px; }
 .inline-viewer__note { font-size: 0.72rem; color: var(--muted); padding: 0 4px; letter-spacing: 0.04em; }

@@ -5,6 +5,7 @@
 {%- elif name == 'left' %}<path d="M15 18l-6-6 6-6"/>
 {%- elif name == 'right' %}<path d="M9 18l6-6-6-6"/>
 {%- elif name == 'download' %}<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>
+{%- elif name == 'lock' %}<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/>
 {%- elif name == 'close' %}<path d="M6 6l12 12M18 6L6 18"/>
 {%- elif name == 'zoom' %}<circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2M11 8.5v5M8.5 11h5"/>
 {%- elif name == 'spark' %}<path d="M12 3l1.8 5.4L19 10l-5.2 1.6L12 17l-1.8-5.4L5 10l5.2-1.6z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/>
@@ -289,6 +290,7 @@
             <div class="tags tags--lg">{% for t in cs.tags %}<span>{{ t }}</span>{% endfor %}</div>
             <div><h3>The challenge</h3><p>{{ cs.challenge }}</p></div>
             <div><h3>The approach</h3><p>{{ cs.approach }}</p></div>
+            {% if cs.confidential_note %}<p class="case__note">{{ icon('lock', 15) }} {{ cs.confidential_note }}</p>{% endif %}
             <div>
               <div class="mono caps muted small">{{ cs.layers_label or 'Inspect layer' }}</div>
               <div class="layers" data-layers='{{ cs.layers|tojson }}'>
