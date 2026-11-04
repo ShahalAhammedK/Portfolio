@@ -262,38 +262,62 @@
       ]
     },
     "campaign": {
-      "title": "Social Media Analytics — illustrative views",
-      "note": "Illustrative visuals of the analysis workflow.",
+      "title": "Social Media Analytics — sample outputs",
+      "note": "Sample reports with fictional creators and numbers. Real campaign reports are confidential.",
       "slides": [
         {
           "img": "img/campaign-analysis.jpg",
-          "caption": "Comparing creators side by side: who delivered for the campaign across TikTok, Instagram and YouTube."
+          "caption": "Tracking every creator in a launch campaign side by side, across TikTok, Instagram and YouTube."
         },
         {
           "img": "img/social-dashboard.jpg",
-          "caption": "One view of every creator's campaign: content performance, audience segments and benchmarking against competitors."
+          "caption": "One view per campaign: overview, creator performance, audience and platform mix (illustrative)."
         },
         {
-          "img": "img/social-small.jpg",
-          "caption": "The results guide which creators to work with next and how to plan the following campaign."
+          "img": "img/sample-campaign-insights.jpg",
+          "caption": "Sample report, fictional data: key insights written for the team, such as the top creator, the strongest platform and the best-performing video length."
+        },
+        {
+          "img": "img/sample-campaign-ranking.jpg",
+          "caption": "Sample report, fictional data: creators ranked by views, with view share, engagements and engagement rate."
+        },
+        {
+          "img": "img/sample-campaign-charts.jpg",
+          "caption": "Sample report, fictional data: views by platform and creator, engagement rate, video-length tiers and views by launch week."
+        },
+        {
+          "img": "img/sample-launch-report.jpg",
+          "caption": "Sample report, fictional data: a post-by-post launch report with campaign totals and engagement rate."
+        },
+        {
+          "img": "img/social-comparison.jpg",
+          "caption": "Comparing launch campaigns with each other and with a competitor benchmark (illustrative)."
         }
       ]
     },
     "sentiment": {
-      "title": "Campaign Sentiment Analysis — illustrative views",
-      "note": "Illustrative visuals and data, not real campaign results.",
+      "title": "Campaign Sentiment Analysis — sample outputs",
+      "note": "Sample reports with fictional creators, numbers and comments. Real campaign reports are confidential.",
       "slides": [
         {
           "img": "img/sentiment-analysis.jpg",
-          "caption": "Every comment on creator posts is read and classified as positive, neutral or negative."
+          "caption": "Every comment on a campaign's creator posts is read and classified as positive, neutral or negative."
         },
         {
           "img": "img/sentiment-dashboard.jpg",
-          "caption": "Comments are coded into themes such as camera, design, battery and price, showing what people love and where the campaign can improve."
+          "caption": "Sentiment split, themes (camera, design, battery, price) and UAE vs KSA at a glance (illustrative)."
         },
         {
-          "img": "img/social-small.jpg",
-          "caption": "Themes are compared across TikTok, Instagram and YouTube, with statistical testing for UAE and KSA audiences."
+          "img": "img/sample-sentiment-insights.jpg",
+          "caption": "Sample report, fictional data: key insights, such as the most discussed and most criticised themes and the warmest market."
+        },
+        {
+          "img": "img/sample-sentiment-charts.jpg",
+          "caption": "Sample report, fictional data: sentiment split, theme × sentiment, why people comment, sentiment by creator and by week."
+        },
+        {
+          "img": "img/sample-sentiment-breakdown.jpg",
+          "caption": "Sample report, fictional data: breakdowns by creator and by comment intent, with net sentiment."
         }
       ]
     }
@@ -1191,7 +1215,7 @@
           "detail": "Campaigns are compared across launches, such as V70 vs V60 vs V50, and against competitor benchmarks, guiding which creators to work with next."
         }
       ],
-      "status": "Sample reports coming soon",
+      "status": "Sample outputs · fictional data",
       "link": {
         "label": "See the campaign dashboards",
         "href": "#dashboards"
@@ -1233,7 +1257,7 @@
           "detail": "Themes are compared across TikTok, Instagram and YouTube, with statistical testing for UAE and KSA audiences."
         }
       ],
-      "status": "Sample reports coming soon",
+      "status": "Sample outputs · fictional data",
       "confidential_note": "Real campaign reports are confidential. The samples here use fictional creators, numbers and comments, and leave out costs."
     }
   ]
