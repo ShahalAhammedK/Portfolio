@@ -49,9 +49,10 @@ Data Analyst | Generative AI Builder at **vivo Middle East**, Dubai, UAE. Follow
    Studio · 10 country websites managed · 13+ certificates), and a scrolling skills ticker.
 4. **Work / Project gallery**: "Explore what **I've built.**", filter pills (All · AI & Engineering · Research ·
    Analytics), sticky "Find a project" sidebar with the same categories as radio items and a profile card
-   (`avatar.jpg`, Dubai UAE, vivo Middle East, MSc CS (AI)). Two featured cards: **AI Studio** (lime border,
-   "Open case study") and **Social Media Analytics** ("Open case study"). "Explore other work" horizontal
-   carousel with pager dots: Campaign Sentiment Analysis (opens its case study), IPL Auction Prediction (GitHub link), UAE & KSA Smartphone IDIs &
+   (`avatar.jpg`, Dubai UAE, vivo Middle East, MSc CS (AI)). Two equal main-work cards side by side, both with
+   lime border, badge and "Open case study": **AI Studio** and **Social Media Analytics** (`main: true`). Below
+   them a full-width featured card for **Campaign Sentiment Analysis** (opens its case study). "Explore other
+   work" horizontal carousel with pager dots: IPL Auction Prediction (GitHub link), UAE & KSA Smartphone IDIs &
    AIPL Decks, AI Reporting Toolkit & Interview Simulator, IMDB Movie Industry EDA (GitHub link), vivo ME
    Website & Launch Localisation (official sites for 10 ME countries).
 5. **AI Studio case study**: challenge, approach, tags, four clickable pipeline layers with typewriter detail

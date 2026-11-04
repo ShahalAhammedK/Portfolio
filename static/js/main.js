@@ -219,7 +219,7 @@
       const match = cat === "all" || f.dataset.cat === cat;
       f.classList.toggle("is-filtered-out", !match);
       f.classList.toggle("is-match", match && cat !== "all");
-      f.classList.toggle("is-highlight", cat === "all" && i === 0);
+      f.classList.toggle("is-highlight", cat === "all" && f.dataset.main === "true");
     });
     let shown = 0;
     rows.forEach((r) => {

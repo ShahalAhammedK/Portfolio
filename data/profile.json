@@ -115,7 +115,8 @@
         "Python (Pillow, rembg)"
       ],
       "viewer": "aistudio",
-      "case": "aistudio"
+      "case": "aistudio",
+      "main": true
     },
     {
       "id": "campaign",
@@ -130,7 +131,9 @@
         "REST APIs"
       ],
       "viewer": "campaign",
-      "case": "campaign"
+      "case": "campaign",
+      "main": true,
+      "badge": "SOCIAL MEDIA ANALYTICS"
     },
     {
       "id": "sentiment",
@@ -145,7 +148,9 @@
         "Statistical testing"
       ],
       "viewer": "sentiment",
-      "case": "sentiment"
+      "case": "sentiment",
+      "featured": true,
+      "badge": "SENTIMENT"
     },
     {
       "id": "ipl",

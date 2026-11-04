@@ -184,7 +184,7 @@
 
           <div class="featured">
             {% for pr in p.projects if pr.featured %}
-            <article class="project-feature card reveal {% if loop.first %}is-highlight{% endif %}" data-cat="{{ pr.cat }}" style="--i:{{ loop.index0 }}">
+            <article class="project-feature card reveal{% if pr.main %} is-highlight{% else %} project-feature--wide{% endif %}" data-main="{{ 'true' if pr.main else 'false' }}" data-cat="{{ pr.cat }}" style="--i:{{ loop.index0 }}">
               <div class="project-feature__media">
                 <img src="static/{{ pr.img }}" alt="{{ pr.title }}" loading="lazy" />
                 {% if pr.badge %}<span class="badge mono">{{ pr.badge }}</span>{% endif %}
