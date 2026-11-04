@@ -46,17 +46,27 @@ Data Analyst | Generative AI Builder at **vivo Middle East**, Dubai, UAE. Follow
    reacting to the mouse. Below: 3 image cards (AI Studio, Social Media Analytics, Consumer Insights) that open
    an image viewer; "Scroll to explore" mouse cue; LinkedIn + GitHub icons.
 3. **About**: "Research to **decisions.**", short intro, 4 stat cards (3 yrs · 2 launches shipped with AI
-   Studio · 4 research agencies · 13+ certificates), and a scrolling skills ticker.
+   Studio · 10 country websites managed · 13+ certificates), and a scrolling skills ticker.
 4. **Work / Project gallery**: "Explore what **I've built.**", filter pills (All · AI & Engineering · Research ·
    Analytics), sticky "Find a project" sidebar with the same categories as radio items and a profile card
-   (`avatar.jpg`, Dubai UAE, vivo Middle East, MSc CS (AI)). Two featured cards: **AI Studio** (lime border,
-   "Open case study") and **Influencer Campaign Analysis**. "Explore other work" horizontal carousel with
-   pager dots: Influencer Sentiment Analysis, IPL Auction Prediction (GitHub link), UAE & KSA Smartphone IDIs &
+   (`avatar.jpg`, Dubai UAE, vivo Middle East, MSc CS (AI)). Two equal main-work cards side by side, both with
+   lime border, badge and "Open case study": **AI Studio** and **Social Media Analytics** (`main: true`). Below
+   them a full-width featured card for **Campaign Sentiment Analysis** (opens its case study). "Explore other
+   work" horizontal carousel with pager dots: IPL Auction Prediction (GitHub link), UAE & KSA Smartphone IDIs &
    AIPL Decks, AI Reporting Toolkit & Interview Simulator, IMDB Movie Industry EDA (GitHub link), vivo ME
-   Website & Launch Localisation.
+   Website & Launch Localisation (official sites for 10 ME countries).
 5. **AI Studio case study**: challenge, approach, tags, four clickable pipeline layers with typewriter detail
    (Mask Pipeline, Gender Prompting, Cloudflare Edge, Frame Mode) and an inline image viewer showing the real
    sample outputs (vivo V80 male/female, V80 Lite male/female) on a blurred backdrop.
+   Followed by two more case studies in the same layout (data: `case_studies` list in profile.json), each with a
+   "Sample reports coming soon" chip until real reports are added:
+   - **Social Media Analytics**: every launch campaign tracked in one place, creators compared across
+     TikTok/Instagram/YouTube. Layers: Campaign Overview, Creator Performance, Audience Insights, Comparisons.
+     Never describe how it is built (no tech stack, APIs, data sources or page mechanics). Button
+     "See the campaign dashboards" jumps to section 7.
+   - **Campaign Sentiment Analysis** (second web app): comments classified positive/neutral/negative, coded into
+     themes (camera, design, battery, price), tested across platforms and UAE vs KSA. Layers: Comment Capture,
+     Sentiment, Theme Coding, Testing. Viewer images are labelled "Illustrative".
 6. **Consumer Research** ("Listening before **every launch.**"): counters (19 studies · 12 models · 3 series),
    filter (All · X series · V series · iQOO), one card per phone listing its studies: X300 Ultra, X300 Pro,
    X300, V70 (+ upgraded), V70 FE (+ upgraded), X200 Pro, X200 FE (customer survey, table survey, consumer
@@ -69,7 +79,9 @@ Data Analyst | Generative AI Builder at **vivo Middle East**, Dubai, UAE. Follow
    (KSA & GCC); X200 Pro; X200 FE; Honor 400 (competitor benchmark); KOL dashboard for iQOO Neo 10 & Z10.
 8. **Experience & education**: vivo Middle East, Business Commercial Specialist — Branding & Consumer Research
    (Apr 2025 – Present, JLT Dubai) with 4 highlight blocks (IDIs & AIPL decks; influencer campaign & sentiment
-   analytics; GenAI apps & AI reporting toolkit; 4 agencies, trilingual EN/AR/HI surveys & website). Wincept
+   analytics; GenAI apps & AI reporting toolkit; trilingual EN/AR/HI surveys & websites). Below the blocks, a
+   strip "Official vivo websites I manage · 10 countries" (link vivo.com/ae/en) with country chips: UAE, Saudi
+   Arabia, Kuwait, Qatar, Bahrain, Oman, Iraq, Jordan, Lebanon, Yemen (one chip per country, no EN/AR split). Wincept
    Technologies, Data Analyst & Data Science Intern (Nov 2023 – Dec 2024, Kerala) with document links. MSc
    Computer Science (AI), University of Kerala (8.54/10, A+); BSc Computer Science, University of Calicut.
 9. **Credentials & LinkedIn** ("Learning, ideas & milestones."): tabs Credentials (featured 4) · All

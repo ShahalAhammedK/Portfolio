@@ -55,7 +55,7 @@
     entries.forEach((e) => {
       if (!e.isIntersecting) return;
       const id = e.target.id;
-      const linkId = id === "case-study" ? "work" : id === "home" ? "" : id;
+      const linkId = id.startsWith("case-") ? "work" : id === "home" ? "" : id;
       links.forEach((l) => l.classList.toggle("is-active", l.getAttribute("href") === "#" + linkId));
       if (counter && e.target.dataset.index) counter.textContent = `${pad(e.target.dataset.index)} / 05`;
     });
@@ -219,7 +219,7 @@
       const match = cat === "all" || f.dataset.cat === cat;
       f.classList.toggle("is-filtered-out", !match);
       f.classList.toggle("is-match", match && cat !== "all");
-      f.classList.toggle("is-highlight", cat === "all" && i === 0);
+      f.classList.toggle("is-highlight", cat === "all" && f.dataset.main === "true");
     });
     let shown = 0;
     rows.forEach((r) => {
@@ -234,8 +234,10 @@
   [...pills, ...finderItems].forEach((b) => b.addEventListener("click", () => applyFilter(b.dataset.filter)));
   applyFilter("all");
 
-  $$("[data-case-study]").forEach((b) => b.addEventListener("click", () =>
-    $("#case-study").scrollIntoView({ behavior: reduce ? "auto" : "smooth" })));
+  $$("[data-case-study]").forEach((b) => b.addEventListener("click", () => {
+    const target = $("#case-" + (b.dataset.caseStudy || "aistudio"));
+    if (target) target.scrollIntoView({ behavior: reduce ? "auto" : "smooth" });
+  }));
 
   /* ============ Consumer research: filter by series ============ */
   const rPills = $$("#researchPills .pill");
@@ -273,14 +275,16 @@
     });
   }));
 
-  /* ============ Case study: pipeline layers (typewriter) ============ */
-  const layersEl = $("#layers");
-  if (layersEl) {
+  /* ============ Case studies: pipeline layers (typewriter) ============ */
+  $$(".layers[data-layers]").forEach((layersEl) => {
     const layers = JSON.parse(layersEl.dataset.layers);
-    const detail = $("#layerDetail");
+    const detail = $("[data-layer-detail]", layersEl.parentElement);
     let typeT;
     const showLayer = (i) => {
-      $$(".layer", layersEl).forEach((b, k) => b.classList.toggle("is-active", k === i));
+      $$(".layer", layersEl).forEach((b, k) => {
+        b.classList.toggle("is-active", k === i);
+        b.setAttribute("aria-pressed", k === i ? "true" : "false");
+      });
       const l = layers[i];
       const head = `<b>[${pad(i + 1)}. ${l.name.toUpperCase()}]</b> `;
       clearTimeout(typeT);
@@ -294,7 +298,7 @@
       type();
     };
     $$(".layer", layersEl).forEach((b) => b.addEventListener("click", () => showLayer(+b.dataset.layer)));
-  }
+  });
 
   /* ============ Image viewers (inline + lightbox) ============ */
   const swapImg = (img, src, alt) => {
@@ -308,8 +312,7 @@
     pre.src = src;
   };
 
-  const inline = $("#inlineViewer");
-  if (inline) {
+  $$(".inline-viewer[data-viewer-key]").forEach((inline) => {
     const slidesIV = DATA.viewers[inline.dataset.viewerKey].slides;
     const mainImg = $("[data-main]", inline);
     mainImg.parentElement.style.setProperty("--bg", `url('${mainImg.src}')`);
@@ -325,7 +328,7 @@
     $("[data-prev]", inline).addEventListener("click", () => go(idx - 1));
     $("[data-next]", inline).addEventListener("click", () => go(idx + 1));
     $$(".thumb", inline).forEach((th) => th.addEventListener("click", () => go(+th.dataset.thumb)));
-  }
+  });
 
   /* Modals */
   let lastFocus = null;
