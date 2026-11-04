@@ -326,7 +326,7 @@
       "note": "Photos from the vivo Autumn Reveal launch event.",
       "slides": [
         {
-          "img": "img/li-vivo.jpg",
+          "img": "img/launch-stage.jpg",
           "caption": "The launch stage, built around the \"Master Every vivo Moment\" theme."
         },
         {
@@ -703,8 +703,7 @@
       "desc": "Behind the scenes of launching live generative AI campaign web apps and evaluating creator performance across TikTok, Instagram and YouTube.",
       "url": "https://www.linkedin.com/in/shahal-ahammed/",
       "cta": "Read on LinkedIn",
-      "viewer": "launch",
-      "gallery_label": "View launch event photos"
+      "card_img": "img/launch-stage.jpg"
     },
     {
       "id": "li_ipl",

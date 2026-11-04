@@ -629,5 +629,3 @@ em { font-style: normal; color: var(--lime); }
   .hero__line .w > span { transform: none !important; }
   .hero__portrait { opacity: 1; }
 }
-.drawer__gallery { margin-top: 10px; }
-.drawer__gallery[hidden] { display: none; }

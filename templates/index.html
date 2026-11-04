@@ -539,7 +539,7 @@
             <div class="li__grid">
               {% for l in p.linkedin_posts %}
               <button type="button" class="li-card card reveal" style="--i:{{ loop.index0 }}" data-cred="{{ l.id }}">
-                <span class="li-card__media"><img src="static/{{ l.img }}" alt="" loading="lazy" /></span>
+                <span class="li-card__media"><img src="static/{{ l.card_img or l.img }}" alt="" loading="lazy" /></span>
                 <span class="li-card__body">
                   <span class="li-card__title">{{ l.title }} {{ icon('arrow-ur', 18) }}</span>
                   <span class="li-card__src"><span class="in">in</span> Shared on LinkedIn</span>
@@ -562,7 +562,6 @@
             <span class="chip"><span class="in">in</span> Listed on LinkedIn</span>
           </div>
           <a class="btn btn--lime btn--block" id="drawerCta" href="#" target="_blank" rel="noopener"><span>View</span> {{ icon('arrow-ur', 17) }}</a>
-          <button type="button" class="btn btn--ghost btn--block drawer__gallery" id="drawerGallery" data-viewer="" hidden>{{ icon('zoom', 17) }} <span>View photos</span></button>
           <div class="copybar">
             {{ icon('link', 17) }}
             <span class="mono">{{ p.contact.linkedin|replace('https://www.', '') }}</span>
