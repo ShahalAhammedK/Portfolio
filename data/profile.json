@@ -320,6 +320,28 @@
           "caption": "Sample report, fictional data: breakdowns by creator and by comment intent, with net sentiment."
         }
       ]
+    },
+    "launch": {
+      "title": "vivo Autumn Reveal — launch event",
+      "note": "Photos from the vivo Autumn Reveal launch event.",
+      "slides": [
+        {
+          "img": "img/li-vivo.jpg",
+          "caption": "The launch stage, built around the \"Master Every vivo Moment\" theme."
+        },
+        {
+          "img": "img/launch-keyvisual.jpg",
+          "caption": "The vivo Autumn Reveal key visual."
+        },
+        {
+          "img": "img/launch-audience.jpg",
+          "caption": "Guests at the launch event."
+        },
+        {
+          "img": "img/launch-team.jpg",
+          "caption": "The team at the launch event."
+        }
+      ]
     }
   },
   "experience": {
@@ -680,7 +702,9 @@
       "img": "img/li-vivo.jpg",
       "desc": "Behind the scenes of launching live generative AI campaign web apps and evaluating creator performance across TikTok, Instagram and YouTube.",
       "url": "https://www.linkedin.com/in/shahal-ahammed/",
-      "cta": "Read on LinkedIn"
+      "cta": "Read on LinkedIn",
+      "viewer": "launch",
+      "gallery_label": "View launch event photos"
     },
     {
       "id": "li_ipl",

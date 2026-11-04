@@ -408,7 +408,8 @@
   DATA.credentials.forEach((c) => { items[c.id] = { ...c, kind: "cred" }; });
   DATA.linkedin.forEach((l) => {
     items[l.id] = { id: l.id, title: l.title, full: l.full, issuer: "Shared on LinkedIn", type: "LinkedIn post",
-      date: "Featured", art: l.img, desc: l.desc, url: l.url, cta: l.cta, brand: "LinkedIn", kind: "li" };
+      date: "Featured", art: l.img, desc: l.desc, url: l.url, cta: l.cta, brand: "LinkedIn", kind: "li",
+      viewer: l.viewer, galleryLabel: l.gallery_label };
   });
   const drawer = $("#drawer");
   const credsGrid = $(".creds__grid");
@@ -432,6 +433,12 @@
     const cta = $("#drawerCta");
     cta.href = c.url;
     $("span", cta).textContent = c.cta || "View";
+    const gallery = $("#drawerGallery");
+    gallery.hidden = !c.viewer;
+    if (c.viewer) {
+      gallery.dataset.viewer = c.viewer;
+      $("span", gallery).textContent = c.galleryLabel || "View photos";
+    }
     $$("[data-cred]").forEach((el) => el.classList.toggle("is-active", el.dataset.cred === id && el.id !== "drawerRelated"));
 
     // related: next featured/visible credential that's not this one
