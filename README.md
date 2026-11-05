@@ -18,7 +18,10 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Open http://127.0.0.1:5000
+Open http://127.0.0.1:5000. For auto-reload while editing, run with `FLASK_DEBUG=1` (never on a public server: the debugger can run code).
+
+Security: the server and the static build (`dist/_headers`) send a Content-Security-Policy and other security
+headers; the contact form only accepts same-site JSON, max 64 KB, 5 messages per visitor per 10 minutes.
 
 ## Update your content
 
