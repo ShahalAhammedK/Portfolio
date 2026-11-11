@@ -107,3 +107,28 @@ Seedance 2.5 costs 15–35 credits per shot, more than the 10 credits that were 
 **Rough credit costs for the full hero trailer (about 7 shots × 5 s):**
 - Seedance 2.0 Mini, 720p: about 5 credits per shot, about 35 credits in total
 - Seedance 2.5, 720p (best quality): about 35 credits per shot, about 245 credits in total
+
+---
+
+## 8. Revision after test round 1
+
+**Series cut from five videos to three.**
+
+| # | Video | Length |
+|---|-------|--------|
+| 1 | **Hero trailer**: who Shahal is (research, credentials and stats stay inside this one) | 30–40 s |
+| 2 | **AI Studio**: selfie to launch key visual | 20 s |
+| 3 | **Social Media Analytics + Sentiment**: every campaign, measured | 20 s |
+
+Videos 4 (Consumer Research) and 5 (Credentials) are dropped as standalone videos. Their key numbers
+(19 studies, MSc AI, 13+ certificates) already appear in the hero trailer.
+
+**Phones are real vivo models, not generic ones.** Every phone shot uses a product image from
+`static/img/phones/` as a reference image, so the generated phone matches the real design.
+
+| Shot | Scene | Reference | Higgsfield job |
+|------|-------|-----------|----------------|
+| 3 (redo) | Data particles assembling into the phone | `static/img/phones/x300-ultra.png` | `c8814cca-aa7c-4410-acae-9151eabfdc19` |
+
+Suggested phone per video: X300 Ultra in the hero trailer, V80 and V80 Lite in the AI Studio video
+(the two launches AI Studio shipped for).
