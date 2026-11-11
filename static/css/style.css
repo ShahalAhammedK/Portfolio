@@ -623,17 +623,41 @@ em { font-style: normal; color: var(--lime); }
   .hero__foot .caps { display: none; }
 }
 
-/* ---------- Showreel ---------- */
-.reel { padding-block: clamp(48px, 7vw, 96px); }
-.reel__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 32px; }
-.reel__clip { overflow: hidden; padding: 0; display: flex; flex-direction: column; }
-.reel__video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #000; }
-.reel__clip figcaption { display: grid; gap: 2px; padding: 16px 18px 18px; }
-.reel__clip strong { font-family: var(--display); font-size: 1.15rem; letter-spacing: -0.01em; }
-.reel__clip figcaption span:last-child { color: var(--muted); font-size: 0.92rem; }
-.reel__num { color: var(--lime); font-size: 0.72rem; }
-.reel__note { margin-top: 16px; color: var(--muted); font-size: 0.78rem; }
-@media (max-width: 980px) { .reel__grid { grid-template-columns: 1fr; } }
+/* ---------- Ambient videos (AI clips blended into sections) ---------- */
+.amb { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+.amb__video { width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1.6s var(--ease); }
+.amb__video.is-on { opacity: var(--amb-o, 0.6); }
+
+/* Hero: lime particle wave glowing up from the bottom, behind headline + portrait */
+.amb--hero { top: clamp(220px, 34vh, 360px); bottom: auto; height: min(62vh, 560px); --amb-o: 0.8; mix-blend-mode: screen;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 30%, #000 70%, transparent 100%);
+  mask-image: linear-gradient(180deg, transparent 0%, #000 30%, #000 70%, transparent 100%); }
+
+/* Research header: Dubai skyline as a cinematic backdrop */
+.research__head--cinema { position: relative; isolation: isolate; overflow: hidden; min-height: clamp(320px, 42vw, 460px);
+  padding: clamp(26px, 4vw, 52px); border-radius: 26px; border: 1px solid var(--line); background: #05070a; margin-bottom: 26px; }
+.research__head--cinema > :not(.amb) { position: relative; z-index: 1; }
+.amb--cinema { --amb-o: 0.9; }
+.amb--cinema::after { content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(10,13,16,0.94) 0%, rgba(10,13,16,0.7) 42%, rgba(10,13,16,0.15) 100%),
+              linear-gradient(0deg, rgba(10,13,16,0.85) 0%, transparent 55%); }
+.research__head--cinema .research__stats div { background: rgba(10,13,16,0.55); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+
+/* CTA: X300 Ultra clip fading in from the right of the card */
+.cta__card--media { position: relative; isolation: isolate; overflow: hidden; min-height: clamp(300px, 34vw, 420px); }
+.cta__card--media .cta__text { position: relative; z-index: 1; max-width: 56ch; }
+.cta__text .btn { margin-top: 26px; }
+.amb--cta { left: auto; width: min(62%, 760px); --amb-o: 1;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 38%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 38%); }
+
+@media (max-width: 760px) {
+  .amb--hero { --amb-o: 0.5; }
+  .amb--cinema::after { background: linear-gradient(0deg, rgba(10,13,16,0.95) 0%, rgba(10,13,16,0.6) 60%, rgba(10,13,16,0.35) 100%); }
+  .cta__card--media { padding-bottom: 240px; }
+  .amb--cta { top: auto; width: 100%; height: 260px;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 40%); mask-image: linear-gradient(180deg, transparent 0%, #000 40%); }
+}
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }

@@ -56,7 +56,6 @@
     <div class="nav__inner">
       <a href="#home" class="brand" aria-label="{{ p.name }}, home">{{ p.brand }}<b>.</b></a>
       <nav class="nav__links" id="navLinks" aria-label="Primary">
-        <a href="#showreel" data-link>Showreel</a>
         <a href="#work" data-link>Work</a>
         <a href="#research" data-link>Research</a>
         <a href="#about" data-link>About</a>
@@ -75,6 +74,9 @@
   <main>
     <!-- ================= 01 HERO ================= -->
     <section class="hero" id="home" data-index="1">
+      {% if p.ambient_videos and p.ambient_videos.hero %}
+      <div class="amb amb--hero" aria-hidden="true"><video class="amb__video" data-src="{{ p.ambient_videos.hero }}" muted loop playsinline preload="none"></video></div>
+      {% endif %}
       <div class="hero__media" aria-hidden="true">
         <img src="static/{{ p.portrait }}" alt="" class="hero__portrait" id="heroPortrait" />
         <canvas id="waveCanvas"></canvas>
@@ -166,30 +168,6 @@
         </div>
       </div>
     </section>
-
-    {% if p.showreel %}
-    <!-- ================= SHOWREEL ================= -->
-    <section class="wrap reel" id="showreel" data-index="1">
-      <div class="reveal">
-        <div class="eyebrow mono caps">{{ p.showreel.eyebrow }}</div>
-        <h2 class="h2">{{ p.showreel.title|safe }}</h2>
-        <p class="lead">{{ p.showreel.intro }}</p>
-      </div>
-      <div class="reel__grid">
-        {% for c in p.showreel.clips %}
-        <figure class="reel__clip card reveal" style="--i:{{ loop.index0 }}">
-          <video class="reel__video" src="{{ c.src }}" muted loop playsinline preload="metadata" aria-label="{{ c.title|striptags }}: {{ c.text }}"></video>
-          <figcaption>
-            <span class="mono caps reel__num">0{{ loop.index }}</span>
-            <strong>{{ c.title|safe }}</strong>
-            <span>{{ c.text }}</span>
-          </figcaption>
-        </figure>
-        {% endfor %}
-      </div>
-      {% if p.showreel.note %}<p class="reel__note mono">{{ p.showreel.note }}</p>{% endif %}
-    </section>
-    {% endif %}
 
     <!-- ================= 02 WORK ================= -->
     <section class="wrap work" id="work" data-index="2">
@@ -351,7 +329,10 @@
     {% set ns = namespace(total=rs.cross|length) %}
     {% for m in rs.models %}{% set ns.total = ns.total + m.studies|length %}{% endfor %}
     <section class="wrap research" id="research" data-index="3">
-      <div class="research__head">
+      <div class="research__head{% if p.ambient_videos and p.ambient_videos.research %} research__head--cinema{% endif %}">
+        {% if p.ambient_videos and p.ambient_videos.research %}
+        <div class="amb amb--cinema" aria-hidden="true"><video class="amb__video" data-src="{{ p.ambient_videos.research }}" muted loop playsinline preload="none"></video></div>
+        {% endif %}
         <div class="reveal">
           <div class="eyebrow mono caps">Research / Consumer studies</div>
           <h2 class="h2">Listening before <em>every launch.</em></h2>
@@ -602,13 +583,16 @@
 
     <!-- ================= CTA ================= -->
     <section class="wrap cta reveal">
-      <div class="cta__card">
-        <div>
+      <div class="cta__card{% if p.ambient_videos and p.ambient_videos.cta %} cta__card--media{% endif %}">
+        <div class="cta__text">
           <div class="eyebrow mono caps">Open to opportunities</div>
           <h2 class="h2">Have a question about <em>your customers?</em></h2>
           <p class="lead">Research, dashboards or a GenAI prototype. Let's talk about what you need.</p>
+          <button type="button" class="btn btn--lime btn--lg" data-open-connect>Let's connect {{ icon('arrow') }}</button>
         </div>
-        <button type="button" class="btn btn--lime btn--lg" data-open-connect>Let's connect {{ icon('arrow') }}</button>
+        {% if p.ambient_videos and p.ambient_videos.cta %}
+        <div class="amb amb--cta" aria-hidden="true"><video class="amb__video" data-src="{{ p.ambient_videos.cta }}" muted loop playsinline preload="none"></video></div>
+        {% endif %}
       </div>
     </section>
   </main>

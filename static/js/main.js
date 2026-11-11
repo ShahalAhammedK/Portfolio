@@ -521,19 +521,23 @@
     }
   });
 
-  /* ============ Showreel: play clips only while visible ============ */
-  const reelVideos = $$(".reel__video");
-  if (reelVideos.length) {
-    if (reduce || !("IntersectionObserver" in window)) {
-      reelVideos.forEach((v) => { v.controls = true; });
-    } else {
-      const reelIO = new IntersectionObserver((entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) e.target.play().catch(() => { e.target.controls = true; });
-          else e.target.pause();
-        });
-      }, { threshold: 0.35 });
-      reelVideos.forEach((v) => reelIO.observe(v));
-    }
+  /* ============ Ambient videos: load lazily, play only while on screen ============ */
+  // Skipped entirely for reduced motion; the sections look complete without them.
+  const ambVideos = $$(".amb__video");
+  if (ambVideos.length && !reduce && "IntersectionObserver" in window) {
+    const ambIO = new IntersectionObserver((entries) => {
+      entries.forEach(({ target: v, isIntersecting }) => {
+        if (isIntersecting) {
+          if (!v.src) {
+            v.src = v.dataset.src;
+            v.addEventListener("playing", () => v.classList.add("is-on"), { once: true });
+          }
+          v.play().catch(() => {});
+        } else if (v.src) {
+          v.pause();
+        }
+      });
+    }, { rootMargin: "200px 0px", threshold: 0.01 });
+    ambVideos.forEach((v) => ambIO.observe(v));
   }
 })();
