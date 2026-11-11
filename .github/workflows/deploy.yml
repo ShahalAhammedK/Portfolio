@@ -1,0 +1,35 @@
+name: Deploy to Cloudflare Pages
+
+# Builds the static site and publishes it to the shahal-portfolio Pages project.
+# Runs on every push to the live branch, or manually from the Actions tab.
+on:
+  push:
+    branches: [claude/elegant-cerf-35px6y]
+  workflow_dispatch:
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build static site
+        run: |
+          pip install -r requirements.txt
+          python app.py build
+
+      - name: Publish to Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: 912ad7e6f903fc76e1ad6967c2e8a1b6
+        run: npx --yes wrangler@4 pages deploy dist --project-name shahal-portfolio --branch main --commit-hash "$GITHUB_SHA"
