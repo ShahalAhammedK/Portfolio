@@ -56,6 +56,7 @@
     <div class="nav__inner">
       <a href="#home" class="brand" aria-label="{{ p.name }}, home">{{ p.brand }}<b>.</b></a>
       <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#showreel" data-link>Showreel</a>
         <a href="#work" data-link>Work</a>
         <a href="#research" data-link>Research</a>
         <a href="#about" data-link>About</a>
@@ -165,6 +166,30 @@
         </div>
       </div>
     </section>
+
+    {% if p.showreel %}
+    <!-- ================= SHOWREEL ================= -->
+    <section class="wrap reel" id="showreel" data-index="1">
+      <div class="reveal">
+        <div class="eyebrow mono caps">{{ p.showreel.eyebrow }}</div>
+        <h2 class="h2">{{ p.showreel.title|safe }}</h2>
+        <p class="lead">{{ p.showreel.intro }}</p>
+      </div>
+      <div class="reel__grid">
+        {% for c in p.showreel.clips %}
+        <figure class="reel__clip card reveal" style="--i:{{ loop.index0 }}">
+          <video class="reel__video" src="{{ c.src }}" muted loop playsinline preload="metadata" aria-label="{{ c.title|striptags }}: {{ c.text }}"></video>
+          <figcaption>
+            <span class="mono caps reel__num">0{{ loop.index }}</span>
+            <strong>{{ c.title|safe }}</strong>
+            <span>{{ c.text }}</span>
+          </figcaption>
+        </figure>
+        {% endfor %}
+      </div>
+      {% if p.showreel.note %}<p class="reel__note mono">{{ p.showreel.note }}</p>{% endif %}
+    </section>
+    {% endif %}
 
     <!-- ================= 02 WORK ================= -->
     <section class="wrap work" id="work" data-index="2">

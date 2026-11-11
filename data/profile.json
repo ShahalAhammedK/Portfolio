@@ -59,6 +59,29 @@
       "label": "Verified certificates"
     }
   ],
+  "showreel": {
+    "eyebrow": "Showreel",
+    "title": "Research, data &amp; AI, <em>in motion.</em>",
+    "intro": "Short AI-generated scenes made with Higgsfield, built around the same story as this site: listen to people, turn it into data, ship what's next.",
+    "note": "AI-generated draft clips. Full videos coming soon.",
+    "clips": [
+      {
+        "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3KMTjYEhIifmgPfHDX9Cl2RxtPi/hf_20261111_051248_5516a065-35b7-4198-8243-56b97643f402.mp4",
+        "title": "Understand people.",
+        "text": "Every launch starts with a question."
+      },
+      {
+        "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3KMTjYEhIifmgPfHDX9Cl2RxtPi/hf_20261111_051248_f68110b7-8ee9-429d-bb94-3e51cb9986f3.mp4",
+        "title": "UAE &amp; KSA",
+        "text": "Consumer research across the Gulf, turned into data."
+      },
+      {
+        "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3KMTjYEhIifmgPfHDX9Cl2RxtPi/hf_20261111_061506_c8814cca-aa7c-4410-acae-9151eabfdc19.mp4",
+        "title": "Build what’s next.",
+        "text": "From insight to launch: vivo X300 Ultra."
+      }
+    ]
+  },
   "categories": [
     {
       "id": "ai",

@@ -520,4 +520,20 @@
       label.textContent = "Send message";
     }
   });
+
+  /* ============ Showreel: play clips only while visible ============ */
+  const reelVideos = $$(".reel__video");
+  if (reelVideos.length) {
+    if (reduce || !("IntersectionObserver" in window)) {
+      reelVideos.forEach((v) => { v.controls = true; });
+    } else {
+      const reelIO = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) e.target.play().catch(() => { e.target.controls = true; });
+          else e.target.pause();
+        });
+      }, { threshold: 0.35 });
+      reelVideos.forEach((v) => reelIO.observe(v));
+    }
+  }
 })();
