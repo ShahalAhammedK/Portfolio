@@ -90,3 +90,20 @@ AI video models can't render exact text and numbers reliably, so the work is spl
 2. Lock the style, then generate the rest of the shots.
 3. Edit: text, stats, music, voice → 16:9 and 9:16 exports.
 4. Optionally add Video 1 to the site hero as a muted, looping background (it will respect `prefers-reduced-motion`).
+
+---
+
+## 7. Test round 1 (Video 1 style test)
+
+Generated three 4-second, 480p silent test shots with **Seedance 2.0 Mini** (2 credits each, 6 credits total).
+Seedance 2.5 costs 15–35 credits per shot, more than the 10 credits that were available.
+
+| Shot | Scene | Higgsfield job |
+|------|-------|----------------|
+| 1 | Lime particle wave on black (opening) | `5516a065-35b7-4198-8243-56b97643f402` |
+| 2 | Night skyline with lime light trails | `f68110b7-8ee9-429d-bb94-3e51cb9986f3` |
+| 3 | Data particles assembling into an unbranded phone | `ea42ee1b-976c-4864-8d68-d2d6ec6211d8` |
+
+**Rough credit costs for the full hero trailer (about 7 shots × 5 s):**
+- Seedance 2.0 Mini, 720p: about 5 credits per shot, about 35 credits in total
+- Seedance 2.5, 720p (best quality): about 35 credits per shot, about 245 credits in total
