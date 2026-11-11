@@ -132,3 +132,35 @@ Videos 4 (Consumer Research) and 5 (Credentials) are dropped as standalone video
 
 Suggested phone per video: X300 Ultra in the hero trailer, V80 and V80 Lite in the AI Studio video
 (the two launches AI Studio shipped for).
+
+---
+
+## 9. Plan v2: animate the site's own pictures
+
+Approach: take an image that is already on the page and turn it into a short (4–6 s), silent, looping
+video with Higgsfield image-to-video. The design stays the same and the picture comes alive.
+The still image remains as the poster/fallback (and is what reduced-motion visitors see).
+
+| # | Where on the page | Source image | Motion idea |
+|---|-------------------|--------------|-------------|
+| 1 | Hero portrait | `portrait.jpg` | Very subtle: breath, blink, soft light sweep. Face unchanged |
+| 2 | Home card: AI Studio | `card-ai-studio.jpg` | Glow pulses behind both posters, light glints on the phones |
+| 3 | Home card + project: Social Media Analytics / Sentiment | `sentiment-analysis.jpg` | Bubbles float, pulses flow into the ring, ring rotates (**test done**) |
+| 4 | Home card + project: Consumer Insights | `card-insights.jpg` | Holographic charts and people icons animate, city bokeh drifts |
+| 5 | Project: AI Studio (featured) | `ai-studio-showcase.jpg` | Screens light up in sequence, slow push-in |
+| 6 | Project: Social Media Analytics (featured) | `campaign-analysis.jpg` | Dashboard bars grow, numbers tick |
+| 7 | Project: AI Reporting Toolkit | `ai-toolkit.jpg` | Text and data streams flowing |
+| 8 | Project: IPL Auction Prediction | `ipl-analytics.jpg` | Data points clustering |
+| 9 | Project: IMDB EDA | `imdb-eda.jpg` | Film-strip / chart motion |
+| 10 | Project: vivo ME Website & Localisation | `localisation.jpg` | City lights twinkle, screens glow |
+| 11 | Research header backdrop | (already live) skyline clip | Swap the 480p draft for a 720p/1080p version |
+| 12 | CTA card | (already live) X300 Ultra clip | Swap for a higher-quality version |
+| 13 | Credentials: Honours | `honours.jpg` | Medal glint, light sweep |
+| 14 | LinkedIn highlights | `li-*.jpg` | Gentle parallax / push-in |
+
+On the site: videos replace the `<img>` only when in view (same lazy loader as the ambient videos), and
+hover-to-play on the project cards keeps the gallery calm.
+
+| Test | Source | Higgsfield job |
+|------|--------|----------------|
+| Animated picture #3 | `sentiment-analysis.jpg` | `2ecfae5b-2e91-4215-b1c4-22bc94149f7c` |
